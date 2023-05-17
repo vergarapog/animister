@@ -1,16 +1,44 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { animationCategories } from "../constants";
+import { useGlobalContext } from "../context";
 
 const Navbar = () => {
+  const { selectedCategory, setSelectedCategory } = useGlobalContext();
+
+  const handleClick = (title: string) => {
+    setSelectedCategory(title);
+    console.log("1", title, "2", selectedCategory);
+  };
+
   return (
-    <nav className={`text-white px-4 text-md uppercase p-4`}>
-      <div className={`flex justify-between items-center`}>
-        <div className={`flex space-x-5 items-center`}>
-          <div className={`font-bold text-3xl`}>A</div>
+    <nav className={`p-3 px-4 text-sm uppercase text-white`}>
+      <div className={`flex items-center justify-between`}>
+        <div className={`flex items-center space-x-5`}>
+          <div className={`text-3xl font-semibold`}>B</div>
           <div>
-            <ul className="flex space-x-4 font-bold">
+            <ul className="flex space-x-2 font-bold">
               {animationCategories.map((category) => {
-                return <li key={category.id}>{category.title}</li>;
+                if (category.title === selectedCategory) {
+                  return (
+                    <li
+                      className={`p=1 cursor-pointer select-none bg-accent p-1`}
+                      key={category.id}
+                      onClick={() => handleClick(category.title)}
+                    >
+                      {category.title}
+                    </li>
+                  );
+                } else {
+                  return (
+                    <li
+                      className={`cursor-pointer select-none p-1 transition-all hover:scale-110 hover:underline`}
+                      key={category.id}
+                      onClick={() => handleClick(category.title)}
+                    >
+                      {category.title}
+                    </li>
+                  );
+                }
               })}
             </ul>
           </div>
