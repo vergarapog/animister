@@ -49,7 +49,11 @@ const Navbar = () => {
           </div>
         </div>
         <div onClick={() => setIsSideBarOpen(true)}>
-          <FontAwesomeIcon icon="bars" size="2xl" />
+          <FontAwesomeIcon
+            className={`cursor-pointer`}
+            icon="bars"
+            size="2xl"
+          />
         </div>
       </div>
     </nav>

@@ -15,7 +15,11 @@ const Sidebar = () => {
         onClick={() => setIsSideBarOpen(false)}
       >
         <div>
-          <FontAwesomeIcon icon="circle-xmark" size="2xl" />
+          <FontAwesomeIcon
+            className={`cursor-pointer`}
+            icon="circle-xmark"
+            size="2xl"
+          />
         </div>
       </div>
     </aside>
