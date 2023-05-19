@@ -11,7 +11,7 @@ interface AppContextType {
 }
 
 const AppContext = createContext<AppContextType>({
-  selectedCategory: "",
+  selectedCategory: "Basic",
   setSelectedCategory: () => {},
   errorMessage: "",
   setErrorMessage: () => {},
@@ -24,7 +24,7 @@ interface AppProviderProps {
 }
 
 const AppProvider = ({ children }: AppProviderProps) => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("basic");
+  const [selectedCategory, setSelectedCategory] = useState<string>("Basic");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
 

@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`p-3 px-4 text-sm uppercase`}>
+    <nav className={` p-3 px-4 text-sm uppercase`}>
       <div className={`flex items-center justify-between`}>
         <div className={`flex items-center space-x-5`}>
           <div
@@ -48,12 +48,8 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div>
-          <FontAwesomeIcon
-            icon="bars"
-            size="2xl"
-            onClick={() => setIsSideBarOpen(true)}
-          />
+        <div onClick={() => setIsSideBarOpen(true)}>
+          <FontAwesomeIcon icon="bars" size="2xl" />
         </div>
       </div>
     </nav>
