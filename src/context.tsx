@@ -6,13 +6,17 @@ interface AppContextType {
   setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
   errorMessage: string;
   setErrorMessage: React.Dispatch<React.SetStateAction<string>>;
+  isSideBarOpen: boolean;
+  setIsSideBarOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const AppContext = createContext<AppContextType>({
-  selectedCategory: "",
+  selectedCategory: "Basic",
   setSelectedCategory: () => {},
   errorMessage: "",
   setErrorMessage: () => {},
+  isSideBarOpen: false,
+  setIsSideBarOpen: () => {},
 });
 
 interface AppProviderProps {
@@ -20,8 +24,9 @@ interface AppProviderProps {
 }
 
 const AppProvider = ({ children }: AppProviderProps) => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [selectedCategory, setSelectedCategory] = useState<string>("Basic");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
 
   return (
     <AppContext.Provider
@@ -30,6 +35,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
         setSelectedCategory,
         errorMessage,
         setErrorMessage,
+        isSideBarOpen,
+        setIsSideBarOpen,
       }}
     >
       {children}
