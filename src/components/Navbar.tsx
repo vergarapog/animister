@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={` p-3 px-4 text-sm uppercase`}>
+    <nav className={`px-4 py-2 text-sm uppercase`}>
       <div className={`flex items-center justify-between`}>
         <div className={`flex items-center space-x-5`}>
           <div
