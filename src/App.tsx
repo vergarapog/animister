@@ -14,7 +14,7 @@ function App() {
   const { setIsSideBarOpen } = useGlobalContext();
 
   return (
-    <div className="relative w-full overflow-x-hidden font-montserrat text-textoffwhite">
+    <div className="overflow-x- relative w-full font-montserrat text-textoffwhite">
       <Sidebar />
       <div className="flex h-screen flex-col">
         <div className={`${styles.flexCenter} bg-primary`}>
