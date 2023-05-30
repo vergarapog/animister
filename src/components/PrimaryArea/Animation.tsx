@@ -1,9 +1,13 @@
 import React from "react";
 
-const Animation = () => {
+type Props = {
+  itemId: string;
+};
+
+const Animation = ({ itemId }: Props) => {
   return (
     <div
-      className={`min-w flex h-32 min-w-[128px] items-center justify-center rounded-full bg-primary`}
+      className={`min-w flex h-32 min-w-[128px] select-none items-center justify-center rounded-full bg-primary`}
     >
       <div>Circle</div>
     </div>
