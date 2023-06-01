@@ -38,7 +38,10 @@ const PrimaryArea = () => {
 
   return (
     <main className={`h-full py-2`}>
-      <section onMouseLeave={dragStop}>
+      <section
+        onMouseLeave={dragStop}
+        className={`${dragging ? "cursor-grabbing" : "cursor-grab"}`}
+      >
         <ScrollMenu
           onWheel={onWheel}
           onMouseDown={() => dragStart}
