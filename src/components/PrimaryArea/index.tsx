@@ -12,6 +12,7 @@ import Animation from "./Animation";
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
+import "./hideScrollbar.css";
 
 import useDrag from "./useDrag";
 
