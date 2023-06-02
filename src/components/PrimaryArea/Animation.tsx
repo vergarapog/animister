@@ -9,7 +9,7 @@ const Animation = ({ itemId }: Props) => {
     <div
       className={`min-w flex h-32 min-w-[128px] cursor-pointer select-none items-center justify-center rounded-full bg-primary`}
     >
-      <div>Circle</div>
+      <div>Animation</div>
     </div>
   );
 };

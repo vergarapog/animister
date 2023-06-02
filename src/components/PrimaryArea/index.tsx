@@ -15,6 +15,7 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
 
 import useDrag from "./useDrag";
+import AnimationVariation from "./AnimationVariation";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
@@ -41,7 +42,9 @@ const PrimaryArea = () => {
     <main className={`h-full py-2`}>
       <section
         onMouseLeave={dragStop}
-        className={`${dragging ? "cursor-grabbing" : "cursor-grab"}`}
+        className={`${
+          dragging ? "cursor-grabbing" : "cursor-grab"
+        } border-b-[1.5px] pb-2`}
       >
         <ScrollMenu
           onWheel={onWheel}
@@ -54,13 +57,29 @@ const PrimaryArea = () => {
           >
             {items.map(({ id }) => (
               <Animation
-                itemId={id} // NOTE: itemId is required for track items
+                itemId={id}
+                key={id} // NOTE: itemId is required for track items
               />
             ))}
           </div>
         </ScrollMenu>
       </section>
-      <section></section>
+      <section className={`p-2`}>
+        <div className={`grid grid-cols-3 gap-3`}>
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+          <AnimationVariation />
+        </div>
+      </section>
       <section></section>
     </main>
   );
