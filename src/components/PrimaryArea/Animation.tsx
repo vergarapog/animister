@@ -1,0 +1,17 @@
+import React from "react";
+
+type Props = {
+  itemId: string;
+};
+
+const Animation = ({ itemId }: Props) => {
+  return (
+    <div
+      className={`min-w flex h-32 min-w-[128px] cursor-pointer select-none items-center justify-center rounded-full bg-primary`}
+    >
+      <div>Animation</div>
+    </div>
+  );
+};
+
+export default Animation;

@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={` p-3 px-4 text-sm uppercase`}>
+    <nav className={`px-4 py-2 text-sm uppercase`}>
       <div className={`flex items-center justify-between`}>
         <div className={`flex items-center space-x-5`}>
           <div
@@ -26,7 +26,7 @@ const Navbar = () => {
                 if (category.title === selectedCategory) {
                   return (
                     <li
-                      className={`cursor-pointer select-none rounded bg-accent p-1 text-black`}
+                      className={`cursor-pointer select-none rounded bg-accent p-1 `}
                       key={category.id}
                       onClick={() => handleClick(category.title)}
                     >
