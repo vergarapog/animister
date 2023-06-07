@@ -39,7 +39,7 @@ const PrimaryArea = () => {
       });
 
   return (
-    <main className={`h-full py-2`}>
+    <main className={`flex h-full flex-col pt-2`}>
       <section
         onMouseLeave={dragStop}
         className={`${
@@ -65,7 +65,7 @@ const PrimaryArea = () => {
         </ScrollMenu>
       </section>
       <section className={`p-2`}>
-        <div className={`grid grid-cols-3 gap-3`}>
+        <div className={`grid  grid-cols-3 gap-3`}>
           <AnimationVariation />
           <AnimationVariation />
           <AnimationVariation />
@@ -80,7 +80,7 @@ const PrimaryArea = () => {
           <AnimationVariation />
         </div>
       </section>
-      <section></section>
+      <section className={`grow bg-gray-200`}></section>
     </main>
   );
 };

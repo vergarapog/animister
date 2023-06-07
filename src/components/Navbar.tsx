@@ -26,7 +26,7 @@ const Navbar = () => {
                 if (category.title === selectedCategory) {
                   return (
                     <li
-                      className={`cursor-pointer select-none rounded bg-accent p-1 text-black`}
+                      className={`cursor-pointer select-none rounded bg-accent p-1 `}
                       key={category.id}
                       onClick={() => handleClick(category.title)}
                     >
