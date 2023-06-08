@@ -6,3 +6,5 @@ export const animationCategories = [
   { id: "attention", title: "Attention" },
   { id: "background", title: "Background" },
 ];
+
+export const apiBaseUrl = "http://localhost:3001/all";
