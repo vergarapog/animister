@@ -9,3 +9,9 @@ export interface AnimationVariation {
   lowerTitle: string;
   keyframes: string;
 }
+
+export interface AnimationCategories {
+  id: boolean;
+  title: string;
+  groups: Animation[];
+}
