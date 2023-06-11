@@ -7,4 +7,4 @@ export const animationCategories = [
   { id: "background", title: "Background" },
 ];
 
-export const apiBaseUrl = "http://localhost:3001/all";
+export const apiBaseUrl = "http://localhost:3001";

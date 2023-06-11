@@ -1,35 +1,37 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { Dispatch, createSlice } from "@reduxjs/toolkit";
+import { AnimationCategories } from "../types";
+import animationsService from "../services/animations";
 
 interface animationsSliceState {
-  animation: string;
+  animations: AnimationCategories[];
 }
 
 const initialState: animationsSliceState = {
-  animation: "ay",
+  animations: [],
 };
 
 export const animationsSlice = createSlice({
   name: "selectedAnimation",
   initialState: initialState,
   reducers: {
-    increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
-      state.value += 1;
+    setAnimations: (state, action) => {
+      return action.payload;
     },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
+
+    clearAnimations: (state, action) => {
+      return initialState;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } =
-  animationsSlice.actions;
+export const { setAnimations, clearAnimations } = animationsSlice.actions;
+
+export const initializeAnimations = () => {
+  return async (dispatch: Dispatch) => {
+    const countries = await animationsService.getAll();
+    dispatch(setAnimations(countries));
+  };
+};
 
 export default animationsSlice.reducer;

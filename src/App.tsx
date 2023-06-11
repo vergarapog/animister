@@ -1,17 +1,26 @@
+import { useEffect } from "react";
+import { useAppSelector, useAppDispatch } from "./hooks";
+import { useGlobalContext } from "./context";
+import { initializeAnimations } from "./reducers/animationsReducer";
+
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import styles from "./style";
+import PrimaryArea from "./components/PrimaryArea";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
-import { useGlobalContext } from "./context";
-import PrimaryArea from "./components/PrimaryArea";
 
 library.add(faBars, faCircleXmark);
 
 function App() {
   const { setIsSideBarOpen } = useGlobalContext();
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(initializeAnimations());
+  }, []);
 
   return (
     <div className="relative w-full overflow-x-hidden font-montserrat text-textoffwhite">
