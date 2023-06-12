@@ -1,6 +1,4 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 import React from "react";
 import Animation from "./Animation";
 
@@ -10,6 +8,8 @@ import Animation from "./Animation";
 //   // eslint-disable-next-line @typescript-eslint/no-var-requires
 // } = require("react-horizontal-scrolling-menu");
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
@@ -17,7 +17,8 @@ import "./hideScrollbar.css";
 import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
 
-type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type scrollVisibilityApiType = any;
 
 const getItems = () =>
   Array(20)
@@ -85,6 +86,7 @@ const PrimaryArea = () => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
   const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
 
