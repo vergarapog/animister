@@ -1,4 +1,4 @@
-import { Dispatch, createSlice } from "@reduxjs/toolkit";
+import { Dispatch, PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { AnimationCategories } from "../types";
 import animationsService from "../services/animations";
 
@@ -14,8 +14,8 @@ export const animationsSlice = createSlice({
   name: "selectedAnimation",
   initialState: initialState,
   reducers: {
-    setAnimations: (state, action) => {
-      return action.payload;
+    setAnimations: (state, action: PayloadAction<AnimationCategories[]>) => {
+      state.animations = action.payload;
     },
 
     clearAnimations: (state, action) => {
@@ -29,8 +29,8 @@ export const { setAnimations, clearAnimations } = animationsSlice.actions;
 
 export const initializeAnimations = () => {
   return async (dispatch: Dispatch) => {
-    const countries = await animationsService.getAll();
-    dispatch(setAnimations(countries));
+    const animations = await animationsService.getAll();
+    dispatch(setAnimations(animations));
   };
 };
 

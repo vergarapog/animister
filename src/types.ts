@@ -11,7 +11,7 @@ export interface AnimationVariation {
 }
 
 export interface AnimationCategories {
-  id: boolean;
+  id: string;
   title: string;
   groups: Animation[];
 }
