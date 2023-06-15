@@ -1,8 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { animationCategories } from "../constants";
+import { useAppSelector } from "../hooks";
 import { useGlobalContext } from "../context";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { animationCategories } from "../constants";
+
 const Navbar = () => {
+  const animations = useAppSelector((state) => state.animations.animations);
   const { selectedCategory, setSelectedCategory, setIsSideBarOpen } =
     useGlobalContext();
 
@@ -22,7 +25,35 @@ const Navbar = () => {
           </div>
           <div>
             <ul className="flex space-x-2 font-bold">
-              {animationCategories.map((category) => {
+              {animations.map((category) => {
+                if (category.title === selectedCategory) {
+                  return (
+                    <li
+                      className={`cursor-pointer select-none rounded bg-accent p-1 `}
+                      key={category.id}
+                      onClick={() => handleClick(category.title)}
+                    >
+                      {category.title}
+                      {/* {category.groups[0].upperTitle} */}
+                    </li>
+                  );
+                } else {
+                  return (
+                    <li
+                      className={`cursor-pointer select-none p-1 underline-offset-4 transition-all hover:scale-110 hover:underline`}
+                      key={category.id}
+                      onClick={() => handleClick(category.title)}
+                    >
+                      {category.title}
+                    </li>
+                  );
+                }
+              })}
+            </ul>
+          </div>
+          {/* <div>
+            <ul className="flex space-x-2 font-bold">
+              {animations.map((category) => {
                 if (category.title === selectedCategory) {
                   return (
                     <li
@@ -46,7 +77,7 @@ const Navbar = () => {
                 }
               })}
             </ul>
-          </div>
+          </div> */}
         </div>
         <div onClick={() => setIsSideBarOpen(true)}>
           <FontAwesomeIcon

@@ -1,6 +1,6 @@
 export interface Animation {
   isFavorite: boolean;
-  upperTItle: string;
+  upperTitle: string;
   variations: AnimationVariation[];
 }
 
