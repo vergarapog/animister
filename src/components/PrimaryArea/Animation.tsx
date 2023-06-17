@@ -2,14 +2,15 @@ import React from "react";
 
 type Props = {
   itemId: string;
+  upperTitle: string;
 };
 
-const Animation = ({ itemId }: Props) => {
+const Animation = ({ itemId, upperTitle }: Props) => {
   return (
     <div
       className={`min-w flex h-32 min-w-[128px] cursor-pointer select-none items-center justify-center rounded-full bg-primary`}
     >
-      <div>Animation</div>
+      <div>{upperTitle}</div>
     </div>
   );
 };

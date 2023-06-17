@@ -2,13 +2,12 @@ import { useAppSelector } from "../hooks";
 import { useGlobalContext } from "../context";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { animationCategories } from "../constants";
 
 const Navbar = () => {
   const animations = useAppSelector((state) => state.animations.animations);
   const { selectedCategory, setSelectedCategory, setIsSideBarOpen } =
     useGlobalContext();
-
+  console.log(animations);
   const handleClick = (title: string) => {
     setSelectedCategory(title);
     console.log("1", title, "2", selectedCategory);
@@ -34,7 +33,6 @@ const Navbar = () => {
                       onClick={() => handleClick(category.title)}
                     >
                       {category.title}
-                      {/* {category.groups[0].upperTitle} */}
                     </li>
                   );
                 } else {

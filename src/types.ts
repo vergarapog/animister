@@ -1,4 +1,4 @@
-export interface Animation {
+export interface AnimationGroup {
   isFavorite: boolean;
   upperTitle: string;
   variations: AnimationVariation[];
@@ -13,5 +13,5 @@ export interface AnimationVariation {
 export interface AnimationCategories {
   id: string;
   title: string;
-  groups: Animation[];
+  groups: AnimationGroup[];
 }
