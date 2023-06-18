@@ -4,6 +4,10 @@ import React, { useState, useContext, createContext } from "react";
 interface AppContextType {
   selectedCategory: string;
   setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
+  selectedGroup: string;
+  setSelectedGroup: React.Dispatch<React.SetStateAction<string>>;
+  selectedVariation: string;
+  setSelectedVariation: React.Dispatch<React.SetStateAction<string>>;
   errorMessage: string;
   setErrorMessage: React.Dispatch<React.SetStateAction<string>>;
   isSideBarOpen: boolean;
@@ -13,6 +17,10 @@ interface AppContextType {
 const AppContext = createContext<AppContextType>({
   selectedCategory: "Basic",
   setSelectedCategory: () => {},
+  selectedGroup: "",
+  setSelectedGroup: () => {},
+  selectedVariation: "",
+  setSelectedVariation: () => {},
   errorMessage: "",
   setErrorMessage: () => {},
   isSideBarOpen: false,
@@ -25,6 +33,8 @@ interface AppProviderProps {
 
 const AppProvider = ({ children }: AppProviderProps) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Basic");
+  const [selectedGroup, setSelectedGroup] = useState<string>("");
+  const [selectedVariation, setSelectedVariation] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
 
@@ -33,6 +43,10 @@ const AppProvider = ({ children }: AppProviderProps) => {
       value={{
         selectedCategory,
         setSelectedCategory,
+        selectedGroup,
+        setSelectedGroup,
+        selectedVariation,
+        setSelectedVariation,
         errorMessage,
         setErrorMessage,
         isSideBarOpen,

@@ -16,31 +16,27 @@ import AnimationVariation from "./AnimationVariation";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
 
-// const getItems = () =>
-//   Array(20)
-//     .fill(0)
-//     .map((_, ind) => ({ id: `element-${ind}` }));
-
 const PrimaryArea = () => {
   const [items, setItems] = useState<AnimationGroup[]>([]);
 
   const allAnimations = useAppSelector((state) => state.animations.animations);
-  const { selectedCategory } = useGlobalContext();
-
-  const getObjectByTitle = (selectedCategory: string) => {
-    return allAnimations.find(
-      (animation) => animation.title === selectedCategory
-    );
-  };
+  const { selectedCategory, setSelectedGroup } = useGlobalContext();
 
   useEffect(() => {
+    const getObjectByTitle = (selectedCategory: string) => {
+      return allAnimations.find(
+        (animation) => animation.title === selectedCategory
+      );
+    };
+
     const animationByCategory = getObjectByTitle(selectedCategory);
     if (animationByCategory) {
       setItems(animationByCategory.groups);
+      setSelectedGroup(animationByCategory.groups[0].upperTitle);
     } else {
       setItems([]);
     }
-  }, [getObjectByTitle, selectedCategory]);
+  }, [allAnimations, selectedCategory]);
 
   // NOTE: for drag by mouse
   const { dragStart, dragStop, dragMove, dragging } = useDrag();
@@ -70,11 +66,11 @@ const PrimaryArea = () => {
           <div
             className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
           >
-            {items.map(({ isFavorite, upperTitle }) => (
+            {items.map(({ upperTitle }) => (
               <Animation
-                itemId={upperTitle}
+                itemId={upperTitle} // NOTE: itemId is required for track items
                 key={upperTitle}
-                upperTitle={upperTitle} // NOTE: itemId is required for track items
+                upperTitle={upperTitle}
               />
             ))}
           </div>
