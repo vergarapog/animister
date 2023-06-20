@@ -17,7 +17,7 @@ import AnimationVariation from "./AnimationVariation";
 type scrollVisibilityApiType = any;
 
 const PrimaryArea = () => {
-  const [items, setItems] = useState<AnimationGroup[]>([]);
+  const [animationItems, setAnimationItems] = useState<AnimationGroup[]>([]);
 
   const allAnimations = useAppSelector((state) => state.animations.animations);
   const { selectedCategory, setSelectedGroup } = useGlobalContext();
@@ -31,12 +31,12 @@ const PrimaryArea = () => {
 
     const animationByCategory = getObjectByTitle(selectedCategory);
     if (animationByCategory) {
-      setItems(animationByCategory.groups);
+      setAnimationItems(animationByCategory.groups);
       setSelectedGroup(animationByCategory.groups[0].upperTitle);
     } else {
-      setItems([]);
+      setAnimationItems([]);
     }
-  }, [allAnimations, selectedCategory]);
+  }, [allAnimations, selectedCategory, setSelectedGroup]);
 
   // NOTE: for drag by mouse
   const { dragStart, dragStop, dragMove, dragging } = useDrag();
@@ -54,7 +54,7 @@ const PrimaryArea = () => {
       <section
         onMouseLeave={dragStop}
         className={`${
-          dragging ? "cursor-grabbing" : "cursor-grab"
+          dragging ? "cursor-grabbing" : "cursor-pointer"
         } border-b-[1.5px] pb-2`}
       >
         <ScrollMenu
@@ -66,11 +66,12 @@ const PrimaryArea = () => {
           <div
             className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
           >
-            {items.map(({ upperTitle }) => (
+            {animationItems.map(({ upperTitle }) => (
               <Animation
                 itemId={upperTitle} // NOTE: itemId is required for track items
                 key={upperTitle}
                 upperTitle={upperTitle}
+                dragging={dragging}
               />
             ))}
           </div>

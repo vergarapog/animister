@@ -7,7 +7,6 @@ const Navbar = () => {
   const animations = useAppSelector((state) => state.animations.animations);
   const { selectedCategory, setSelectedCategory, setIsSideBarOpen } =
     useGlobalContext();
-  console.log(animations);
   const handleClick = (title: string) => {
     setSelectedCategory(title);
     console.log("1", title, "2", selectedCategory);
