@@ -1,32 +1,42 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-import React from "react";
+import { useEffect, useState } from "react";
 import Animation from "./Animation";
-
-// const {
-//   ScrollMenu,
-//   VisibilityContext,
-//   // eslint-disable-next-line @typescript-eslint/no-var-requires
-// } = require("react-horizontal-scrolling-menu");
+import { useAppSelector } from "../../hooks";
+import { useGlobalContext } from "../../context";
+import { AnimationGroup } from "../../types";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore
+//@ts-ignore, need to ignore because react-horizontal-scrolling library doesnt have updated types
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
-
 import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
 
-const getItems = () =>
-  Array(20)
-    .fill(0)
-    .map((_, ind) => ({ id: `element-${ind}` }));
-
 const PrimaryArea = () => {
-  const [items, setItems] = React.useState(getItems);
+  const [animationItems, setAnimationItems] = useState<AnimationGroup[]>([]);
+
+  const allAnimations = useAppSelector((state) => state.animations.animations);
+  const { selectedCategory, setSelectedGroup } = useGlobalContext();
+
+  useEffect(() => {
+    const getObjectByTitle = (selectedCategory: string) => {
+      return allAnimations.find(
+        (animation) => animation.title === selectedCategory
+      );
+    };
+
+    const animationByCategory = getObjectByTitle(selectedCategory);
+    if (animationByCategory) {
+      setAnimationItems(animationByCategory.groups);
+      setSelectedGroup(animationByCategory.groups[0].upperTitle);
+    } else {
+      setAnimationItems([]);
+    }
+  }, [allAnimations, selectedCategory, setSelectedGroup]);
 
   // NOTE: for drag by mouse
   const { dragStart, dragStop, dragMove, dragging } = useDrag();
@@ -44,7 +54,7 @@ const PrimaryArea = () => {
       <section
         onMouseLeave={dragStop}
         className={`${
-          dragging ? "cursor-grabbing" : "cursor-grab"
+          dragging ? "cursor-grabbing" : "cursor-pointer"
         } border-b-[1.5px] pb-2`}
       >
         <ScrollMenu
@@ -56,10 +66,12 @@ const PrimaryArea = () => {
           <div
             className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
           >
-            {items.map(({ id }) => (
+            {animationItems.map(({ upperTitle }) => (
               <Animation
-                itemId={id}
-                key={id} // NOTE: itemId is required for track items
+                itemId={upperTitle} // NOTE: itemId is required for track items
+                key={upperTitle}
+                upperTitle={upperTitle}
+                dragging={dragging}
               />
             ))}
           </div>
@@ -86,7 +98,8 @@ const PrimaryArea = () => {
   );
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any,
+//need to ignore because react-horizontal-scrolling library doesnt have updated types
 function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
   const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
 
