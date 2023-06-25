@@ -2,6 +2,7 @@ import { useAppSelector } from "../hooks";
 import { useGlobalContext } from "../context";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Auth from "./Auth";
 
 const Navbar = () => {
   const animations = useAppSelector((state) => state.animations.animations);
@@ -14,6 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className={`px-4 py-2 text-sm uppercase`}>
+      <Auth />
       <div className={`flex items-center justify-between`}>
         <div className={`flex items-center space-x-5`}>
           <div
