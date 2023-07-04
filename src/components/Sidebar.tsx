@@ -6,7 +6,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`absolute p-4 transition-all ${
+      className={`absolute z-50 p-4 transition-all ${
         isSideBarOpen ? "fixed right-0" : "-right-52"
       } h-screen w-52 bg-accent`}
     >
