@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className={`px-4 py-2 text-sm uppercase`}>
-      <Auth />
+      {/* <Auth /> */}
       <div className={`flex items-center justify-between`}>
         <div className={`flex items-center space-x-5`}>
           <div
