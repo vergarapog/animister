@@ -3,8 +3,28 @@ import { useGlobalContext } from "../context";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Auth from "./Auth";
+import { db } from "../config/firebase";
+import { getDocs, collection } from "firebase/firestore";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [movieList, setMovieList] = useState([]);
+
+  const moviesCollectionRef = collection(db, "movies");
+
+  useEffect(() => {
+    const getMovieList = async () => {
+      try {
+        const data = await getDocs(moviesCollectionRef);
+        console.log(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    getMovieList();
+  }, []);
+
   const animations = useAppSelector((state) => state.animations.animations);
   const { selectedCategory, setSelectedCategory, setIsSideBarOpen } =
     useGlobalContext();
