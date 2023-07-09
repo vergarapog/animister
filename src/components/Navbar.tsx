@@ -2,9 +2,12 @@ import { useAppSelector } from "../hooks";
 import { useGlobalContext } from "../context";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Auth from "./Auth";
+import { db } from "../config/firebase";
+import { getDocs, collection } from "firebase/firestore";
 
 const Navbar = () => {
+
+
   const animations = useAppSelector((state) => state.animations.animations);
   const { selectedCategory, setSelectedCategory, setIsSideBarOpen } =
     useGlobalContext();
