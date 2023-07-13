@@ -65,9 +65,9 @@ const allAnimations = [
   ...correctedBasicAnimations,
   ...correctedEntrancesAnimations,
   ...correctedExitsAnimations,
-  correctedTextAnimations,
-  correctedAttentionAnimations,
-  correctedBackgroundAnimations,
+  ...correctedTextAnimations,
+  ...correctedAttentionAnimations,
+  ...correctedBackgroundAnimations,
 ];
 
 console.log(allAnimations);
