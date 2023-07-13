@@ -19,7 +19,7 @@ export const animationsSlice = createSlice({
       state.animations = action.payload;
     },
 
-    clearAnimations: (state, action) => {
+    clearAnimations: (state) => {
       state.animations = [];
     },
   },

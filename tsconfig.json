@@ -5,6 +5,7 @@
     "module": "ESNext",
     "allowJs": true,
     "skipLibCheck": true,
+    "outDir": "./dist",
 
     /* Bundler mode */
     "moduleResolution": "bundler",

@@ -2,8 +2,7 @@ import { useAppSelector } from "../hooks";
 import { useGlobalContext } from "../context";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { db } from "../config/firebase";
-import { getDocs, collection } from "firebase/firestore";
+
 
 const Navbar = () => {
 

@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import { useAppSelector, useAppDispatch } from "./hooks";
-import { useGlobalContext } from "./context";
+import { useAppDispatch } from "./hooks";
 import { initializeAnimations } from "./reducers/animationsReducer";
 
 import "./App.css";
@@ -15,7 +14,6 @@ import { faBars, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 library.add(faBars, faCircleXmark);
 
 function App() {
-  const { setIsSideBarOpen } = useGlobalContext();
   const dispatch = useAppDispatch();
 
   useEffect(() => {

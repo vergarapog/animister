@@ -61,7 +61,7 @@ const correctedBackgroundAnimations = backgroundAnimations.groups.map(
   }
 );
 
-const allAnimations = [
+export const allAnimations = [
   ...correctedBasicAnimations,
   ...correctedEntrancesAnimations,
   ...correctedExitsAnimations,
