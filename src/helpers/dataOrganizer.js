@@ -70,4 +70,4 @@ export const allAnimations = [
   ...correctedBackgroundAnimations,
 ];
 
-console.log(allAnimations);
+// console.log(allAnimations);

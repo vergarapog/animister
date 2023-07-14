@@ -1,4 +1,4 @@
-import { db } from "./config/firebase.ts";
+import { db } from "./firebase.js";
 import { collection, addDoc } from "firebase/firestore";
 
 import { allAnimations } from "./dataOrganizer.js";
@@ -13,6 +13,9 @@ const addAnimation = async (animation) => {
   }
 };
 
+// console.log(allAnimations[0]);
+// addAnimation(allAnimations[0]);
+
 allAnimations.forEach((animation) => {
-  console.log(animation);
+  addAnimation(animation);
 });
