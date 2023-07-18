@@ -1,17 +1,11 @@
-export interface AnimationGroup {
-  isFavorite: boolean;
-  upperTitle: string;
-  variations: AnimationVariation[];
+export interface Animation {
+  animationTitle: string;
+  animationType: string;
+  id?: string;
+  variations: AnimationVariations[];
 }
 
-export interface AnimationVariation {
-  isFavorite: boolean;
-  lowerTitle: string;
+export interface AnimationVariations {
+  variationTitle: string;
   keyframes: string;
-}
-
-export interface AnimationCategories {
-  id: string;
-  title: string;
-  groups: AnimationGroup[];
 }
