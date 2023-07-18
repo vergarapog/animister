@@ -1,11 +1,11 @@
 import { Dispatch, PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { AnimationCategories } from "../types";
+import { Animation } from "../types";
 import { allAnimations } from "../helpers/organizedData"; // same structure as firebase, remove later TODO:
 import animationsFirebaseService from "../services/animationsFirebaseService";
 import type { RootState } from "../store";
 
 interface animationsSliceState {
-  animations: AnimationCategories[];
+  animations: Animation[];
 }
 
 const initialState: animationsSliceState = {
@@ -16,7 +16,7 @@ export const animationsSlice = createSlice({
   name: "animations",
   initialState: initialState,
   reducers: {
-    setAnimations: (state, action: PayloadAction<AnimationCategories[]>) => {
+    setAnimations: (state, action: PayloadAction<Animation[]>) => {
       state.animations = action.payload;
     },
 
@@ -32,7 +32,7 @@ export const { setAnimations, clearAnimations } = animationsSlice.actions;
 // Other code such as selectors can use the imported `RootState` type
 export const selectCount = (state: RootState) => state.animations.animations;
 
-const organizeByAnimationType = (allAnimations) => {
+const organizeByAnimationType = (allAnimations: Animation[]) => {
   const organizedAnimations = allAnimations.reduce((acc, curr) => {
     const animationType = curr.animationType;
 
@@ -43,7 +43,7 @@ const organizeByAnimationType = (allAnimations) => {
     acc[animationType].push(curr);
 
     return acc;
-  }, {});
+  }, {} as { [key: string]: Animation[] });
 
   return organizedAnimations;
 };

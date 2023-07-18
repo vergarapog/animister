@@ -8,7 +8,7 @@ export const data = [
         upperTitle: "Scale-Up",
         variations: [
           {
-            lowerTitle: "scale-up-center",
+            variationTitle: "scale-up-center",
             keyframes: `@-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -31,7 +31,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-up-top",
+            variationTitle: "scale-up-top",
             keyframes: `@-webkit-keyframes scale-up-top {
   0% {
     -webkit-transform: scale(0.5);
@@ -62,7 +62,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-up-tr",
+            variationTitle: "scale-up-tr",
             keyframes: `@-webkit-keyframes scale-up-tr {
   0% {
     -webkit-transform: scale(0.5);
@@ -94,7 +94,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "scale-up-right",
+            variationTitle: "scale-up-right",
             keyframes: `@-webkit-keyframes scale-up-right {
   0% {
     -webkit-transform: scale(0.5);
@@ -126,7 +126,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "scale-up-br",
+            variationTitle: "scale-up-br",
             keyframes: `@-webkit-keyframes scale-up-br {
   0% {
     -webkit-transform: scale(0.5);
@@ -158,7 +158,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "scale-up-bottom",
+            variationTitle: "scale-up-bottom",
             keyframes: `@-webkit-keyframes scale-up-bottom {
   0% {
     -webkit-transform: scale(0.5);
@@ -190,7 +190,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "scale-up-bl",
+            variationTitle: "scale-up-bl",
             keyframes: `@-webkit-keyframes scale-up-bl {
   0% {
     -webkit-transform: scale(0.5);
@@ -222,7 +222,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "scale-up-left",
+            variationTitle: "scale-up-left",
             keyframes: `@keyframes scale-up-left {
   0% {
     -webkit-transform: scale(0.5);
@@ -239,7 +239,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-up-tl",
+            variationTitle: "scale-up-tl",
             keyframes: `@keyframes scale-up-tl {
   0% {
     -webkit-transform: scale(0.5);
@@ -256,7 +256,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-up-hor-center",
+            variationTitle: "scale-up-hor-center",
             keyframes: `@-webkit-keyframes scale-up-hor-center {
   0% {
     -webkit-transform: scaleX(0.4);
@@ -280,7 +280,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "scale-up-hor-left",
+            variationTitle: "scale-up-hor-left",
             keyframes: `@-webkit-keyframes scale-up-hor-left {
   0% {
     -webkit-transform: scaleX(0.4);
@@ -311,7 +311,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-up-hor-right",
+            variationTitle: "scale-up-hor-right",
             keyframes: `@-webkit-keyframes scale-up-hor-right {
   0% {
     -webkit-transform: scaleX(0.4);
@@ -342,7 +342,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-up-ver-center",
+            variationTitle: "scale-up-ver-center",
             keyframes: `@-webkit-keyframes scale-up-ver-center {
   0% {
     -webkit-transform: scaleY(0.4);
@@ -365,7 +365,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-up-ver-top",
+            variationTitle: "scale-up-ver-top",
             keyframes: `@-webkit-keyframes scale-up-ver-top {
   0% {
     -webkit-transform: scaleY(0.4);
@@ -398,7 +398,7 @@ export const data = [
           },
 
           {
-            lowerTitle: "scale-up-ver-bottom",
+            variationTitle: "scale-up-ver-bottom",
             keyframes: `@-webkit-keyframes scale-up-ver-bottom {
   0% {
     -webkit-transform: scaleY(0.4);
@@ -435,7 +435,7 @@ export const data = [
         upperTitle: "Scale-Down",
         variations: [
           {
-            lowerTitle: "scale-down-center",
+            variationTitle: "scale-down-center",
             keyframes: `@-webkit-keyframes scale-down-center {
   0% {
     -webkit-transform: scale(1);
@@ -458,7 +458,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-top",
+            variationTitle: "scale-down-top",
             keyframes: `@-webkit-keyframes scale-down-top {
   0% {
     -webkit-transform: scale(1);
@@ -490,7 +490,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-tr",
+            variationTitle: "scale-down-tr",
             keyframes: `@-webkit-keyframes scale-down-tr {
   0% {
     -webkit-transform: scale(1);
@@ -521,7 +521,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-right",
+            variationTitle: "scale-down-right",
             keyframes: `@-webkit-keyframes scale-down-right {
   0% {
     -webkit-transform: scale(1);
@@ -552,7 +552,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-br",
+            variationTitle: "scale-down-br",
             keyframes: `@-webkit-keyframes scale-down-br {
   0% {
     -webkit-transform: scale(1);
@@ -583,7 +583,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-bottom",
+            variationTitle: "scale-down-bottom",
             keyframes: `@-webkit-keyframes scale-down-bottom {
   0% {
     -webkit-transform: scale(1);
@@ -614,7 +614,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-bl",
+            variationTitle: "scale-down-bl",
             keyframes: `@-webkit-keyframes scale-down-bl {
   0% {
     -webkit-transform: scale(1);
@@ -646,7 +646,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "scale-down-left",
+            variationTitle: "scale-down-left",
             keyframes: `@-webkit-keyframes scale-down-left {
   0% {
     -webkit-transform: scale(1);
@@ -677,7 +677,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-tl",
+            variationTitle: "scale-down-tl",
             keyframes: `@-webkit-keyframes scale-down-tl {
   0% {
     -webkit-transform: scale(1);
@@ -708,7 +708,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-hor-center",
+            variationTitle: "scale-down-hor-center",
             keyframes: `@-webkit-keyframes scale-down-hor-center {
   0% {
     -webkit-transform: scaleX(1);
@@ -731,7 +731,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-hor-left",
+            variationTitle: "scale-down-hor-left",
             keyframes: `@-webkit-keyframes scale-down-hor-left {
   0% {
     -webkit-transform: scaleX(1);
@@ -763,7 +763,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "scale-down-hor-right",
+            variationTitle: "scale-down-hor-right",
             keyframes: `@-webkit-keyframes scale-down-hor-right {
   0% {
     -webkit-transform: scaleX(1);
@@ -794,7 +794,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-ver-center",
+            variationTitle: "scale-down-ver-center",
             keyframes: `@-webkit-keyframes scale-down-ver-center {
   0% {
     -webkit-transform: scaleY(1);
@@ -817,7 +817,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-ver-top",
+            variationTitle: "scale-down-ver-top",
             keyframes: `@-webkit-keyframes scale-down-ver-top {
   0% {
     -webkit-transform: scaleY(1);
@@ -848,7 +848,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-down-ver-bottom",
+            variationTitle: "scale-down-ver-bottom",
             keyframes: `@-webkit-keyframes scale-down-ver-bottom {
   0% {
     -webkit-transform: scaleY(1);
@@ -884,7 +884,7 @@ export const data = [
         upperTitle: "Rotate",
         variations: [
           {
-            lowerTitle: "rotate-center",
+            variationTitle: "rotate-center",
             keyframes: `@-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -907,7 +907,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-top",
+            variationTitle: "rotate-top",
             keyframes: `
 @-webkit-keyframes rotate-top {
   0% {
@@ -939,7 +939,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-tr",
+            variationTitle: "rotate-tr",
             keyframes: `@-webkit-keyframes rotate-tr {
   0% {
     -webkit-transform: rotate(0);
@@ -970,7 +970,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-right",
+            variationTitle: "rotate-right",
             keyframes: `@-webkit-keyframes rotate-right {
   0% {
     -webkit-transform: rotate(0);
@@ -1001,7 +1001,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-br",
+            variationTitle: "rotate-br",
             keyframes: `@keyframes rotate-br {
   0% {
     -webkit-transform: rotate(0);
@@ -1018,7 +1018,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-bottom",
+            variationTitle: "rotate-bottom",
             keyframes: `@keyframes rotate-bottom {
   0% {
     -webkit-transform: rotate(0);
@@ -1035,7 +1035,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-bl",
+            variationTitle: "rotate-bl",
             keyframes: `@-webkit-keyframes rotate-bl {
   0% {
     -webkit-transform: rotate(0);
@@ -1066,7 +1066,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-left",
+            variationTitle: "rotate-left",
             keyframes: `@-webkit-keyframes rotate-left {
   0% {
     -webkit-transform: rotate(0);
@@ -1097,7 +1097,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-tl",
+            variationTitle: "rotate-tl",
             keyframes: `@-webkit-keyframes rotate-tl {
   0% {
     -webkit-transform: rotate(0);
@@ -1128,7 +1128,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-hor-center",
+            variationTitle: "rotate-hor-center",
             keyframes: `@-webkit-keyframes rotate-hor-center {
   0% {
     -webkit-transform: rotateX(0);
@@ -1151,7 +1151,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-hor-top",
+            variationTitle: "rotate-hor-top",
             keyframes: `@-webkit-keyframes rotate-hor-top {
   0% {
     -webkit-transform: rotateX(0);
@@ -1182,7 +1182,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-hor-bottom",
+            variationTitle: "rotate-hor-bottom",
             keyframes: `@-webkit-keyframes rotate-hor-bottom {
   0% {
     -webkit-transform: rotateX(0);
@@ -1213,7 +1213,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-vert-center",
+            variationTitle: "rotate-vert-center",
             keyframes: `@-webkit-keyframes rotate-vert-center {
   0% {
     -webkit-transform: rotateY(0);
@@ -1236,7 +1236,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-vert-left",
+            variationTitle: "rotate-vert-left",
             keyframes: `@-webkit-keyframes rotate-vert-left {
   0% {
     -webkit-transform: rotateY(0);
@@ -1267,7 +1267,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-vert-right",
+            variationTitle: "rotate-vert-right",
             keyframes: `@keyframes rotate-vert-right {
   0% {
     -webkit-transform: rotateY(0);
@@ -1284,7 +1284,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-diagonal-1",
+            variationTitle: "rotate-diagonal-1",
             keyframes: `@-webkit-keyframes rotate-diagonal-1 {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -1315,7 +1315,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-diagonal-2",
+            variationTitle: "rotate-diagonal-2",
             keyframes: `@-webkit-keyframes rotate-diagonal-2 {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -1346,7 +1346,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-diagonal-tr",
+            variationTitle: "rotate-diagonal-tr",
             keyframes: `@-webkit-keyframes rotate-diagonal-tr {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -1389,7 +1389,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-diagonal-br",
+            variationTitle: "rotate-diagonal-br",
             keyframes: `@-webkit-keyframes rotate-diagonal-br {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -1432,7 +1432,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-diagonal-bl",
+            variationTitle: "rotate-diagonal-bl",
             keyframes: `@-webkit-keyframes rotate-diagonal-bl {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -1475,7 +1475,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-diagonal-tl",
+            variationTitle: "rotate-diagonal-tl",
             keyframes: `@-webkit-keyframes rotate-diagonal-tl {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -1523,7 +1523,7 @@ export const data = [
         upperTitle: "Rotate-Scale",
         variations: [
           {
-            lowerTitle: "rotate-scale-up",
+            variationTitle: "rotate-scale-up",
             keyframes: `@-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -1554,7 +1554,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-down",
+            variationTitle: "rotate-scale-down",
             keyframes: `@-webkit-keyframes rotate-scale-down {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -1585,7 +1585,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-up-hor",
+            variationTitle: "rotate-scale-up-hor",
             keyframes: `-webkit-keyframes rotate-scale-up-hor {
   0% {
     -webkit-transform: scale(1) rotateX(0);
@@ -1616,7 +1616,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-down-hor",
+            variationTitle: "rotate-scale-down-hor",
             keyframes: `@-webkit-keyframes rotate-scale-down-hor {
   0% {
     -webkit-transform: scale(1) rotateX(0);
@@ -1647,7 +1647,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-up-ver",
+            variationTitle: "rotate-scale-up-ver",
             keyframes: `@-webkit-keyframes rotate-scale-up-ver {
   0% {
     -webkit-transform: scale(1) rotateY(0);
@@ -1678,7 +1678,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-down-ver",
+            variationTitle: "rotate-scale-down-ver",
             keyframes: `-webkit-keyframes rotate-scale-down-ver {
   0% {
     -webkit-transform: scale(1) rotateY(0);
@@ -1709,7 +1709,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-up-diag-1",
+            variationTitle: "rotate-scale-up-diag-1",
             keyframes: `@-webkit-keyframes rotate-scale-up-diag-1 {
   0% {
     -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -1740,7 +1740,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-down-diag-1",
+            variationTitle: "rotate-scale-down-diag-1",
             keyframes: `@-webkit-keyframes rotate-scale-down-diag-1 {
   0% {
     -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -1771,7 +1771,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-up-diag-2",
+            variationTitle: "rotate-scale-up-diag-2",
             keyframes: `@-webkit-keyframes rotate-scale-up-diag-2 {
   0% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
@@ -1802,7 +1802,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-scale-down-diag-2",
+            variationTitle: "rotate-scale-down-diag-2",
             keyframes: `@-webkit-keyframes rotate-scale-down-diag-2 {
   0% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
@@ -1838,7 +1838,7 @@ export const data = [
         upperTitle: "Rotate-90",
         variations: [
           {
-            lowerTitle: "rotate-90-cw",
+            variationTitle: "rotate-90-cw",
             keyframes: `@-webkit-keyframes rotate-90-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -1861,7 +1861,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-ccw",
+            variationTitle: "rotate-90-ccw",
             keyframes: `
 @-webkit-keyframes rotate-90-ccw {
   0% {
@@ -1886,7 +1886,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "rotate-90-top-cw",
+            variationTitle: "rotate-90-top-cw",
             keyframes: `@-webkit-keyframes rotate-90-top-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -1917,7 +1917,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-top-ccw",
+            variationTitle: "rotate-90-top-ccw",
             keyframes: `@-webkit-keyframes rotate-90-top-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -1948,7 +1948,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-tr-cw",
+            variationTitle: "rotate-90-tr-cw",
             keyframes: `@-webkit-keyframes rotate-90-tr-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -1980,7 +1980,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "rotate-90-tr-ccw",
+            variationTitle: "rotate-90-tr-ccw",
             keyframes: `
 @-webkit-keyframes rotate-90-tr-ccw {
   0% {
@@ -2012,7 +2012,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-right-cw",
+            variationTitle: "rotate-90-right-cw",
             keyframes: `@-webkit-keyframes rotate-90-right-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -2043,7 +2043,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-right-ccw",
+            variationTitle: "rotate-90-right-ccw",
             keyframes: `@-webkit-keyframes rotate-90-right-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -2074,7 +2074,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-br-cw",
+            variationTitle: "rotate-90-br-cw",
             keyframes: `@-webkit-keyframes rotate-90-br-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -2106,7 +2106,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "rotate-90-br-ccw",
+            variationTitle: "rotate-90-br-ccw",
             keyframes: `@-webkit-keyframes rotate-90-br-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -2123,7 +2123,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-bottom-ccw",
+            variationTitle: "rotate-90-bottom-ccw",
             keyframes: `@-webkit-keyframes rotate-90-bottom-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -2154,7 +2154,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-bl-cw",
+            variationTitle: "rotate-90-bl-cw",
             keyframes: `@-webkit-keyframes rotate-90-bl-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -2185,7 +2185,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-bl-ccw",
+            variationTitle: "rotate-90-bl-ccw",
             keyframes: `@-webkit-keyframes rotate-90-bl-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -2216,7 +2216,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-left-cw",
+            variationTitle: "rotate-90-left-cw",
             keyframes: `@-webkit-keyframes rotate-90-left-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -2247,7 +2247,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-left-ccw",
+            variationTitle: "rotate-90-left-ccw",
             keyframes: `@-webkit-keyframes rotate-90-left-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -2278,7 +2278,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-tl-cw",
+            variationTitle: "rotate-90-tl-cw",
             keyframes: `@-webkit-keyframes rotate-90-tl-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -2309,7 +2309,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-tl-ccw",
+            variationTitle: "rotate-90-tl-ccw",
             keyframes: `@-webkit-keyframes rotate-90-tl-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -2341,7 +2341,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "rotate-90-horizontal-fwd",
+            variationTitle: "rotate-90-horizontal-fwd",
             keyframes: `@-webkit-keyframes rotate-90-horizontal-fwd {
   0% {
     -webkit-transform: rotateX(0);
@@ -2364,7 +2364,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-horizontal-bck",
+            variationTitle: "rotate-90-horizontal-bck",
             keyframes: `@-webkit-keyframes rotate-90-horizontal-bck {
   0% {
     -webkit-transform: rotateX(0);
@@ -2387,7 +2387,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-vertical-fwd",
+            variationTitle: "rotate-90-vertical-fwd",
             keyframes: `@-webkit-keyframes rotate-90-vertical-fwd {
   0% {
     -webkit-transform: rotateY(0);
@@ -2410,7 +2410,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-90-vertical-bck",
+            variationTitle: "rotate-90-vertical-bck",
             keyframes: `@-webkit-keyframes rotate-90-vertical-bck {
   0% {
     -webkit-transform: rotateY(0);
@@ -2439,7 +2439,7 @@ export const data = [
         upperTitle: "Flip",
         variations: [
           {
-            lowerTitle: "flip-horizontal-bottom",
+            variationTitle: "flip-horizontal-bottom",
             keyframes: `@-webkit-keyframes flip-horizontal-bottom {
   0% {
     -webkit-transform: rotateX(0);
@@ -2462,7 +2462,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-horizontal-top",
+            variationTitle: "flip-horizontal-top",
             keyframes: `@-webkit-keyframes flip-horizontal-top {
   0% {
     -webkit-transform: rotateX(0);
@@ -2485,7 +2485,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-horizontal-bck",
+            variationTitle: "flip-horizontal-bck",
             keyframes: `@-webkit-keyframes flip-horizontal-bck {
   0% {
     -webkit-transform: translateZ(0) rotateX(0);
@@ -2508,7 +2508,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-horizontal-fwd",
+            variationTitle: "flip-horizontal-fwd",
             keyframes: `@-webkit-keyframes flip-horizontal-fwd {
   0% {
     -webkit-transform: translateZ(0) rotateX(0);
@@ -2531,7 +2531,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-vertical-right",
+            variationTitle: "flip-vertical-right",
             keyframes: `@-webkit-keyframes flip-vertical-right {
   0% {
     -webkit-transform: rotateY(0);
@@ -2554,7 +2554,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-vertical-left",
+            variationTitle: "flip-vertical-left",
             keyframes: `@-webkit-keyframes flip-vertical-left {
   0% {
     -webkit-transform: rotateY(0);
@@ -2577,7 +2577,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-vertical-bck",
+            variationTitle: "flip-vertical-bck",
             keyframes: `@-webkit-keyframes flip-vertical-bck {
   0% {
     -webkit-transform: translateZ(0) rotateY(0);
@@ -2600,7 +2600,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-vertical-fwd",
+            variationTitle: "flip-vertical-fwd",
             keyframes: `@-webkit-keyframes flip-vertical-fwd {
   0% {
     -webkit-transform: translateZ(0) rotateY(0);
@@ -2623,7 +2623,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-diagonal-1-tr",
+            variationTitle: "flip-diagonal-1-tr",
             keyframes: `@-webkit-keyframes flip-diagonal-1-tr {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -2646,7 +2646,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-diagonal-1-bl",
+            variationTitle: "flip-diagonal-1-bl",
             keyframes: `@-webkit-keyframes flip-diagonal-1-bl {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -2669,7 +2669,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-diagonal-1-bck",
+            variationTitle: "flip-diagonal-1-bck",
             keyframes: `@-webkit-keyframes flip-diagonal-1-bck {
   0% {
     -webkit-transform: translateZ(0) rotate3d(1, 1, 0, 0deg);
@@ -2692,7 +2692,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-diagonal-1-fwd",
+            variationTitle: "flip-diagonal-1-fwd",
             keyframes: `@-webkit-keyframes flip-diagonal-1-fwd {
   0% {
     -webkit-transform: translateZ(0) rotate3d(1, 1, 0, 0deg);
@@ -2715,7 +2715,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-diagonal-2-br",
+            variationTitle: "flip-diagonal-2-br",
             keyframes: `@-webkit-keyframes flip-diagonal-2-br {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -2738,7 +2738,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-diagonal-2-tl",
+            variationTitle: "flip-diagonal-2-tl",
             keyframes: `@-webkit-keyframes flip-diagonal-2-tl {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -2761,7 +2761,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-diagonal-2-bck",
+            variationTitle: "flip-diagonal-2-bck",
             keyframes: `@-webkit-keyframes flip-diagonal-2-bck {
   0% {
     -webkit-transform: translateZ(0) rotate3d(-1, 1, 0, 0deg);
@@ -2784,7 +2784,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-diagonal-2-fwd",
+            variationTitle: "flip-diagonal-2-fwd",
             keyframes: `@-webkit-keyframes flip-diagonal-2-fwd {
   0% {
     -webkit-transform: translateZ(0) rotate3d(-1, 1, 0, 0deg);
@@ -2812,7 +2812,7 @@ export const data = [
         upperTitle: "Flip-2",
         variations: [
           {
-            lowerTitle: "flip-2-hor-top-1",
+            variationTitle: "flip-2-hor-top-1",
             keyframes: `@-webkit-keyframes flip-2-hor-top-1 {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
@@ -2843,7 +2843,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-hor-top-2",
+            variationTitle: "flip-2-hor-top-2",
             keyframes: `@-webkit-keyframes flip-2-hor-top-2 {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
@@ -2874,7 +2874,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-hor-top-bck",
+            variationTitle: "flip-2-hor-top-bck",
             keyframes: `@-webkit-keyframes flip-2-hor-top-bck {
   0% {
     -webkit-transform: translateY(0) translateZ(0) rotateX(0);
@@ -2905,7 +2905,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-hor-top-fwd",
+            variationTitle: "flip-2-hor-top-fwd",
             keyframes: `@-webkit-keyframes flip-2-hor-top-fwd {
   0% {
     -webkit-transform: translateY(0) translateZ(0) rotateX(0);
@@ -2936,7 +2936,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-ver-right-1",
+            variationTitle: "flip-2-ver-right-1",
             keyframes: `@-webkit-keyframes flip-2-ver-right-1 {
   0% {
     -webkit-transform: translateX(0) rotateY(0);
@@ -2967,7 +2967,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-ver-right-2",
+            variationTitle: "flip-2-ver-right-2",
             keyframes: `@-webkit-keyframes flip-2-ver-right-2 {
   0% {
     -webkit-transform: translateX(0) rotateY(0);
@@ -2998,7 +2998,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-ver-right-bck",
+            variationTitle: "flip-2-ver-right-bck",
             keyframes: `@-webkit-keyframes flip-2-ver-right-bck {
   0% {
     -webkit-transform: translateX(0) translateZ(0) rotateY(0);
@@ -3029,7 +3029,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-ver-right-fwd",
+            variationTitle: "flip-2-ver-right-fwd",
             keyframes: `@-webkit-keyframes flip-2-ver-right-fwd {
   0% {
     -webkit-transform: translateX(0) translateZ(0) rotateY(0);
@@ -3060,7 +3060,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-hor-bottom-1",
+            variationTitle: "flip-2-hor-bottom-1",
             keyframes: `@-webkit-keyframes flip-2-hor-bottom-1 {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
@@ -3091,7 +3091,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-hor-bottom-2",
+            variationTitle: "flip-2-hor-bottom-2",
             keyframes: `@-webkit-keyframes flip-2-hor-bottom-2 {
   0% {
     -webkit-transform: translateY(0) rotateX(0);
@@ -3122,7 +3122,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-hor-bottom-bck",
+            variationTitle: "flip-2-hor-bottom-bck",
             keyframes: `@-webkit-keyframes flip-2-hor-bottom-bck {
   0% {
     -webkit-transform: translateY(0) translateZ(0) rotateX(0);
@@ -3153,7 +3153,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-hor-bottom-fwd",
+            variationTitle: "flip-2-hor-bottom-fwd",
             keyframes: `@-webkit-keyframes flip-2-hor-bottom-fwd {
   0% {
     -webkit-transform: translateY(0) translateZ(0) rotateX(0);
@@ -3184,7 +3184,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-ver-left-1",
+            variationTitle: "flip-2-ver-left-1",
             keyframes: `@-webkit-keyframes flip-2-ver-left-1 {
   0% {
     -webkit-transform: translateX(0) rotateY(0);
@@ -3215,7 +3215,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-ver-left-2",
+            variationTitle: "flip-2-ver-left-2",
             keyframes: `@-webkit-keyframes flip-2-ver-left-2 {
   0% {
     -webkit-transform: translateX(0) rotateY(0);
@@ -3246,7 +3246,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-ver-left-bck",
+            variationTitle: "flip-2-ver-left-bck",
             keyframes: `@-webkit-keyframes flip-2-ver-left-bck {
   0% {
     -webkit-transform: translateX(0) translateZ(0) rotateY(0);
@@ -3277,7 +3277,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-2-ver-left-fwd",
+            variationTitle: "flip-2-ver-left-fwd",
             keyframes: `@-webkit-keyframes flip-2-ver-left-fwd {
   0% {
     -webkit-transform: translateX(0) translateZ(0) rotateY(0);
@@ -3314,7 +3314,7 @@ export const data = [
         upperTitle: "Flip-Scale",
         variations: [
           {
-            lowerTitle: "flip-scale-up-hor",
+            variationTitle: "flip-scale-up-hor",
             keyframes: `@-webkit-keyframes flip-scale-up-hor {
   0% {
     -webkit-transform: scale(1) rotateX(0);
@@ -3346,7 +3346,7 @@ export const data = [
 `,
           },
           {
-            lowerTitle: "flip-scale-down-hor",
+            variationTitle: "flip-scale-down-hor",
             keyframes: `@-webkit-keyframes flip-scale-down-hor {
   0% {
     -webkit-transform: scale(1) rotateX(0);
@@ -3377,7 +3377,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-up-ver",
+            variationTitle: "flip-scale-up-ver",
             keyframes: `@-webkit-keyframes flip-scale-up-ver {
   0% {
     -webkit-transform: scale(1) rotateY(0);
@@ -3408,7 +3408,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-down-ver",
+            variationTitle: "flip-scale-down-ver",
             keyframes: `@-webkit-keyframes flip-scale-down-ver {
   0% {
     -webkit-transform: scale(1) rotateY(0);
@@ -3439,7 +3439,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-up-diag-1",
+            variationTitle: "flip-scale-up-diag-1",
             keyframes: `@-webkit-keyframes flip-scale-up-diag-1 {
   0% {
     -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -3470,7 +3470,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-down-diag-1",
+            variationTitle: "flip-scale-down-diag-1",
             keyframes: `@-webkit-keyframes flip-scale-down-diag-1 {
   0% {
     -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -3501,7 +3501,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-up-diag-2",
+            variationTitle: "flip-scale-up-diag-2",
             keyframes: `@-webkit-keyframes flip-scale-up-diag-2 {
   0% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
@@ -3532,7 +3532,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-down-diag-2",
+            variationTitle: "flip-scale-down-diag-2",
             keyframes: `@-webkit-keyframes flip-scale-down-diag-2 {
   0% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
@@ -3568,7 +3568,7 @@ export const data = [
         upperTitle: "Flip-Scale-2",
         variations: [
           {
-            lowerTitle: "flip-scale-2-hor-top",
+            variationTitle: "flip-scale-2-hor-top",
             keyframes: `@-webkit-keyframes flip-scale-2-hor-top {
   0% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
@@ -3611,7 +3611,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-2-ver-right",
+            variationTitle: "flip-scale-2-ver-right",
             keyframes: `@-webkit-keyframes flip-scale-2-ver-right {
   0% {
     -webkit-transform: translateX(0) rotateY(0) scale(1);
@@ -3654,7 +3654,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-2-hor-bottom",
+            variationTitle: "flip-scale-2-hor-bottom",
             keyframes: `@-webkit-keyframes flip-scale-2-hor-bottom {
   0% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
@@ -3697,7 +3697,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-scale-2-ver-left",
+            variationTitle: "flip-scale-2-ver-left",
             keyframes: `@-webkit-keyframes flip-scale-2-ver-left {
   0% {
     -webkit-transform: translateX(0) rotateY(0) scale(1);
@@ -3745,7 +3745,7 @@ export const data = [
         upperTitle: "Swing",
         variations: [
           {
-            lowerTitle: "swing-top-fwd",
+            variationTitle: "swing-top-fwd",
             keyframes: `@-webkit-keyframes swing-top-fwd {
   0% {
     -webkit-transform: rotateX(0);
@@ -3776,7 +3776,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-top-bck",
+            variationTitle: "swing-top-bck",
             keyframes: `@-webkit-keyframes swing-top-bck {
   0% {
     -webkit-transform: rotateX(0);
@@ -3807,7 +3807,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-top-right-fwd",
+            variationTitle: "swing-top-right-fwd",
             keyframes: `@-webkit-keyframes swing-top-right-fwd {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -3838,7 +3838,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-top-right-bck",
+            variationTitle: "swing-top-right-bck",
             keyframes: `@-webkit-keyframes swing-top-right-bck {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -3869,7 +3869,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-right-fwd",
+            variationTitle: "swing-right-fwd",
             keyframes: `@-webkit-keyframes swing-right-fwd {
   0% {
     -webkit-transform: rotateY(0);
@@ -3900,7 +3900,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-right-bck",
+            variationTitle: "swing-right-bck",
             keyframes: `@-webkit-keyframes swing-right-bck {
   0% {
     -webkit-transform: rotateY(0);
@@ -3931,7 +3931,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-bottom-right-fwd",
+            variationTitle: "swing-bottom-right-fwd",
             keyframes: `@-webkit-keyframes swing-bottom-right-fwd {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -3962,7 +3962,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-bottom-right-bck",
+            variationTitle: "swing-bottom-right-bck",
             keyframes: `@-webkit-keyframes swing-bottom-right-bck {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -3993,7 +3993,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-bottom-fwd",
+            variationTitle: "swing-bottom-fwd",
             keyframes: `@-webkit-keyframes swing-bottom-fwd {
   0% {
     -webkit-transform: rotateX(0);
@@ -4024,7 +4024,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-bottom-bck",
+            variationTitle: "swing-bottom-bck",
             keyframes: `@-webkit-keyframes swing-bottom-bck {
   0% {
     -webkit-transform: rotateX(0);
@@ -4055,7 +4055,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-bottom-left-fwd",
+            variationTitle: "swing-bottom-left-fwd",
             keyframes: `@-webkit-keyframes swing-bottom-left-fwd {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -4086,7 +4086,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-bottom-left-bck",
+            variationTitle: "swing-bottom-left-bck",
             keyframes: `@-webkit-keyframes swing-bottom-left-bck {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -4117,7 +4117,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-left-fwd",
+            variationTitle: "swing-left-fwd",
             keyframes: `@-webkit-keyframes swing-left-fwd {
   0% {
     -webkit-transform: rotateY(0);
@@ -4148,7 +4148,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-left-bck",
+            variationTitle: "swing-left-bck",
             keyframes: `@-webkit-keyframes swing-left-bck {
   0% {
     -webkit-transform: rotateY(0);
@@ -4179,7 +4179,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-top-left-fwd",
+            variationTitle: "swing-top-left-fwd",
             keyframes: `@-webkit-keyframes swing-top-left-fwd {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -4210,7 +4210,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-top-left-bck",
+            variationTitle: "swing-top-left-bck",
             keyframes: `@-webkit-keyframes swing-top-left-bck {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 0deg);
@@ -4247,7 +4247,7 @@ export const data = [
         upperTitle: "Slide",
         variations: [
           {
-            lowerTitle: "slide-top",
+            variationTitle: "slide-top",
             keyframes: `@-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(0);
@@ -4270,7 +4270,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-tr",
+            variationTitle: "slide-tr",
             keyframes: `@-webkit-keyframes slide-tr {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -4293,7 +4293,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-right",
+            variationTitle: "slide-right",
             keyframes: `@-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(0);
@@ -4316,7 +4316,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-br",
+            variationTitle: "slide-br",
             keyframes: `@-webkit-keyframes slide-br {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -4339,7 +4339,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bottom",
+            variationTitle: "slide-bottom",
             keyframes: `@-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(0);
@@ -4362,7 +4362,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bl",
+            variationTitle: "slide-bl",
             keyframes: `@-webkit-keyframes slide-bl {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -4385,7 +4385,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-left",
+            variationTitle: "slide-left",
             keyframes: `@-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
@@ -4408,7 +4408,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-tl",
+            variationTitle: "slide-tl",
             keyframes: `@-webkit-keyframes slide-tl {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -4437,7 +4437,7 @@ export const data = [
         upperTitle: "Slide-Bck",
         variations: [
           {
-            lowerTitle: "slide-bck-center",
+            variationTitle: "slide-bck-center",
             keyframes: `@-webkit-keyframes slide-bck-center {
   0% {
     -webkit-transform: translateZ(0);
@@ -4460,7 +4460,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bck-top",
+            variationTitle: "slide-bck-top",
             keyframes: `@-webkit-keyframes slide-bck-top {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -4483,7 +4483,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bck-tr",
+            variationTitle: "slide-bck-tr",
             keyframes: `@-webkit-keyframes slide-bck-tr {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -4506,7 +4506,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bck-right",
+            variationTitle: "slide-bck-right",
             keyframes: `@-webkit-keyframes slide-bck-right {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -4529,7 +4529,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bck-br",
+            variationTitle: "slide-bck-br",
             keyframes: `@-webkit-keyframes slide-bck-br {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -4552,7 +4552,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bck-bottom",
+            variationTitle: "slide-bck-bottom",
             keyframes: `@-webkit-keyframes slide-bck-bottom {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -4575,7 +4575,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bck-bl",
+            variationTitle: "slide-bck-bl",
             keyframes: `@-webkit-keyframes slide-bck-bl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -4598,7 +4598,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bck-left",
+            variationTitle: "slide-bck-left",
             keyframes: `@-webkit-keyframes slide-bck-left {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -4621,7 +4621,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-bck-tl",
+            variationTitle: "slide-bck-tl",
             keyframes: `@-webkit-keyframes slide-bck-tl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -4649,7 +4649,7 @@ export const data = [
         upperTitle: "Slide-Fwd",
         variations: [
           {
-            lowerTitle: "slide-fwd-center",
+            variationTitle: "slide-fwd-center",
             keyframes: `@-webkit-keyframes slide-fwd-center {
   0% {
     -webkit-transform: translateZ(0);
@@ -4672,7 +4672,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-fwd-top",
+            variationTitle: "slide-fwd-top",
             keyframes: `@-webkit-keyframes slide-fwd-top {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -4695,7 +4695,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-fwd-tr",
+            variationTitle: "slide-fwd-tr",
             keyframes: `@-webkit-keyframes slide-fwd-tr {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -4718,7 +4718,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-fwd-right",
+            variationTitle: "slide-fwd-right",
             keyframes: `@-webkit-keyframes slide-fwd-right {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -4741,7 +4741,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-fwd-br",
+            variationTitle: "slide-fwd-br",
             keyframes: `@-webkit-keyframes slide-fwd-br {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -4764,7 +4764,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-fwd-bottom",
+            variationTitle: "slide-fwd-bottom",
             keyframes: `@-webkit-keyframes slide-fwd-bottom {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -4787,7 +4787,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-fwd-bl",
+            variationTitle: "slide-fwd-bl",
             keyframes: `@-webkit-keyframes slide-fwd-bl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -4810,7 +4810,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-fwd-left",
+            variationTitle: "slide-fwd-left",
             keyframes: `@-webkit-keyframes slide-fwd-left {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -4833,7 +4833,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-fwd-tl",
+            variationTitle: "slide-fwd-tl",
             keyframes: `@-webkit-keyframes slide-fwd-tl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -4861,7 +4861,7 @@ export const data = [
         upperTitle: "Slide-Rotate",
         variations: [
           {
-            lowerTitle: "slide-rotate-hor-top",
+            variationTitle: "slide-rotate-hor-top",
             keyframes: `@-webkit-keyframes slide-rotate-hor-top {
   0% {
     -webkit-transform: translateY(0) rotateX(0deg);
@@ -4884,7 +4884,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-hor-t-bck",
+            variationTitle: "slide-rotate-hor-t-bck",
             keyframes: `@-webkit-keyframes slide-rotate-hor-t-bck {
   0% {
     -webkit-transform: translateY(0) translateZ(0) rotateX(0deg);
@@ -4915,7 +4915,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-hor-t-fwd",
+            variationTitle: "slide-rotate-hor-t-fwd",
             keyframes: `@-webkit-keyframes slide-rotate-hor-t-fwd {
   0% {
     -webkit-transform: translateY(0) translateZ(0) rotateX(0deg);
@@ -4946,7 +4946,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-ver-right",
+            variationTitle: "slide-rotate-ver-right",
             keyframes: `@-webkit-keyframes slide-rotate-ver-right {
   0% {
     -webkit-transform: translateX(0) rotateY(0);
@@ -4969,7 +4969,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-ver-r-bck",
+            variationTitle: "slide-rotate-ver-r-bck",
             keyframes: `@-webkit-keyframes slide-rotate-ver-r-bck {
   0% {
     -webkit-transform: translateX(0) translateZ(0) rotateY(0);
@@ -5000,7 +5000,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-ver-r-fwd",
+            variationTitle: "slide-rotate-ver-r-fwd",
             keyframes: `@-webkit-keyframes slide-rotate-ver-r-fwd {
   0% {
     -webkit-transform: translateX(0) translateZ(0) rotateY(0);
@@ -5031,7 +5031,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-hor-bottom",
+            variationTitle: "slide-rotate-hor-bottom",
             keyframes: `@-webkit-keyframes slide-rotate-hor-bottom {
   0% {
     -webkit-transform: translateY(0) rotateX(0deg);
@@ -5054,7 +5054,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-hor-b-bck",
+            variationTitle: "slide-rotate-hor-b-bck",
             keyframes: `@-webkit-keyframes slide-rotate-hor-b-bck {
   0% {
     -webkit-transform: translateY(0) translateZ(0) rotateX(0deg);
@@ -5085,7 +5085,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-hor-b-fwd",
+            variationTitle: "slide-rotate-hor-b-fwd",
             keyframes: `@-webkit-keyframes slide-rotate-hor-b-fwd {
   0% {
     -webkit-transform: translateY(0) translateZ(0) rotateX(0deg);
@@ -5116,7 +5116,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-ver-left",
+            variationTitle: "slide-rotate-ver-left",
             keyframes: `@-webkit-keyframes slide-rotate-ver-left {
   0% {
     -webkit-transform: translateX(0) rotateY(0);
@@ -5139,7 +5139,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-ver-l-bck",
+            variationTitle: "slide-rotate-ver-l-bck",
             keyframes: `@-webkit-keyframes slide-rotate-ver-l-bck {
   0% {
     -webkit-transform: translateX(0) translateZ(0) rotateY(0);
@@ -5170,7 +5170,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-rotate-ver-l-fwd",
+            variationTitle: "slide-rotate-ver-l-fwd",
             keyframes: `@-webkit-keyframes slide-rotate-ver-l-fwd {
   0% {
     -webkit-transform: translateX(0) translateZ(0) rotateY(0);
@@ -5206,7 +5206,7 @@ export const data = [
         upperTitle: "Shadow-Drop",
         variations: [
           {
-            lowerTitle: "shadow-drop-center",
+            variationTitle: "shadow-drop-center",
             keyframes: `@-webkit-keyframes shadow-drop-center {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5229,7 +5229,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-top",
+            variationTitle: "shadow-drop-top",
             keyframes: `@-webkit-keyframes shadow-drop-top {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5252,7 +5252,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-right",
+            variationTitle: "shadow-drop-right",
             keyframes: `@-webkit-keyframes shadow-drop-right {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5275,7 +5275,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-bottom",
+            variationTitle: "shadow-drop-bottom",
             keyframes: `@-webkit-keyframes shadow-drop-bottom {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5298,7 +5298,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-left",
+            variationTitle: "shadow-drop-left",
             keyframes: `@-webkit-keyframes shadow-drop-left {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5321,7 +5321,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-lr",
+            variationTitle: "shadow-drop-lr",
             keyframes: `@-webkit-keyframes shadow-drop-lr {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5348,7 +5348,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-tb",
+            variationTitle: "shadow-drop-tb",
             keyframes: `@-webkit-keyframes shadow-drop-tb {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5375,7 +5375,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-tr",
+            variationTitle: "shadow-drop-tr",
             keyframes: `@-webkit-keyframes shadow-drop-tr {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5398,7 +5398,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-br",
+            variationTitle: "shadow-drop-br",
             keyframes: `@-webkit-keyframes shadow-drop-br {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5421,7 +5421,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-bl",
+            variationTitle: "shadow-drop-bl",
             keyframes: `@-webkit-keyframes shadow-drop-bl {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5444,7 +5444,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-tl",
+            variationTitle: "shadow-drop-tl",
             keyframes: `@-webkit-keyframes shadow-drop-tl {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -5472,7 +5472,7 @@ export const data = [
         upperTitle: "Shadow-Drop-2",
         variations: [
           {
-            lowerTitle: "shadow-drop-2-center",
+            variationTitle: "shadow-drop-2-center",
             keyframes: `@-webkit-keyframes shadow-drop-2-center {
   0% {
     -webkit-transform: translateZ(0);
@@ -5503,7 +5503,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-top",
+            variationTitle: "shadow-drop-2-top",
             keyframes: `@-webkit-keyframes shadow-drop-2-top {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -5534,7 +5534,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-right",
+            variationTitle: "shadow-drop-2-right",
             keyframes: `@-webkit-keyframes shadow-drop-2-right {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -5565,7 +5565,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-bottom",
+            variationTitle: "shadow-drop-2-bottom",
             keyframes: `@-webkit-keyframes shadow-drop-2-bottom {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -5596,7 +5596,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-left",
+            variationTitle: "shadow-drop-2-left",
             keyframes: `@-webkit-keyframes shadow-drop-2-left {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -5627,7 +5627,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-lr",
+            variationTitle: "shadow-drop-2-lr",
             keyframes: `@-webkit-keyframes shadow-drop-2-lr {
   0% {
     -webkit-transform: translateZ(0);
@@ -5662,7 +5662,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-tb",
+            variationTitle: "shadow-drop-2-tb",
             keyframes: `@-webkit-keyframes shadow-drop-2-tb {
   0% {
     -webkit-transform: translateZ(0);
@@ -5697,7 +5697,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-tr",
+            variationTitle: "shadow-drop-2-tr",
             keyframes: `@-webkit-keyframes shadow-drop-2-tr {
   0% {
     -webkit-transform: translateZ(0) translateX(0) translateY(0);
@@ -5728,7 +5728,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-br",
+            variationTitle: "shadow-drop-2-br",
             keyframes: `@-webkit-keyframes shadow-drop-2-br {
   0% {
     -webkit-transform: translateZ(0) translateX(0) translateY(0);
@@ -5759,7 +5759,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-bl",
+            variationTitle: "shadow-drop-2-bl",
             keyframes: `@-webkit-keyframes shadow-drop-2-bl {
   0% {
     -webkit-transform: translateZ(0) translateX(0) translateY(0);
@@ -5790,7 +5790,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-drop-2-tl",
+            variationTitle: "shadow-drop-2-tl",
             keyframes: `@-webkit-keyframes shadow-drop-2-tl {
   0% {
     -webkit-transform: translateZ(0) translateX(0) translateY(0);
@@ -5826,7 +5826,7 @@ export const data = [
         upperTitle: "Shadow-Pop",
         variations: [
           {
-            lowerTitle: "shadow-pop-tr",
+            variationTitle: "shadow-pop-tr",
             keyframes: `@-webkit-keyframes shadow-pop-tr {
   0% {
     -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
@@ -5869,7 +5869,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-pop-br",
+            variationTitle: "shadow-pop-br",
             keyframes: `@-webkit-keyframes shadow-pop-br {
   0% {
     -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
@@ -5912,7 +5912,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-pop-bl",
+            variationTitle: "shadow-pop-bl",
             keyframes: `@-webkit-keyframes shadow-pop-bl {
   0% {
     -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
@@ -5955,7 +5955,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-pop-tl",
+            variationTitle: "shadow-pop-tl",
             keyframes: `@-webkit-keyframes shadow-pop-tl {
   0% {
     -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
@@ -6003,7 +6003,7 @@ export const data = [
         upperTitle: "Shadow-Inset",
         variations: [
           {
-            lowerTitle: "shadow-inset-center",
+            variationTitle: "shadow-inset-center",
             keyframes: `@-webkit-keyframes shadow-inset-center {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6026,7 +6026,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-top",
+            variationTitle: "shadow-inset-top",
             keyframes: `@-webkit-keyframes shadow-inset-top {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6049,7 +6049,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-right",
+            variationTitle: "shadow-inset-right",
             keyframes: `@-webkit-keyframes shadow-inset-right {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6072,7 +6072,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-bottom",
+            variationTitle: "shadow-inset-bottom",
             keyframes: `@-webkit-keyframes shadow-inset-bottom {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6095,7 +6095,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-left",
+            variationTitle: "shadow-inset-left",
             keyframes: `@-webkit-keyframes shadow-inset-left {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6118,7 +6118,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-lr",
+            variationTitle: "shadow-inset-lr",
             keyframes: `@-webkit-keyframes shadow-inset-lr {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0),
@@ -6147,7 +6147,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-tb",
+            variationTitle: "shadow-inset-tb",
             keyframes: `@-webkit-keyframes shadow-inset-tb {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0),
@@ -6176,7 +6176,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-tr",
+            variationTitle: "shadow-inset-tr",
             keyframes: `@-webkit-keyframes shadow-inset-tr {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6199,7 +6199,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-br",
+            variationTitle: "shadow-inset-br",
             keyframes: `@-webkit-keyframes shadow-inset-br {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6222,7 +6222,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-bl",
+            variationTitle: "shadow-inset-bl",
             keyframes: `@-webkit-keyframes shadow-inset-bl {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6245,7 +6245,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shadow-inset-tl",
+            variationTitle: "shadow-inset-tl",
             keyframes: `@-webkit-keyframes shadow-inset-tl {
   0% {
     -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6280,7 +6280,7 @@ export const data = [
         upperTitle: "Scale-In",
         variations: [
           {
-            lowerTitle: "scale-in-center",
+            variationTitle: "scale-in-center",
             keyframes: `@-webkit-keyframes scale-in-center {
   0% {
     -webkit-transform: scale(0);
@@ -6307,7 +6307,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-top",
+            variationTitle: "scale-in-top",
             keyframes: `@-webkit-keyframes scale-in-top {
   0% {
     -webkit-transform: scale(0);
@@ -6342,7 +6342,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-tr",
+            variationTitle: "scale-in-tr",
             keyframes: `@-webkit-keyframes scale-in-tr {
   0% {
     -webkit-transform: scale(0);
@@ -6377,7 +6377,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-right",
+            variationTitle: "scale-in-right",
             keyframes: `@-webkit-keyframes scale-in-right {
   0% {
     -webkit-transform: scale(0);
@@ -6412,7 +6412,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-br",
+            variationTitle: "scale-in-br",
             keyframes: `@-webkit-keyframes scale-in-br {
   0% {
     -webkit-transform: scale(0);
@@ -6447,7 +6447,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-bottom",
+            variationTitle: "scale-in-bottom",
             keyframes: `@-webkit-keyframes scale-in-bottom {
   0% {
     -webkit-transform: scale(0);
@@ -6482,7 +6482,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-bl",
+            variationTitle: "scale-in-bl",
             keyframes: `@-webkit-keyframes scale-in-bl {
   0% {
     -webkit-transform: scale(0);
@@ -6517,7 +6517,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-left",
+            variationTitle: "scale-in-left",
             keyframes: `@-webkit-keyframes scale-in-left {
   0% {
     -webkit-transform: scale(0);
@@ -6552,7 +6552,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-tl",
+            variationTitle: "scale-in-tl",
             keyframes: `@-webkit-keyframes scale-in-tl {
   0% {
     -webkit-transform: scale(0);
@@ -6587,7 +6587,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-hor-center",
+            variationTitle: "scale-in-hor-center",
             keyframes: `@-webkit-keyframes scale-in-hor-center {
   0% {
     -webkit-transform: scaleX(0);
@@ -6614,7 +6614,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-hor-left",
+            variationTitle: "scale-in-hor-left",
             keyframes: `@-webkit-keyframes scale-in-hor-left {
   0% {
     -webkit-transform: scaleX(0);
@@ -6649,7 +6649,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-hor-right",
+            variationTitle: "scale-in-hor-right",
             keyframes: `@-webkit-keyframes scale-in-hor-right {
   0% {
     -webkit-transform: scaleX(0);
@@ -6684,7 +6684,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-ver-center",
+            variationTitle: "scale-in-ver-center",
             keyframes: `@-webkit-keyframes scale-in-ver-center {
   0% {
     -webkit-transform: scaleY(0);
@@ -6711,7 +6711,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-ver-top",
+            variationTitle: "scale-in-ver-top",
             keyframes: `@-webkit-keyframes scale-in-ver-top {
   0% {
     -webkit-transform: scaleY(0);
@@ -6746,7 +6746,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-in-ver-bottom",
+            variationTitle: "scale-in-ver-bottom",
             keyframes: `@-webkit-keyframes scale-in-ver-bottom {
   0% {
     -webkit-transform: scaleY(0);
@@ -6787,7 +6787,7 @@ export const data = [
         upperTitle: "Rotate-In",
         variations: [
           {
-            lowerTitle: "rotate-in-center",
+            variationTitle: "rotate-in-center",
             keyframes: `@-webkit-keyframes rotate-in-center {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -6814,7 +6814,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-top",
+            variationTitle: "rotate-in-top",
             keyframes: `@-webkit-keyframes rotate-in-top {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -6849,7 +6849,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-tr",
+            variationTitle: "rotate-in-tr",
             keyframes: `@-webkit-keyframes rotate-in-tr {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -6884,7 +6884,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-right",
+            variationTitle: "rotate-in-right",
             keyframes: `@-webkit-keyframes rotate-in-right {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -6919,7 +6919,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-br",
+            variationTitle: "rotate-in-br",
             keyframes: `@-webkit-keyframes rotate-in-br {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -6954,7 +6954,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-bottom",
+            variationTitle: "rotate-in-bottom",
             keyframes: `@-webkit-keyframes rotate-in-bottom {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -6989,7 +6989,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-bl",
+            variationTitle: "rotate-in-bl",
             keyframes: `@-webkit-keyframes rotate-in-bl {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -7024,7 +7024,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-left",
+            variationTitle: "rotate-in-left",
             keyframes: `@-webkit-keyframes rotate-in-left {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -7059,7 +7059,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-tl",
+            variationTitle: "rotate-in-tl",
             keyframes: `@-webkit-keyframes rotate-in-tl {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -7094,7 +7094,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-hor",
+            variationTitle: "rotate-in-hor",
             keyframes: `@-webkit-keyframes rotate-in-hor {
   0% {
     -webkit-transform: rotateX(360deg);
@@ -7121,7 +7121,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-ver",
+            variationTitle: "rotate-in-ver",
             keyframes: `@-webkit-keyframes rotate-in-ver {
   0% {
     -webkit-transform: rotateY(-360deg);
@@ -7148,7 +7148,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-diag-1",
+            variationTitle: "rotate-in-diag-1",
             keyframes: `@-webkit-keyframes rotate-in-diag-1 {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, -360deg);
@@ -7175,7 +7175,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-diag-2",
+            variationTitle: "rotate-in-diag-2",
             keyframes: `@-webkit-keyframes rotate-in-diag-2 {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, -360deg);
@@ -7207,7 +7207,7 @@ export const data = [
         upperTitle: "Rotate-In-2",
         variations: [
           {
-            lowerTitle: "rotate-in-2-cw",
+            variationTitle: "rotate-in-2-cw",
             keyframes: `@-webkit-keyframes rotate-in-2-cw {
   0% {
     -webkit-transform: rotate(-45deg);
@@ -7234,7 +7234,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-ccw",
+            variationTitle: "rotate-in-2-ccw",
             keyframes: `@-webkit-keyframes rotate-in-2-ccw {
   0% {
     -webkit-transform: rotate(45deg);
@@ -7261,7 +7261,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-fwd-cw",
+            variationTitle: "rotate-in-2-fwd-cw",
             keyframes: `@-webkit-keyframes rotate-in-2-fwd-cw {
   0% {
     -webkit-transform: translateZ(-200px) rotate(-45deg);
@@ -7288,7 +7288,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-fwd-ccw",
+            variationTitle: "rotate-in-2-fwd-ccw",
             keyframes: `@-webkit-keyframes rotate-in-2-fwd-ccw {
   0% {
     -webkit-transform: translateZ(-200px) rotate(45deg);
@@ -7315,7 +7315,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-bck-cw",
+            variationTitle: "rotate-in-2-bck-cw",
             keyframes: `@-webkit-keyframes rotate-in-2-bck-cw {
   0% {
     -webkit-transform: translateZ(200px) rotate(-45deg);
@@ -7342,7 +7342,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-bck-ccw",
+            variationTitle: "rotate-in-2-bck-ccw",
             keyframes: `@-webkit-keyframes rotate-in-2-bck-ccw {
   0% {
     -webkit-transform: translateZ(200px) rotate(45deg);
@@ -7369,7 +7369,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-tr-cw",
+            variationTitle: "rotate-in-2-tr-cw",
             keyframes: `@-webkit-keyframes rotate-in-2-tr-cw {
   0% {
     -webkit-transform: rotate(-45deg);
@@ -7404,7 +7404,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-tr-ccw",
+            variationTitle: "rotate-in-2-tr-ccw",
             keyframes: `@-webkit-keyframes rotate-in-2-tr-ccw {
   0% {
     -webkit-transform: rotate(45deg);
@@ -7439,7 +7439,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-br-cw",
+            variationTitle: "rotate-in-2-br-cw",
             keyframes: `@-webkit-keyframes rotate-in-2-br-cw {
   0% {
     -webkit-transform: rotate(-45deg);
@@ -7474,7 +7474,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-br-ccw",
+            variationTitle: "rotate-in-2-br-ccw",
             keyframes: `@-webkit-keyframes rotate-in-2-br-ccw {
   0% {
     -webkit-transform: rotate(45deg);
@@ -7509,7 +7509,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-bl-cw",
+            variationTitle: "rotate-in-2-bl-cw",
             keyframes: `@-webkit-keyframes rotate-in-2-bl-cw {
   0% {
     -webkit-transform: rotate(-45deg);
@@ -7544,7 +7544,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-bl-ccw",
+            variationTitle: "rotate-in-2-bl-ccw",
             keyframes: `@-webkit-keyframes rotate-in-2-bl-ccw {
   0% {
     -webkit-transform: rotate(45deg);
@@ -7579,7 +7579,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-tl-cw",
+            variationTitle: "rotate-in-2-tl-cw",
             keyframes: `@-webkit-keyframes rotate-in-2-tl-cw {
   0% {
     -webkit-transform: rotate(-45deg);
@@ -7614,7 +7614,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-in-2-tl-ccw",
+            variationTitle: "rotate-in-2-tl-ccw",
             keyframes: `@-webkit-keyframes rotate-in-2-tl-ccw {
   0% {
     -webkit-transform: rotate(45deg);
@@ -7655,7 +7655,7 @@ export const data = [
         upperTitle: "Swirl-In",
         variations: [
           {
-            lowerTitle: "swirl-in-fwd",
+            variationTitle: "swirl-in-fwd",
             keyframes: `@-webkit-keyframes swirl-in-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -7682,7 +7682,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-bck",
+            variationTitle: "swirl-in-bck",
             keyframes: `@-webkit-keyframes swirl-in-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -7709,7 +7709,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-top-fwd",
+            variationTitle: "swirl-in-top-fwd",
             keyframes: `@-webkit-keyframes swirl-in-top-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -7744,7 +7744,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-top-bck",
+            variationTitle: "swirl-in-top-bck",
             keyframes: `@-webkit-keyframes swirl-in-top-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -7780,7 +7780,7 @@ export const data = [
           },
 
           {
-            lowerTitle: "swirl-in-tr-fwd",
+            variationTitle: "swirl-in-tr-fwd",
             keyframes: `@-webkit-keyframes swirl-in-tr-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -7815,7 +7815,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-tr-bck",
+            variationTitle: "swirl-in-tr-bck",
             keyframes: `@-webkit-keyframes swirl-in-tr-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -7850,7 +7850,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-right-fwd",
+            variationTitle: "swirl-in-right-fwd",
             keyframes: `@-webkit-keyframes swirl-in-right-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -7885,7 +7885,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-right-bck",
+            variationTitle: "swirl-in-right-bck",
             keyframes: `@-webkit-keyframes swirl-in-right-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -7920,7 +7920,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-br-fwd",
+            variationTitle: "swirl-in-br-fwd",
             keyframes: `@-webkit-keyframes swirl-in-br-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -7955,7 +7955,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-br-bck",
+            variationTitle: "swirl-in-br-bck",
             keyframes: `@-webkit-keyframes swirl-in-br-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -7990,7 +7990,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-bottom-fwd",
+            variationTitle: "swirl-in-bottom-fwd",
             keyframes: `@-webkit-keyframes swirl-in-bottom-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -8025,7 +8025,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-bottom-bck",
+            variationTitle: "swirl-in-bottom-bck",
             keyframes: `@-webkit-keyframes swirl-in-bottom-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -8060,7 +8060,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-bl-fwd",
+            variationTitle: "swirl-in-bl-fwd",
             keyframes: `@-webkit-keyframes swirl-in-bl-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -8095,7 +8095,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-bl-bck",
+            variationTitle: "swirl-in-bl-bck",
             keyframes: `@-webkit-keyframes swirl-in-bl-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -8130,7 +8130,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-left-fwd",
+            variationTitle: "swirl-in-left-fwd",
             keyframes: `@-webkit-keyframes swirl-in-left-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -8165,7 +8165,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-left-bck",
+            variationTitle: "swirl-in-left-bck",
             keyframes: `@-webkit-keyframes swirl-in-left-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -8200,7 +8200,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-tl-fwd",
+            variationTitle: "swirl-in-tl-fwd",
             keyframes: `@-webkit-keyframes swirl-in-tl-fwd {
   0% {
     -webkit-transform: rotate(-540deg) scale(0);
@@ -8235,7 +8235,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-in-tl-bck",
+            variationTitle: "swirl-in-tl-bck",
             keyframes: `@-webkit-keyframes swirl-in-tl-bck {
   0% {
     -webkit-transform: rotate(540deg) scale(5);
@@ -8276,7 +8276,7 @@ export const data = [
         upperTitle: "Flip-In",
         variations: [
           {
-            lowerTitle: "flip-in-hor-bottom",
+            variationTitle: "flip-in-hor-bottom",
             keyframes: `@-webkit-keyframes flip-in-hor-bottom {
   0% {
     -webkit-transform: rotateX(80deg);
@@ -8303,7 +8303,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-in-hor-top",
+            variationTitle: "flip-in-hor-top",
             keyframes: `@-webkit-keyframes flip-in-hor-top {
   0% {
     -webkit-transform: rotateX(-80deg);
@@ -8330,7 +8330,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-in-ver-right",
+            variationTitle: "flip-in-ver-right",
             keyframes: `@-webkit-keyframes flip-in-ver-right {
   0% {
     -webkit-transform: rotateY(-80deg);
@@ -8357,7 +8357,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-in-ver-left",
+            variationTitle: "flip-in-ver-left",
             keyframes: `@-webkit-keyframes flip-in-ver-left {
   0% {
     -webkit-transform: rotateY(80deg);
@@ -8384,7 +8384,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-in-diag-1-tr",
+            variationTitle: "flip-in-diag-1-tr",
             keyframes: `@-webkit-keyframes flip-in-diag-1-tr {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, -80deg);
@@ -8411,7 +8411,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-in-diag-1-bl",
+            variationTitle: "flip-in-diag-1-bl",
             keyframes: `@-webkit-keyframes flip-in-diag-1-bl {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 80deg);
@@ -8438,7 +8438,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-in-diag-2-tl",
+            variationTitle: "flip-in-diag-2-tl",
             keyframes: `@-webkit-keyframes flip-in-diag-2-tl {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 80deg);
@@ -8465,7 +8465,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-in-diag-2-br",
+            variationTitle: "flip-in-diag-2-br",
             keyframes: `@-webkit-keyframes flip-in-diag-2-br {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, -80deg);
@@ -8497,7 +8497,7 @@ export const data = [
         upperTitle: "Slit-In",
         variations: [
           {
-            lowerTitle: "slit-in-vertical",
+            variationTitle: "slit-in-vertical",
             keyframes: `@-webkit-keyframes slit-in-vertical {
   0% {
     -webkit-transform: translateZ(-800px) rotateY(90deg);
@@ -8532,7 +8532,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slit-in-horizontal",
+            variationTitle: "slit-in-horizontal",
             keyframes: `@-webkit-keyframes slit-in-horizontal {
   0% {
     -webkit-transform: translateZ(-800px) rotateX(90deg);
@@ -8567,7 +8567,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slit-in-diagonal-1",
+            variationTitle: "slit-in-diagonal-1",
             keyframes: `@-webkit-keyframes slit-in-diagonal-1 {
   0% {
     -webkit-transform: translateZ(-800px) rotate3d(1, 1, 0, 90deg);
@@ -8614,7 +8614,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slit-in-diagonal-2",
+            variationTitle: "slit-in-diagonal-2",
             keyframes: `@-webkit-keyframes slit-in-diagonal-2 {
   0% {
     -webkit-transform: translateZ(-800px) rotate3d(-1, 1, 0, -90deg);
@@ -8666,7 +8666,7 @@ export const data = [
         upperTitle: "Slide-In",
         variations: [
           {
-            lowerTitle: "slide-in-top",
+            variationTitle: "slide-in-top",
             keyframes: `@-webkit-keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
@@ -8693,7 +8693,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-tr",
+            variationTitle: "slide-in-tr",
             keyframes: `@-webkit-keyframes slide-in-tr {
   0% {
     -webkit-transform: translateY(-1000px) translateX(1000px);
@@ -8720,7 +8720,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-right",
+            variationTitle: "slide-in-right",
             keyframes: `@-webkit-keyframes slide-in-right {
   0% {
     -webkit-transform: translateX(1000px);
@@ -8747,7 +8747,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-br",
+            variationTitle: "slide-in-br",
             keyframes: `@-webkit-keyframes slide-in-br {
   0% {
     -webkit-transform: translateY(1000px) translateX(1000px);
@@ -8774,7 +8774,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bottom",
+            variationTitle: "slide-in-bottom",
             keyframes: `@-webkit-keyframes slide-in-bottom {
   0% {
     -webkit-transform: translateY(1000px);
@@ -8801,7 +8801,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bl",
+            variationTitle: "slide-in-bl",
             keyframes: `@-webkit-keyframes slide-in-bl {
   0% {
     -webkit-transform: translateY(1000px) translateX(-1000px);
@@ -8828,7 +8828,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-left",
+            variationTitle: "slide-in-left",
             keyframes: `@-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -8855,7 +8855,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-tl",
+            variationTitle: "slide-in-tl",
             keyframes: `@-webkit-keyframes slide-in-tl {
   0% {
     -webkit-transform: translateY(-1000px) translateX(-1000px);
@@ -8887,7 +8887,7 @@ export const data = [
         upperTitle: "Slide-In-Fwd",
         variations: [
           {
-            lowerTitle: "slide-in-fwd-center",
+            variationTitle: "slide-in-fwd-center",
             keyframes: `@-webkit-keyframes slide-in-fwd-center {
   0% {
     -webkit-transform: translateZ(-1400px);
@@ -8914,7 +8914,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-fwd-top",
+            variationTitle: "slide-in-fwd-top",
             keyframes: `@-webkit-keyframes slide-in-fwd-top {
   0% {
     -webkit-transform: translateZ(-1400px) translateY(-800px);
@@ -8941,7 +8941,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-fwd-tr",
+            variationTitle: "slide-in-fwd-tr",
             keyframes: `@-webkit-keyframes slide-in-fwd-tr {
   0% {
     -webkit-transform: translateZ(-1400px) translateY(-800px) translateX(1000px);
@@ -8968,7 +8968,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-fwd-right",
+            variationTitle: "slide-in-fwd-right",
             keyframes: `@-webkit-keyframes slide-in-fwd-right {
   0% {
     -webkit-transform: translateZ(-1400px) translateX(1000px);
@@ -8995,7 +8995,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-fwd-br",
+            variationTitle: "slide-in-fwd-br",
             keyframes: `@-webkit-keyframes slide-in-fwd-br {
   0% {
     -webkit-transform: translateZ(-1400px) translateY(800px) translateX(1000px);
@@ -9022,7 +9022,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-fwd-bottom",
+            variationTitle: "slide-in-fwd-bottom",
             keyframes: `@-webkit-keyframes slide-in-fwd-bottom {
   0% {
     -webkit-transform: translateZ(-1400px) translateY(800px);
@@ -9049,7 +9049,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-fwd-bl",
+            variationTitle: "slide-in-fwd-bl",
             keyframes: `@-webkit-keyframes slide-in-fwd-bl {
   0% {
     -webkit-transform: translateZ(-1400px) translateY(800px) translateX(-1000px);
@@ -9076,7 +9076,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-fwd-left",
+            variationTitle: "slide-in-fwd-left",
             keyframes: `@-webkit-keyframes slide-in-fwd-left {
   0% {
     -webkit-transform: translateZ(-1400px) translateX(-1000px);
@@ -9103,7 +9103,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-fwd-tl",
+            variationTitle: "slide-in-fwd-tl",
             keyframes: `@-webkit-keyframes slide-in-fwd-tl {
   0% {
     -webkit-transform: translateZ(-1400px) translateY(-800px)
@@ -9137,7 +9137,7 @@ export const data = [
         upperTitle: "Slide-In-Bck",
         variations: [
           {
-            lowerTitle: "slide-in-bck-center",
+            variationTitle: "slide-in-bck-center",
             keyframes: `@-webkit-keyframes slide-in-bck-center {
   0% {
     -webkit-transform: translateZ(600px);
@@ -9164,7 +9164,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bck-top",
+            variationTitle: "slide-in-bck-top",
             keyframes: `@-webkit-keyframes slide-in-bck-top {
   0% {
     -webkit-transform: translateZ(700px) translateY(-300px);
@@ -9191,7 +9191,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bck-tr",
+            variationTitle: "slide-in-bck-tr",
             keyframes: `@-webkit-keyframes slide-in-bck-tr {
   0% {
     -webkit-transform: translateZ(700px) translateY(-300px) translateX(400px);
@@ -9218,7 +9218,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bck-right",
+            variationTitle: "slide-in-bck-right",
             keyframes: `@-webkit-keyframes slide-in-bck-right {
   0% {
     -webkit-transform: translateZ(700px) translateX(400px);
@@ -9245,7 +9245,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bck-br",
+            variationTitle: "slide-in-bck-br",
             keyframes: `@-webkit-keyframes slide-in-bck-br {
   0% {
     -webkit-transform: translateZ(700px) translateY(300px) translateX(400px);
@@ -9272,7 +9272,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bck-bottom",
+            variationTitle: "slide-in-bck-bottom",
             keyframes: `@-webkit-keyframes slide-in-bck-bottom {
   0% {
     -webkit-transform: translateZ(700px) translateY(300px);
@@ -9299,7 +9299,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bck-bl",
+            variationTitle: "slide-in-bck-bl",
             keyframes: `@-webkit-keyframes slide-in-bck-bl {
   0% {
     -webkit-transform: translateZ(700px) translateY(300px) translateX(-400px);
@@ -9326,7 +9326,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bck-left",
+            variationTitle: "slide-in-bck-left",
             keyframes: `@-webkit-keyframes slide-in-bck-left {
   0% {
     -webkit-transform: translateZ(700px) translateX(-400px);
@@ -9353,7 +9353,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-bck-tl",
+            variationTitle: "slide-in-bck-tl",
             keyframes: `@-webkit-keyframes slide-in-bck-tl {
   0% {
     -webkit-transform: translateZ(700px) translateY(-300px) translateX(-400px);
@@ -9385,7 +9385,7 @@ export const data = [
         upperTitle: "Slide-In-Blurred",
         variations: [
           {
-            lowerTitle: "slide-in-blurred-top",
+            variationTitle: "slide-in-blurred-top",
             keyframes: `@-webkit-keyframes slide-in-blurred-top {
   0% {
     -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
@@ -9428,7 +9428,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-blurred-tr",
+            variationTitle: "slide-in-blurred-tr",
             keyframes: `@-webkit-keyframes slide-in-blurred-tr {
   0% {
     -webkit-transform: translate(1000px, -1000px) skew(-80deg, -10deg);
@@ -9471,7 +9471,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-blurred-right",
+            variationTitle: "slide-in-blurred-right",
             keyframes: `@-webkit-keyframes slide-in-blurred-right {
   0% {
     -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
@@ -9514,7 +9514,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-blurred-br",
+            variationTitle: "slide-in-blurred-br",
             keyframes: `@-webkit-keyframes slide-in-blurred-br {
   0% {
     -webkit-transform: translate(1000px, 1000px) skew(80deg, 10deg);
@@ -9557,7 +9557,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-blurred-bottom",
+            variationTitle: "slide-in-blurred-bottom",
             keyframes: `@-webkit-keyframes slide-in-blurred-bottom {
   0% {
     -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
@@ -9600,7 +9600,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-blurred-bl",
+            variationTitle: "slide-in-blurred-bl",
             keyframes: `@-webkit-keyframes slide-in-blurred-bl {
   0% {
     -webkit-transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
@@ -9643,7 +9643,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-blurred-left",
+            variationTitle: "slide-in-blurred-left",
             keyframes: `@-webkit-keyframes slide-in-blurred-left {
   0% {
     -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
@@ -9686,7 +9686,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-blurred-tl",
+            variationTitle: "slide-in-blurred-tl",
             keyframes: `@-webkit-keyframes slide-in-blurred-tl {
   0% {
     -webkit-transform: translate(-1000px, -1000px) skew(80deg, 10deg);
@@ -9734,7 +9734,7 @@ export const data = [
         upperTitle: "Slide-In-Elliptic",
         variations: [
           {
-            lowerTitle: "slide-in-elliptic-top-fwd",
+            variationTitle: "slide-in-elliptic-top-fwd",
             keyframes: `@-webkit-keyframes slide-in-elliptic-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
@@ -9769,7 +9769,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-elliptic-top-bck",
+            variationTitle: "slide-in-elliptic-top-bck",
             keyframes: `@-webkit-keyframes slide-in-elliptic-top-bck {
   0% {
     -webkit-transform: translateY(-600px) rotateX(30deg) scale(6.5);
@@ -9804,7 +9804,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-elliptic-right-fwd",
+            variationTitle: "slide-in-elliptic-right-fwd",
             keyframes: `@-webkit-keyframes slide-in-elliptic-right-fwd {
   0% {
     -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
@@ -9839,7 +9839,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-elliptic-right-bck",
+            variationTitle: "slide-in-elliptic-right-bck",
             keyframes: `@-webkit-keyframes slide-in-elliptic-right-bck {
   0% {
     -webkit-transform: translateX(800px) rotateY(30deg) scale(6.5);
@@ -9874,7 +9874,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-elliptic-bottom-fwd",
+            variationTitle: "slide-in-elliptic-bottom-fwd",
             keyframes: `@-webkit-keyframes slide-in-elliptic-bottom-fwd {
   0% {
     -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
@@ -9909,7 +9909,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-elliptic-bottom-bck",
+            variationTitle: "slide-in-elliptic-bottom-bck",
             keyframes: `@-webkit-keyframes slide-in-elliptic-bottom-bck {
   0% {
     -webkit-transform: translateY(600px) rotateX(-30deg) scale(6.5);
@@ -9944,7 +9944,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-elliptic-left-fwd",
+            variationTitle: "slide-in-elliptic-left-fwd",
             keyframes: `@-webkit-keyframes slide-in-elliptic-left-fwd {
   0% {
     -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
@@ -9979,7 +9979,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-in-elliptic-left-bck",
+            variationTitle: "slide-in-elliptic-left-bck",
             keyframes: `@-webkit-keyframes slide-in-elliptic-left-bck {
   0% {
     -webkit-transform: translateX(-800px) rotateY(-30deg) scale(6.5);
@@ -10019,7 +10019,7 @@ export const data = [
         upperTitle: "Bounce-In",
         variations: [
           {
-            lowerTitle: "bounce-in-top",
+            variationTitle: "bounce-in-top",
             keyframes: `@-webkit-keyframes bounce-in-top {
   0% {
     -webkit-transform: translateY(-500px);
@@ -10126,7 +10126,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-in-right",
+            variationTitle: "bounce-in-right",
             keyframes: `@-webkit-keyframes bounce-in-right {
   0% {
     -webkit-transform: translateX(600px);
@@ -10233,7 +10233,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-in-bottom",
+            variationTitle: "bounce-in-bottom",
             keyframes: `@-webkit-keyframes bounce-in-bottom {
   0% {
     -webkit-transform: translateY(500px);
@@ -10340,7 +10340,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-in-left",
+            variationTitle: "bounce-in-left",
             keyframes: `@-webkit-keyframes bounce-in-left {
   0% {
     -webkit-transform: translateX(-600px);
@@ -10447,7 +10447,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-in-fwd",
+            variationTitle: "bounce-in-fwd",
             keyframes: `@-webkit-keyframes bounce-in-fwd {
   0% {
     -webkit-transform: scale(0);
@@ -10554,7 +10554,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-in-bck",
+            variationTitle: "bounce-in-bck",
             keyframes: `@-webkit-keyframes bounce-in-bck {
   0% {
     -webkit-transform: scale(7);
@@ -10666,7 +10666,7 @@ export const data = [
         upperTitle: "Roll-In",
         variations: [
           {
-            lowerTitle: "roll-in-left",
+            variationTitle: "roll-in-left",
             keyframes: `@-webkit-keyframes roll-in-left {
   0% {
     -webkit-transform: translateX(-800px) rotate(-540deg);
@@ -10693,7 +10693,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-in-top",
+            variationTitle: "roll-in-top",
             keyframes: `@-webkit-keyframes roll-in-top {
   0% {
     -webkit-transform: translateY(-800px) rotate(-540deg);
@@ -10720,7 +10720,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-in-right",
+            variationTitle: "roll-in-right",
             keyframes: `@-webkit-keyframes roll-in-right {
   0% {
     -webkit-transform: translateX(800px) rotate(540deg);
@@ -10747,7 +10747,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-in-bottom",
+            variationTitle: "roll-in-bottom",
             keyframes: `@-webkit-keyframes roll-in-bottom {
   0% {
     -webkit-transform: translateY(800px) rotate(540deg);
@@ -10779,7 +10779,7 @@ export const data = [
         upperTitle: "Roll-In-Blurred",
         variations: [
           {
-            lowerTitle: "roll-in-blurred-left",
+            variationTitle: "roll-in-blurred-left",
             keyframes: `@-webkit-keyframes roll-in-blurred-left {
   0% {
     -webkit-transform: translateX(-1000px) rotate(-720deg);
@@ -10814,7 +10814,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-in-blurred-top",
+            variationTitle: "roll-in-blurred-top",
             keyframes: `@-webkit-keyframes roll-in-blurred-top {
   0% {
     -webkit-transform: translateY(-800px) rotate(-720deg);
@@ -10849,7 +10849,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-in-blurred-right",
+            variationTitle: "roll-in-blurred-right",
             keyframes: `@-webkit-keyframes roll-in-blurred-right {
   0% {
     -webkit-transform: translateX(1000px) rotate(720deg);
@@ -10884,7 +10884,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-in-blurred-bottom",
+            variationTitle: "roll-in-blurred-bottom",
             keyframes: `@-webkit-keyframes roll-in-blurred-bottom {
   0% {
     -webkit-transform: translateY(800px) rotate(720deg);
@@ -10920,7 +10920,7 @@ export const data = [
         upperTitle: "Tilt-In",
         variations: [
           {
-            lowerTitle: "tilt-in-top-1",
+            variationTitle: "tilt-in-top-1",
             keyframes: `@-webkit-keyframes tilt-in-top-1 {
   0% {
     -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
@@ -10947,7 +10947,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-top-2",
+            variationTitle: "tilt-in-top-2",
             keyframes: `@-webkit-keyframes tilt-in-top-2 {
   0% {
     -webkit-transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
@@ -10974,7 +10974,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-tr",
+            variationTitle: "tilt-in-tr",
             keyframes: `@-webkit-keyframes tilt-in-tr {
   0% {
     -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px)
@@ -11005,7 +11005,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-right-1",
+            variationTitle: "tilt-in-right-1",
             keyframes: `@-webkit-keyframes tilt-in-right-1 {
   0% {
     -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
@@ -11032,7 +11032,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-right-2",
+            variationTitle: "tilt-in-right-2",
             keyframes: `@-webkit-keyframes tilt-in-right-2 {
   0% {
     -webkit-transform: rotateX(30deg) translateX(300px) skewX(-30deg);
@@ -11059,7 +11059,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-br",
+            variationTitle: "tilt-in-br",
             keyframes: `@-webkit-keyframes tilt-in-br {
   0% {
     -webkit-transform: rotateY(-35deg) rotateX(-20deg) translate(250px, 250px)
@@ -11090,7 +11090,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-bottom-1",
+            variationTitle: "tilt-in-bottom-1",
             keyframes: `@-webkit-keyframes tilt-in-bottom-1 {
   0% {
     -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
@@ -11117,7 +11117,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-bottom-2",
+            variationTitle: "tilt-in-bottom-2",
             keyframes: `@-webkit-keyframes tilt-in-bottom-2 {
   0% {
     -webkit-transform: rotateY(-30deg) translateY(300px) skewY(30deg);
@@ -11144,7 +11144,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-bl",
+            variationTitle: "tilt-in-bl",
             keyframes: `@-webkit-keyframes tilt-in-bl {
   0% {
     -webkit-transform: rotateY(35deg) rotateX(-20deg) translate(-250px, 250px)
@@ -11175,7 +11175,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-left-1",
+            variationTitle: "tilt-in-left-1",
             keyframes: `@-webkit-keyframes tilt-in-left-1 {
   0% {
     -webkit-transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
@@ -11202,7 +11202,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-left-2",
+            variationTitle: "tilt-in-left-2",
             keyframes: `@-webkit-keyframes tilt-in-left-2 {
   0% {
     -webkit-transform: rotateX(30deg) translateX(-300px) skewX(30deg);
@@ -11229,7 +11229,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-tl",
+            variationTitle: "tilt-in-tl",
             keyframes: `@-webkit-keyframes tilt-in-tl {
   0% {
     -webkit-transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px)
@@ -11265,7 +11265,7 @@ export const data = [
         upperTitle: "Tilt-In-Fwd",
         variations: [
           {
-            lowerTitle: "tilt-in-fwd-tr",
+            variationTitle: "tilt-in-fwd-tr",
             keyframes: `@-webkit-keyframes tilt-in-fwd-tr {
   0% {
     -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
@@ -11296,7 +11296,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-fwd-br",
+            variationTitle: "tilt-in-fwd-br",
             keyframes: `@-webkit-keyframes tilt-in-fwd-br {
   0% {
     -webkit-transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px)
@@ -11327,7 +11327,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-fwd-bl",
+            variationTitle: "tilt-in-fwd-bl",
             keyframes: `@-webkit-keyframes tilt-in-fwd-bl {
   0% {
     -webkit-transform: rotateY(-20deg) rotateX(-35deg) translate(-300px, 300px)
@@ -11358,7 +11358,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tilt-in-fwd-tl",
+            variationTitle: "tilt-in-fwd-tl",
             keyframes: `@-webkit-keyframes tilt-in-fwd-tl {
   0% {
     -webkit-transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px)
@@ -11395,7 +11395,7 @@ export const data = [
         upperTitle: "Swing-In",
         variations: [
           {
-            lowerTitle: "swing-in-top-fwd",
+            variationTitle: "swing-in-top-fwd",
             keyframes: `@-webkit-keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
@@ -11430,7 +11430,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-in-top-bck",
+            variationTitle: "swing-in-top-bck",
             keyframes: `@-webkit-keyframes swing-in-top-bck {
   0% {
     -webkit-transform: rotateX(70deg);
@@ -11465,7 +11465,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-in-right-fwd",
+            variationTitle: "swing-in-right-fwd",
             keyframes: `@-webkit-keyframes swing-in-right-fwd {
   0% {
     -webkit-transform: rotateY(-100deg);
@@ -11500,7 +11500,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-in-right-bck",
+            variationTitle: "swing-in-right-bck",
             keyframes: `@-webkit-keyframes swing-in-right-bck {
   0% {
     -webkit-transform: rotateY(70deg);
@@ -11535,7 +11535,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-in-bottom-fwd",
+            variationTitle: "swing-in-bottom-fwd",
             keyframes: `@-webkit-keyframes swing-in-bottom-fwd {
   0% {
     -webkit-transform: rotateX(100deg);
@@ -11570,7 +11570,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-in-bottom-bck",
+            variationTitle: "swing-in-bottom-bck",
             keyframes: `@-webkit-keyframes swing-in-bottom-bck {
   0% {
     -webkit-transform: rotateX(-70deg);
@@ -11605,7 +11605,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-in-left-fwd",
+            variationTitle: "swing-in-left-fwd",
             keyframes: `@-webkit-keyframes swing-in-left-fwd {
   0% {
     -webkit-transform: rotateY(100deg);
@@ -11640,7 +11640,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-in-left-bck",
+            variationTitle: "swing-in-left-bck",
             keyframes: `@-webkit-keyframes swing-in-left-bck {
   0% {
     -webkit-transform: rotateY(-70deg);
@@ -11680,7 +11680,7 @@ export const data = [
         upperTitle: "Fade-In",
         variations: [
           {
-            lowerTitle: "fade-in",
+            variationTitle: "fade-in",
             keyframes: `@-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -11699,7 +11699,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-fwd",
+            variationTitle: "fade-in-fwd",
             keyframes: `@-webkit-keyframes fade-in-fwd {
   0% {
     -webkit-transform: translateZ(-80px);
@@ -11726,7 +11726,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-bck",
+            variationTitle: "fade-in-bck",
             keyframes: `@-webkit-keyframes fade-in-bck {
   0% {
     -webkit-transform: translateZ(80px);
@@ -11753,7 +11753,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-top",
+            variationTitle: "fade-in-top",
             keyframes: `@-webkit-keyframes fade-in-top {
   0% {
     -webkit-transform: translateY(-50px);
@@ -11780,7 +11780,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-tr",
+            variationTitle: "fade-in-tr",
             keyframes: `@-webkit-keyframes fade-in-tr {
   0% {
     -webkit-transform: translateX(50px) translateY(-50px);
@@ -11807,7 +11807,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-right",
+            variationTitle: "fade-in-right",
             keyframes: `@-webkit-keyframes fade-in-right {
   0% {
     -webkit-transform: translateX(50px);
@@ -11834,7 +11834,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-br",
+            variationTitle: "fade-in-br",
             keyframes: `@-webkit-keyframes fade-in-br {
   0% {
     -webkit-transform: translateX(50px) translateY(50px);
@@ -11861,7 +11861,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-bottom",
+            variationTitle: "fade-in-bottom",
             keyframes: `@-webkit-keyframes fade-in-bottom {
   0% {
     -webkit-transform: translateY(50px);
@@ -11888,7 +11888,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-bl",
+            variationTitle: "fade-in-bl",
             keyframes: `@-webkit-keyframes fade-in-bl {
   0% {
     -webkit-transform: translateX(-50px) translateY(50px);
@@ -11915,7 +11915,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-left",
+            variationTitle: "fade-in-left",
             keyframes: `@-webkit-keyframes fade-in-left {
   0% {
     -webkit-transform: translateX(-50px);
@@ -11942,7 +11942,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-in-tl",
+            variationTitle: "fade-in-tl",
             keyframes: `@-webkit-keyframes fade-in-tl {
   0% {
     -webkit-transform: translateX(-50px) translateY(-50px);
@@ -11975,7 +11975,7 @@ export const data = [
         upperTitle: "Puff-In",
         variations: [
           {
-            lowerTitle: "puff-in-center",
+            variationTitle: "puff-in-center",
             keyframes: `@-webkit-keyframes puff-in-center {
   0% {
     -webkit-transform: scale(2);
@@ -12010,7 +12010,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-top",
+            variationTitle: "puff-in-top",
             keyframes: `@-webkit-keyframes puff-in-top {
   0% {
     -webkit-transform: scale(2);
@@ -12053,7 +12053,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-tr",
+            variationTitle: "puff-in-tr",
             keyframes: `@-webkit-keyframes puff-in-tr {
   0% {
     -webkit-transform: scale(2);
@@ -12096,7 +12096,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-right",
+            variationTitle: "puff-in-right",
             keyframes: `@-webkit-keyframes puff-in-right {
   0% {
     -webkit-transform: scale(2);
@@ -12139,7 +12139,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-br",
+            variationTitle: "puff-in-br",
             keyframes: `@-webkit-keyframes puff-in-br {
   0% {
     -webkit-transform: scale(2);
@@ -12182,7 +12182,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-bottom",
+            variationTitle: "puff-in-bottom",
             keyframes: `@-webkit-keyframes puff-in-bottom {
   0% {
     -webkit-transform: scale(2);
@@ -12225,7 +12225,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-bl",
+            variationTitle: "puff-in-bl",
             keyframes: `@-webkit-keyframes puff-in-bl {
   0% {
     -webkit-transform: scale(2);
@@ -12268,7 +12268,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-left",
+            variationTitle: "puff-in-left",
             keyframes: `@-webkit-keyframes puff-in-left {
   0% {
     -webkit-transform: scale(2);
@@ -12311,7 +12311,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-tl",
+            variationTitle: "puff-in-tl",
             keyframes: `@-webkit-keyframes puff-in-tl {
   0% {
     -webkit-transform: scale(2);
@@ -12354,7 +12354,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-hor",
+            variationTitle: "puff-in-hor",
             keyframes: `@-webkit-keyframes puff-in-hor {
   0% {
     -webkit-transform: scaleX(2);
@@ -12389,7 +12389,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-in-ver",
+            variationTitle: "puff-in-ver",
             keyframes: `@-webkit-keyframes puff-in-ver {
   0% {
     -webkit-transform: scaleY(2);
@@ -12429,7 +12429,7 @@ export const data = [
         upperTitle: "Flicker-In",
         variations: [
           {
-            lowerTitle: "flicker-in-1",
+            variationTitle: "flicker-in-1",
             keyframes: `@-webkit-keyframes flicker-in-1 {
   0% {
     opacity: 0;
@@ -12622,7 +12622,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flicker-in-2",
+            variationTitle: "flicker-in-2",
             keyframes: `@-webkit-keyframes flicker-in-2 {
   0% {
     opacity: 0;
@@ -12946,7 +12946,7 @@ export const data = [
         upperTitle: "Scale-Out",
         variations: [
           {
-            lowerTitle: "scale-out-center",
+            variationTitle: "scale-out-center",
             keyframes: `@-webkit-keyframes scale-out-center {
   0% {
     -webkit-transform: scale(1);
@@ -12973,7 +12973,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-top",
+            variationTitle: "scale-out-top",
             keyframes: `@-webkit-keyframes scale-out-top {
   0% {
     -webkit-transform: scale(1);
@@ -13008,7 +13008,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-tr",
+            variationTitle: "scale-out-tr",
             keyframes: `@-webkit-keyframes scale-out-tr {
   0% {
     -webkit-transform: scale(1);
@@ -13043,7 +13043,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-right",
+            variationTitle: "scale-out-right",
             keyframes: `@-webkit-keyframes scale-out-right {
   0% {
     -webkit-transform: scale(1);
@@ -13078,7 +13078,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-br",
+            variationTitle: "scale-out-br",
             keyframes: `@-webkit-keyframes scale-out-br {
   0% {
     -webkit-transform: scale(1);
@@ -13113,7 +13113,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-bottom",
+            variationTitle: "scale-out-bottom",
             keyframes: `@-webkit-keyframes scale-out-bottom {
   0% {
     -webkit-transform: scale(1);
@@ -13148,7 +13148,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-bl",
+            variationTitle: "scale-out-bl",
             keyframes: `@-webkit-keyframes scale-out-bl {
   0% {
     -webkit-transform: scale(1);
@@ -13183,7 +13183,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-left",
+            variationTitle: "scale-out-left",
             keyframes: `@-webkit-keyframes scale-out-left {
   0% {
     -webkit-transform: scale(1);
@@ -13218,7 +13218,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-tl",
+            variationTitle: "scale-out-tl",
             keyframes: `@-webkit-keyframes scale-out-tl {
   0% {
     -webkit-transform: scale(1);
@@ -13253,7 +13253,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-horizontal",
+            variationTitle: "scale-out-horizontal",
             keyframes: `@-webkit-keyframes scale-out-horizontal {
   0% {
     -webkit-transform: scaleX(1);
@@ -13280,7 +13280,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-hor-left",
+            variationTitle: "scale-out-hor-left",
             keyframes: `@-webkit-keyframes scale-out-hor-left {
   0% {
     -webkit-transform: scaleX(1);
@@ -13315,7 +13315,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-hor-right",
+            variationTitle: "scale-out-hor-right",
             keyframes: `@-webkit-keyframes scale-out-hor-right {
   0% {
     -webkit-transform: scaleX(1);
@@ -13350,7 +13350,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-vertical",
+            variationTitle: "scale-out-vertical",
             keyframes: `@-webkit-keyframes scale-out-vertical {
   0% {
     -webkit-transform: scaleY(1);
@@ -13377,7 +13377,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-ver-top",
+            variationTitle: "scale-out-ver-top",
             keyframes: `@-webkit-keyframes scale-out-ver-top {
   0% {
     -webkit-transform: scaleY(1);
@@ -13412,7 +13412,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "scale-out-ver-bottom",
+            variationTitle: "scale-out-ver-bottom",
             keyframes: `@-webkit-keyframes scale-out-ver-bottom {
   0% {
     -webkit-transform: scaleY(1);
@@ -13453,7 +13453,7 @@ export const data = [
         upperTitle: "Rotate-Out",
         variations: [
           {
-            lowerTitle: "rotate-out-center",
+            variationTitle: "rotate-out-center",
             keyframes: `@-webkit-keyframes rotate-out-center {
   0% {
     -webkit-transform: rotate(0);
@@ -13480,7 +13480,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-top",
+            variationTitle: "rotate-out-top",
             keyframes: `@-webkit-keyframes rotate-out-top {
   0% {
     -webkit-transform: rotate(0);
@@ -13515,7 +13515,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-tr",
+            variationTitle: "rotate-out-tr",
             keyframes: `@-webkit-keyframes rotate-out-tr {
   0% {
     -webkit-transform: rotate(0);
@@ -13550,7 +13550,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-right",
+            variationTitle: "rotate-out-right",
             keyframes: `@-webkit-keyframes rotate-out-right {
   0% {
     -webkit-transform: rotate(0);
@@ -13585,7 +13585,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-br",
+            variationTitle: "rotate-out-br",
             keyframes: `@-webkit-keyframes rotate-out-br {
   0% {
     -webkit-transform: rotate(0);
@@ -13620,7 +13620,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-bottom",
+            variationTitle: "rotate-out-bottom",
             keyframes: `@-webkit-keyframes rotate-out-bottom {
   0% {
     -webkit-transform: rotate(0);
@@ -13655,7 +13655,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-bl",
+            variationTitle: "rotate-out-bl",
             keyframes: `@-webkit-keyframes rotate-out-bl {
   0% {
     -webkit-transform: rotate(0);
@@ -13690,7 +13690,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-left",
+            variationTitle: "rotate-out-left",
             keyframes: `@-webkit-keyframes rotate-out-left {
   0% {
     -webkit-transform: rotate(0);
@@ -13725,7 +13725,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-tl",
+            variationTitle: "rotate-out-tl",
             keyframes: `@-webkit-keyframes rotate-out-tl {
   0% {
     -webkit-transform: rotate(0);
@@ -13760,7 +13760,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-hor",
+            variationTitle: "rotate-out-hor",
             keyframes: `@-webkit-keyframes rotate-out-hor {
   0% {
     -webkit-transform: rotateX(360deg);
@@ -13787,7 +13787,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-ver",
+            variationTitle: "rotate-out-ver",
             keyframes: `@-webkit-keyframes rotate-out-ver {
   0% {
     -webkit-transform: rotateY(360deg);
@@ -13814,7 +13814,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-diag-1",
+            variationTitle: "rotate-out-diag-1",
             keyframes: `@-webkit-keyframes rotate-out-diag-1 {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 360deg);
@@ -13841,7 +13841,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-diag-2",
+            variationTitle: "rotate-out-diag-2",
             keyframes: `@-webkit-keyframes rotate-out-diag-2 {
   0% {
     -webkit-transform: rotate3d(-1, 1, 0, 360deg);
@@ -13873,7 +13873,7 @@ export const data = [
         upperTitle: "Rotate-Out-2",
         variations: [
           {
-            lowerTitle: "rotate-out-2-cw",
+            variationTitle: "rotate-out-2-cw",
             keyframes: `@-webkit-keyframes rotate-out-2-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -13900,7 +13900,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-ccw",
+            variationTitle: "rotate-out-2-ccw",
             keyframes: `@-webkit-keyframes rotate-out-2-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -13927,7 +13927,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-bck",
+            variationTitle: "rotate-out-2-bck",
             keyframes: `@-webkit-keyframes rotate-out-2-bck {
   0% {
     -webkit-transform: translateZ(0) rotate(0);
@@ -13954,7 +13954,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-fwd",
+            variationTitle: "rotate-out-2-fwd",
             keyframes: `@-webkit-keyframes rotate-out-2-fwd {
   0% {
     -webkit-transform: translateZ(0) rotate(0);
@@ -13981,7 +13981,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-tr-cw",
+            variationTitle: "rotate-out-2-tr-cw",
             keyframes: `@-webkit-keyframes rotate-out-2-tr-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -14016,7 +14016,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-tr-ccw",
+            variationTitle: "rotate-out-2-tr-ccw",
             keyframes: `@-webkit-keyframes rotate-out-2-tr-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -14051,7 +14051,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-br-cw",
+            variationTitle: "rotate-out-2-br-cw",
             keyframes: `@-webkit-keyframes rotate-out-2-br-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -14086,7 +14086,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-br-ccw",
+            variationTitle: "rotate-out-2-br-ccw",
             keyframes: `@-webkit-keyframes rotate-out-2-br-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -14121,7 +14121,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-bl-cw",
+            variationTitle: "rotate-out-2-bl-cw",
             keyframes: `@-webkit-keyframes rotate-out-2-bl-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -14156,7 +14156,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-bl-ccw",
+            variationTitle: "rotate-out-2-bl-ccw",
             keyframes: `@-webkit-keyframes rotate-out-2-bl-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -14191,7 +14191,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-tl-cw",
+            variationTitle: "rotate-out-2-tl-cw",
             keyframes: `@-webkit-keyframes rotate-out-2-tl-cw {
   0% {
     -webkit-transform: rotate(0);
@@ -14226,7 +14226,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "rotate-out-2-tl-ccw",
+            variationTitle: "rotate-out-2-tl-ccw",
             keyframes: `@-webkit-keyframes rotate-out-2-tl-ccw {
   0% {
     -webkit-transform: rotate(0);
@@ -14266,7 +14266,7 @@ export const data = [
         upperTitle: "Swirl-Out",
         variations: [
           {
-            lowerTitle: "swirl-out-bck",
+            variationTitle: "swirl-out-bck",
             keyframes: `@-webkit-keyframes swirl-out-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14293,7 +14293,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-fwd",
+            variationTitle: "swirl-out-fwd",
             keyframes: `@-webkit-keyframes swirl-out-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14320,7 +14320,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-top-bck",
+            variationTitle: "swirl-out-top-bck",
             keyframes: `@-webkit-keyframes swirl-out-top-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14355,7 +14355,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-top-fwd",
+            variationTitle: "swirl-out-top-fwd",
             keyframes: `@-webkit-keyframes swirl-out-top-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14390,7 +14390,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-tr-bck",
+            variationTitle: "swirl-out-tr-bck",
             keyframes: `@-webkit-keyframes swirl-out-tr-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14425,7 +14425,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-tr-fwd",
+            variationTitle: "swirl-out-tr-fwd",
             keyframes: `@-webkit-keyframes swirl-out-tr-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14460,7 +14460,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-right-bck",
+            variationTitle: "swirl-out-right-bck",
             keyframes: `@-webkit-keyframes swirl-out-right-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14495,7 +14495,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-right-fwd",
+            variationTitle: "swirl-out-right-fwd",
             keyframes: `@-webkit-keyframes swirl-out-right-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14530,7 +14530,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-br-bck",
+            variationTitle: "swirl-out-br-bck",
             keyframes: `@-webkit-keyframes swirl-out-br-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14565,7 +14565,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-br-fwd",
+            variationTitle: "swirl-out-br-fwd",
             keyframes: `@-webkit-keyframes swirl-out-br-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14600,7 +14600,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-bottom-bck",
+            variationTitle: "swirl-out-bottom-bck",
             keyframes: `@-webkit-keyframes swirl-out-bottom-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14635,7 +14635,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-bottom-fwd",
+            variationTitle: "swirl-out-bottom-fwd",
             keyframes: `@-webkit-keyframes swirl-out-bottom-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14670,7 +14670,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-bl-bck",
+            variationTitle: "swirl-out-bl-bck",
             keyframes: `@-webkit-keyframes swirl-out-bl-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14705,7 +14705,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-bl-fwd",
+            variationTitle: "swirl-out-bl-fwd",
             keyframes: `@-webkit-keyframes swirl-out-bl-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14740,7 +14740,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-left-bck",
+            variationTitle: "swirl-out-left-bck",
             keyframes: `@-webkit-keyframes swirl-out-left-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14775,7 +14775,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-left-fwd",
+            variationTitle: "swirl-out-left-fwd",
             keyframes: `@-webkit-keyframes swirl-out-left-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14810,7 +14810,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-tl-bck",
+            variationTitle: "swirl-out-tl-bck",
             keyframes: `@-webkit-keyframes swirl-out-tl-bck {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14845,7 +14845,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swirl-out-tl-fwd",
+            variationTitle: "swirl-out-tl-fwd",
             keyframes: `@-webkit-keyframes swirl-out-tl-fwd {
   0% {
     -webkit-transform: rotate(0) scale(1);
@@ -14885,7 +14885,7 @@ export const data = [
         upperTitle: "Flip-Out",
         variations: [
           {
-            lowerTitle: "flip-out-hor-top",
+            variationTitle: "flip-out-hor-top",
             keyframes: `@-webkit-keyframes flip-out-hor-top {
   0% {
     -webkit-transform: rotateX(0);
@@ -14912,7 +14912,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-out-hor-bottom",
+            variationTitle: "flip-out-hor-bottom",
             keyframes: `@-webkit-keyframes flip-out-hor-bottom {
   0% {
     -webkit-transform: rotateX(0);
@@ -14939,7 +14939,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-out-ver-left",
+            variationTitle: "flip-out-ver-left",
             keyframes: `@-webkit-keyframes flip-out-ver-left {
   0% {
     -webkit-transform: rotateY(0);
@@ -14966,7 +14966,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-out-ver-right",
+            variationTitle: "flip-out-ver-right",
             keyframes: `@-webkit-keyframes flip-out-ver-right {
   0% {
     -webkit-transform: rotateY(0);
@@ -14993,7 +14993,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-out-diag-1-tr",
+            variationTitle: "flip-out-diag-1-tr",
             keyframes: `@-webkit-keyframes flip-out-diag-1-tr {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -15020,7 +15020,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-out-diag-1-bl",
+            variationTitle: "flip-out-diag-1-bl",
             keyframes: `@-webkit-keyframes flip-out-diag-1-bl {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -15047,7 +15047,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-out-diag-2-tl",
+            variationTitle: "flip-out-diag-2-tl",
             keyframes: `@-webkit-keyframes flip-out-diag-2-tl {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -15074,7 +15074,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flip-out-diag-2-br",
+            variationTitle: "flip-out-diag-2-br",
             keyframes: `@-webkit-keyframes flip-out-diag-2-br {
   0% {
     -webkit-transform: rotate3d(1, 1, 0, 0deg);
@@ -15106,7 +15106,7 @@ export const data = [
         upperTitle: "Slit-Out",
         variations: [
           {
-            lowerTitle: "slit-out-vertical",
+            variationTitle: "slit-out-vertical",
             keyframes: `@-webkit-keyframes slit-out-vertical {
   0% {
     -webkit-transform: translateZ(0) rotateY(0);
@@ -15143,7 +15143,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slit-out-horizontal",
+            variationTitle: "slit-out-horizontal",
             keyframes: `@-webkit-keyframes slit-out-horizontal {
   0% {
     -webkit-transform: translateZ(0) rotateX(0);
@@ -15180,7 +15180,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slit-out-diagonal-1",
+            variationTitle: "slit-out-diagonal-1",
             keyframes: `@-webkit-keyframes slit-out-diagonal-1 {
   0% {
     -webkit-transform: translateZ(0) rotate3d(1, 1, 0, 0);
@@ -15217,7 +15217,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slit-out-diagonal-2",
+            variationTitle: "slit-out-diagonal-2",
             keyframes: `@-webkit-keyframes slit-out-diagonal-2 {
   0% {
     -webkit-transform: translateZ(0) rotate3d(-1, 1, 0, 0);
@@ -15259,7 +15259,7 @@ export const data = [
         upperTitle: "Slide-Out",
         variations: [
           {
-            lowerTitle: "slide-out-top",
+            variationTitle: "slide-out-top",
             keyframes: `@-webkit-keyframes slide-out-top {
   0% {
     -webkit-transform: translateY(0);
@@ -15286,7 +15286,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-tr",
+            variationTitle: "slide-out-tr",
             keyframes: `@-webkit-keyframes slide-out-tr {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -15313,7 +15313,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-right",
+            variationTitle: "slide-out-right",
             keyframes: `@-webkit-keyframes slide-out-right {
   0% {
     -webkit-transform: translateX(0);
@@ -15340,7 +15340,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-br",
+            variationTitle: "slide-out-br",
             keyframes: `@-webkit-keyframes slide-out-br {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -15367,7 +15367,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bottom",
+            variationTitle: "slide-out-bottom",
             keyframes: `@-webkit-keyframes slide-out-bottom {
   0% {
     -webkit-transform: translateY(0);
@@ -15394,7 +15394,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bl",
+            variationTitle: "slide-out-bl",
             keyframes: `@-webkit-keyframes slide-out-bl {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -15421,7 +15421,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-left",
+            variationTitle: "slide-out-left",
             keyframes: `@-webkit-keyframes slide-out-left {
   0% {
     -webkit-transform: translateX(0);
@@ -15448,7 +15448,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-tl",
+            variationTitle: "slide-out-tl",
             keyframes: `@-webkit-keyframes slide-out-tl {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -15480,7 +15480,7 @@ export const data = [
         upperTitle: "Slide-Out-Bck",
         variations: [
           {
-            lowerTitle: "slide-out-bck-center",
+            variationTitle: "slide-out-bck-center",
             keyframes: `@-webkit-keyframes slide-out-bck-center {
   0% {
     -webkit-transform: translateZ(0);
@@ -15507,7 +15507,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bck-top",
+            variationTitle: "slide-out-bck-top",
             keyframes: `@-webkit-keyframes slide-out-bck-top {
   0% {
     -webkit-transform: translateZ(1) translateY(0);
@@ -15534,7 +15534,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bck-tr",
+            variationTitle: "slide-out-bck-tr",
             keyframes: `@-webkit-keyframes slide-out-bck-tr {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -15563,7 +15563,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bck-right",
+            variationTitle: "slide-out-bck-right",
             keyframes: `@-webkit-keyframes slide-out-bck-right {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -15590,7 +15590,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bck-br",
+            variationTitle: "slide-out-bck-br",
             keyframes: `@-webkit-keyframes slide-out-bck-br {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -15617,7 +15617,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bck-bottom",
+            variationTitle: "slide-out-bck-bottom",
             keyframes: `@-webkit-keyframes slide-out-bck-bottom {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -15644,7 +15644,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bck-bl",
+            variationTitle: "slide-out-bck-bl",
             keyframes: `@-webkit-keyframes slide-out-bck-bl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -15673,7 +15673,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bck-left",
+            variationTitle: "slide-out-bck-left",
             keyframes: `@-webkit-keyframes slide-out-bck-left {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -15700,7 +15700,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-bck-tl",
+            variationTitle: "slide-out-bck-tl",
             keyframes: `@-webkit-keyframes slide-out-bck-tl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -15734,7 +15734,7 @@ export const data = [
         upperTitle: "Slide-Out-Fwd",
         variations: [
           {
-            lowerTitle: "slide-out-fwd-center",
+            variationTitle: "slide-out-fwd-center",
             keyframes: `@-webkit-keyframes slide-out-fwd-center {
   0% {
     -webkit-transform: translateZ(1);
@@ -15761,7 +15761,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-fwd-top",
+            variationTitle: "slide-out-fwd-top",
             keyframes: `@-webkit-keyframes slide-out-fwd-top {
   0% {
     -webkit-transform: translateZ(1) translateY(0);
@@ -15788,7 +15788,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-fwd-tr",
+            variationTitle: "slide-out-fwd-tr",
             keyframes: `@-webkit-keyframes slide-out-fwd-tr {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -15815,7 +15815,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-fwd-right",
+            variationTitle: "slide-out-fwd-right",
             keyframes: `@-webkit-keyframes slide-out-fwd-right {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -15842,7 +15842,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-fwd-br",
+            variationTitle: "slide-out-fwd-br",
             keyframes: `@-webkit-keyframes slide-out-fwd-br {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -15869,7 +15869,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-fwd-bottom",
+            variationTitle: "slide-out-fwd-bottom",
             keyframes: `@-webkit-keyframes slide-out-fwd-bottom {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -15896,7 +15896,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-fwd-bl",
+            variationTitle: "slide-out-fwd-bl",
             keyframes: `@-webkit-keyframes slide-out-fwd-bl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -15923,7 +15923,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-fwd-left",
+            variationTitle: "slide-out-fwd-left",
             keyframes: `@-webkit-keyframes slide-out-fwd-left {
   0% {
     -webkit-transform: translateZ(0) translateX(0);
@@ -15950,7 +15950,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-fwd-tl",
+            variationTitle: "slide-out-fwd-tl",
             keyframes: `@-webkit-keyframes slide-out-fwd-tl {
   0% {
     -webkit-transform: translateZ(0) translateY(0) translateX(0);
@@ -15982,7 +15982,7 @@ export const data = [
         upperTitle: "Slide-Out-Blurred",
         variations: [
           {
-            lowerTitle: "slide-out-blurred-top",
+            variationTitle: "slide-out-blurred-top",
             keyframes: `@-webkit-keyframes slide-out-blurred-top {
   0% {
     -webkit-transform: translateY(0) scaleY(1) scaleX(1);
@@ -16025,7 +16025,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-blurred-tr",
+            variationTitle: "slide-out-blurred-tr",
             keyframes: `@-webkit-keyframes slide-out-blurred-tr {
   0% {
     -webkit-transform: translate(0, 0) skew(0deg, 0deg);
@@ -16068,7 +16068,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-blurred-right",
+            variationTitle: "slide-out-blurred-right",
             keyframes: `@-webkit-keyframes slide-out-blurred-right {
   0% {
     -webkit-transform: translateX(0) scaleY(1) scaleX(1);
@@ -16111,7 +16111,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-blurred-br",
+            variationTitle: "slide-out-blurred-br",
             keyframes: `@-webkit-keyframes slide-out-blurred-br {
   0% {
     -webkit-transform: translate(0, 0) skew(0deg, 0deg);
@@ -16154,7 +16154,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-blurred-bottom",
+            variationTitle: "slide-out-blurred-bottom",
             keyframes: `@-webkit-keyframes slide-out-blurred-bottom {
   0% {
     -webkit-transform: translateY(0) scaleY(1) scaleX(1);
@@ -16197,7 +16197,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-blurred-bl",
+            variationTitle: "slide-out-blurred-bl",
             keyframes: `@-webkit-keyframes slide-out-blurred-bl {
   0% {
     -webkit-transform: translate(0, 0) skew(0deg, 0deg);
@@ -16240,7 +16240,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-blurred-left",
+            variationTitle: "slide-out-blurred-left",
             keyframes: `@-webkit-keyframes slide-out-blurred-left {
   0% {
     -webkit-transform: translateX(0) scaleY(1) scaleX(1);
@@ -16283,7 +16283,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-blurred-tl",
+            variationTitle: "slide-out-blurred-tl",
             keyframes: `@-webkit-keyframes slide-out-blurred-tl {
   0% {
     -webkit-transform: translate(0, 0) skew(0deg, 0deg);
@@ -16331,7 +16331,7 @@ export const data = [
         upperTitle: "Slide-Out-Elliptic",
         variations: [
           {
-            lowerTitle: "slide-out-elliptic-top-bck",
+            variationTitle: "slide-out-elliptic-top-bck",
             keyframes: `@-webkit-keyframes slide-out-elliptic-top-bck {
   0% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
@@ -16366,7 +16366,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-elliptic-top-fwd",
+            variationTitle: "slide-out-elliptic-top-fwd",
             keyframes: `@-webkit-keyframes slide-out-elliptic-top-fwd {
   0% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
@@ -16401,7 +16401,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-elliptic-right-bck",
+            variationTitle: "slide-out-elliptic-right-bck",
             keyframes: `@-webkit-keyframes slide-out-elliptic-right-bck {
   0% {
     -webkit-transform: translateX(0) rotateY(0) scale(1);
@@ -16436,7 +16436,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-elliptic-right-fwd",
+            variationTitle: "slide-out-elliptic-right-fwd",
             keyframes: `@-webkit-keyframes slide-out-elliptic-right-fwd {
   0% {
     -webkit-transform: translateX(0) rotateY(0) scale(1);
@@ -16471,7 +16471,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-elliptic-bottom-bck",
+            variationTitle: "slide-out-elliptic-bottom-bck",
             keyframes: `@-webkit-keyframes slide-out-elliptic-bottom-bck {
   0% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
@@ -16506,7 +16506,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-elliptic-bottom-fwd",
+            variationTitle: "slide-out-elliptic-bottom-fwd",
             keyframes: `@-webkit-keyframes slide-out-elliptic-bottom-fwd {
   0% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
@@ -16541,7 +16541,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-elliptic-left-bck",
+            variationTitle: "slide-out-elliptic-left-bck",
             keyframes: `@-webkit-keyframes slide-out-elliptic-left-bck {
   0% {
     -webkit-transform: translateX(0) rotateY(0) scale(1);
@@ -16576,7 +16576,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "slide-out-elliptic-left-fwd",
+            variationTitle: "slide-out-elliptic-left-fwd",
             keyframes: `@-webkit-keyframes slide-out-elliptic-left-fwd {
   0% {
     -webkit-transform: translateX(0) rotateY(0) scale(1);
@@ -16616,7 +16616,7 @@ export const data = [
         upperTitle: "Bounce-Out",
         variations: [
           {
-            lowerTitle: "bounce-out-top",
+            variationTitle: "bounce-out-top",
             keyframes: `@-webkit-keyframes bounce-out-top {
   0% {
     -webkit-transform: translateY(0);
@@ -16723,7 +16723,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-out-right",
+            variationTitle: "bounce-out-right",
             keyframes: `@-webkit-keyframes bounce-out-right {
   0% {
     -webkit-transform: translateX(0);
@@ -16830,7 +16830,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-out-bottom",
+            variationTitle: "bounce-out-bottom",
             keyframes: `@-webkit-keyframes bounce-out-bottom {
   0% {
     -webkit-transform: translateY(0);
@@ -16937,7 +16937,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-out-left",
+            variationTitle: "bounce-out-left",
             keyframes: `@-webkit-keyframes bounce-out-left {
   0% {
     -webkit-transform: translateX(0);
@@ -17044,7 +17044,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-out-bck",
+            variationTitle: "bounce-out-bck",
             keyframes: `@-webkit-keyframes bounce-out-bck {
   0% {
     -webkit-transform: translateZ(0);
@@ -17155,7 +17155,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-out-fwd",
+            variationTitle: "bounce-out-fwd",
             keyframes: `@-webkit-keyframes bounce-out-fwd {
   0% {
     -webkit-transform: translateZ(0);
@@ -17271,7 +17271,7 @@ export const data = [
         upperTitle: "Roll-Out",
         variations: [
           {
-            lowerTitle: "roll-out-left",
+            variationTitle: "roll-out-left",
             keyframes: `@-webkit-keyframes roll-out-left {
   0% {
     -webkit-transform: translateX(0) rotate(0deg);
@@ -17298,7 +17298,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-out-top",
+            variationTitle: "roll-out-top",
             keyframes: `@-webkit-keyframes roll-out-top {
   0% {
     -webkit-transform: translateY(0) rotate(0deg);
@@ -17325,7 +17325,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-out-right",
+            variationTitle: "roll-out-right",
             keyframes: `@-webkit-keyframes roll-out-right {
   0% {
     -webkit-transform: translateX(0) rotate(0deg);
@@ -17352,7 +17352,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-out-bottom",
+            variationTitle: "roll-out-bottom",
             keyframes: `@-webkit-keyframes roll-out-bottom {
   0% {
     -webkit-transform: translateY(0) rotate(0deg);
@@ -17384,7 +17384,7 @@ export const data = [
         upperTitle: "Roll-Out-Blurred",
         variations: [
           {
-            lowerTitle: "roll-out-blurred-left",
+            variationTitle: "roll-out-blurred-left",
             keyframes: `@-webkit-keyframes roll-out-blurred-left {
   0% {
     -webkit-transform: translateX(0) rotate(0deg);
@@ -17419,7 +17419,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-out-blurred-top",
+            variationTitle: "roll-out-blurred-top",
             keyframes: `@-webkit-keyframes roll-out-blurred-top {
   0% {
     -webkit-transform: translateY(0) rotate(0deg);
@@ -17454,7 +17454,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-out-blurred-right",
+            variationTitle: "roll-out-blurred-right",
             keyframes: `@-webkit-keyframes roll-out-blurred-right {
   0% {
     -webkit-transform: translateX(0) rotate(0deg);
@@ -17489,7 +17489,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "roll-out-blurred-bottom",
+            variationTitle: "roll-out-blurred-bottom",
             keyframes: `@-webkit-keyframes roll-out-blurred-bottom {
   0% {
     -webkit-transform: translateY(0) rotate(0deg);
@@ -17525,7 +17525,7 @@ export const data = [
         upperTitle: "Swing-Out",
         variations: [
           {
-            lowerTitle: "swing-out-top-bck",
+            variationTitle: "swing-out-top-bck",
             keyframes: `@-webkit-keyframes swing-out-top-bck {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -17560,7 +17560,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-out-top-fwd",
+            variationTitle: "swing-out-top-fwd",
             keyframes: `@-webkit-keyframes swing-out-top-fwd {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -17595,7 +17595,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-out-right-bck",
+            variationTitle: "swing-out-right-bck",
             keyframes: `@-webkit-keyframes swing-out-right-bck {
   0% {
     -webkit-transform: rotateY(0);
@@ -17630,7 +17630,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-out-right-fwd",
+            variationTitle: "swing-out-right-fwd",
             keyframes: `@-webkit-keyframes swing-out-right-fwd {
   0% {
     -webkit-transform: rotateY(0);
@@ -17665,7 +17665,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-out-bottom-bck",
+            variationTitle: "swing-out-bottom-bck",
             keyframes: `@-webkit-keyframes swing-out-bottom-bck {
   0% {
     -webkit-transform: rotateX(0);
@@ -17700,7 +17700,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-out-bottom-fwd",
+            variationTitle: "swing-out-bottom-fwd",
             keyframes: `@-webkit-keyframes swing-out-bottom-fwd {
   0% {
     -webkit-transform: rotateX(0);
@@ -17735,7 +17735,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-out-left-bck",
+            variationTitle: "swing-out-left-bck",
             keyframes: `@-webkit-keyframes swing-out-left-bck {
   0% {
     -webkit-transform: rotateY(0);
@@ -17770,7 +17770,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "swing-out-left-fwd",
+            variationTitle: "swing-out-left-fwd",
             keyframes: `@-webkit-keyframes swing-out-left-fwd {
   0% {
     -webkit-transform: rotateY(0);
@@ -17810,7 +17810,7 @@ export const data = [
         upperTitle: "Fade-Out",
         variations: [
           {
-            lowerTitle: "fade-out",
+            variationTitle: "fade-out",
             keyframes: `@-webkit-keyframes fade-out {
   0% {
     opacity: 1;
@@ -17829,7 +17829,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-bck",
+            variationTitle: "fade-out-bck",
             keyframes: `@-webkit-keyframes fade-out-bck {
   0% {
     -webkit-transform: translateZ(0);
@@ -17856,7 +17856,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-fwd",
+            variationTitle: "fade-out-fwd",
             keyframes: `@-webkit-keyframes fade-out-fwd {
   0% {
     -webkit-transform: translateZ(0);
@@ -17883,7 +17883,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-top",
+            variationTitle: "fade-out-top",
             keyframes: `@-webkit-keyframes fade-out-top {
   0% {
     -webkit-transform: translateY(0);
@@ -17910,7 +17910,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-tr",
+            variationTitle: "fade-out-tr",
             keyframes: `@-webkit-keyframes fade-out-tr {
   0% {
     -webkit-transform: translateX(0) translateY(0);
@@ -17937,7 +17937,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-right",
+            variationTitle: "fade-out-right",
             keyframes: `@-webkit-keyframes fade-out-right {
   0% {
     -webkit-transform: translateX(0);
@@ -17964,7 +17964,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-br",
+            variationTitle: "fade-out-br",
             keyframes: `@-webkit-keyframes fade-out-br {
   0% {
     -webkit-transform: translateX(0) translateY(0);
@@ -17991,7 +17991,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-bottom",
+            variationTitle: "fade-out-bottom",
             keyframes: `@-webkit-keyframes fade-out-bottom {
   0% {
     -webkit-transform: translateY(0);
@@ -18018,7 +18018,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-bl",
+            variationTitle: "fade-out-bl",
             keyframes: `@-webkit-keyframes fade-out-bl {
   0% {
     -webkit-transform: translateX(0) translateY(0);
@@ -18045,7 +18045,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-left",
+            variationTitle: "fade-out-left",
             keyframes: `@-webkit-keyframes fade-out-left {
   0% {
     -webkit-transform: translateX(0);
@@ -18072,7 +18072,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "fade-out-tl",
+            variationTitle: "fade-out-tl",
             keyframes: `@-webkit-keyframes fade-out-tl {
   0% {
     -webkit-transform: translateX(0) translateY(0);
@@ -18104,7 +18104,7 @@ export const data = [
         upperTitle: "Puff-Out",
         variations: [
           {
-            lowerTitle: "puff-out-center",
+            variationTitle: "puff-out-center",
             keyframes: `@-webkit-keyframes puff-out-center {
   0% {
     -webkit-transform: scale(1);
@@ -18139,7 +18139,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-top",
+            variationTitle: "puff-out-top",
             keyframes: `@-webkit-keyframes puff-out-top {
   0% {
     -webkit-transform: scale(1);
@@ -18182,7 +18182,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-tr",
+            variationTitle: "puff-out-tr",
             keyframes: `@-webkit-keyframes puff-out-tr {
   0% {
     -webkit-transform: scale(1);
@@ -18225,7 +18225,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-right",
+            variationTitle: "puff-out-right",
             keyframes: `@-webkit-keyframes puff-out-right {
   0% {
     -webkit-transform: scale(1);
@@ -18268,7 +18268,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-br",
+            variationTitle: "puff-out-br",
             keyframes: `@-webkit-keyframes puff-out-br {
   0% {
     -webkit-transform: scale(1);
@@ -18311,7 +18311,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-bottom",
+            variationTitle: "puff-out-bottom",
             keyframes: `@-webkit-keyframes puff-out-bottom {
   0% {
     -webkit-transform: scale(1);
@@ -18354,7 +18354,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-bl",
+            variationTitle: "puff-out-bl",
             keyframes: `@-webkit-keyframes puff-out-bl {
   0% {
     -webkit-transform: scale(1);
@@ -18397,7 +18397,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-left",
+            variationTitle: "puff-out-left",
             keyframes: `@-webkit-keyframes puff-out-left {
   0% {
     -webkit-transform: scale(1);
@@ -18440,7 +18440,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-tl",
+            variationTitle: "puff-out-tl",
             keyframes: `@-webkit-keyframes puff-out-tl {
   0% {
     -webkit-transform: scale(1);
@@ -18483,7 +18483,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-hor",
+            variationTitle: "puff-out-hor",
             keyframes: `@-webkit-keyframes puff-out-hor {
   0% {
     -webkit-transform: scaleX(1);
@@ -18518,7 +18518,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "puff-out-ver",
+            variationTitle: "puff-out-ver",
             keyframes: `@-webkit-keyframes puff-out-ver {
   0% {
     -webkit-transform: scaleY(1);
@@ -18559,7 +18559,7 @@ export const data = [
         upperTitle: "Flicker-Out",
         variations: [
           {
-            lowerTitle: "flicker-out-1",
+            variationTitle: "flicker-out-1",
             keyframes: `@-webkit-keyframes flicker-out-1 {
   0% {
     opacity: 1;
@@ -18816,7 +18816,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flicker-out-2",
+            variationTitle: "flicker-out-2",
             keyframes: `@-webkit-keyframes flicker-out-2 {
   0% {
     opacity: 1;
@@ -19140,7 +19140,7 @@ export const data = [
         upperTitle: "Tracking-In",
         variations: [
           {
-            lowerTitle: "tracking-in-expand",
+            variationTitle: "tracking-in-expand",
             keyframes: `@-webkit-keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -19167,7 +19167,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-in-expand-fwd",
+            variationTitle: "tracking-in-expand-fwd",
             keyframes: `@-webkit-keyframes tracking-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
@@ -19202,7 +19202,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-in-expand-fwd-top",
+            variationTitle: "tracking-in-expand-fwd-top",
             keyframes: `@-webkit-keyframes tracking-in-expand-fwd-top {
   0% {
     letter-spacing: -0.5em;
@@ -19237,7 +19237,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-in-expand-fwd-bottom",
+            variationTitle: "tracking-in-expand-fwd-bottom",
             keyframes: `@-webkit-keyframes tracking-in-expand-fwd-bottom {
   0% {
     letter-spacing: -0.5em;
@@ -19272,7 +19272,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-in-contract",
+            variationTitle: "tracking-in-contract",
             keyframes: `@-webkit-keyframes tracking-in-contract {
   0% {
     letter-spacing: 1em;
@@ -19301,7 +19301,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-in-contract-bck",
+            variationTitle: "tracking-in-contract-bck",
             keyframes: `@-webkit-keyframes tracking-in-contract-bck {
   0% {
     letter-spacing: 1em;
@@ -19336,7 +19336,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-in-contract-bck-top",
+            variationTitle: "tracking-in-contract-bck-top",
             keyframes: `@-webkit-keyframes tracking-in-contract-bck-top {
   0% {
     letter-spacing: 1em;
@@ -19371,7 +19371,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-in-contract-bck-bottom",
+            variationTitle: "tracking-in-contract-bck-bottom",
             keyframes: `@-webkit-keyframes tracking-in-contract-bck-bottom {
   0% {
     letter-spacing: 1em;
@@ -19411,7 +19411,7 @@ export const data = [
         upperTitle: "Tracking-Out",
         variations: [
           {
-            lowerTitle: "tracking-out-contract",
+            variationTitle: "tracking-out-contract",
             keyframes: `@-webkit-keyframes tracking-out-contract {
   0% {
     opacity: 1;
@@ -19438,7 +19438,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-out-contract-bck",
+            variationTitle: "tracking-out-contract-bck",
             keyframes: `@-webkit-keyframes tracking-out-contract-bck {
   0% {
     -webkit-transform: translateZ(0);
@@ -19473,7 +19473,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-out-contract-bck-top",
+            variationTitle: "tracking-out-contract-bck-top",
             keyframes: `@-webkit-keyframes tracking-out-contract-bck-top {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -19508,7 +19508,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-out-contract-bck-bottom",
+            variationTitle: "tracking-out-contract-bck-bottom",
             keyframes: `@-webkit-keyframes tracking-out-contract-bck-bottom {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -19543,7 +19543,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-out-expand",
+            variationTitle: "tracking-out-expand",
             keyframes: `@-webkit-keyframes tracking-out-expand {
   0% {
     opacity: 1;
@@ -19570,7 +19570,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-out-expand-fwd",
+            variationTitle: "tracking-out-expand-fwd",
             keyframes: `@-webkit-keyframes tracking-out-expand-fwd {
   0% {
     -webkit-transform: translateZ(0);
@@ -19605,7 +19605,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-out-expand-fwd-top",
+            variationTitle: "tracking-out-expand-fwd-top",
             keyframes: `@-webkit-keyframes tracking-out-expand-fwd-top {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -19640,7 +19640,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "tracking-out-expand-fwd-bottom",
+            variationTitle: "tracking-out-expand-fwd-bottom",
             keyframes: `@-webkit-keyframes tracking-out-expand-fwd-bottom {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
@@ -19680,7 +19680,7 @@ export const data = [
         upperTitle: "Focus-In",
         variations: [
           {
-            lowerTitle: "text-focus-in",
+            variationTitle: "text-focus-in",
             keyframes: `@-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -19707,7 +19707,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "focus-in-expand",
+            variationTitle: "focus-in-expand",
             keyframes: `@-webkit-keyframes focus-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -19736,7 +19736,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "focus-in-expand-fwd",
+            variationTitle: "focus-in-expand-fwd",
             keyframes: `@-webkit-keyframes focus-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
@@ -19773,7 +19773,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "focus-in-contract",
+            variationTitle: "focus-in-contract",
             keyframes: `@-webkit-keyframes focus-in-contract {
   0% {
     letter-spacing: 1em;
@@ -19802,7 +19802,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "focus-in-contract-bck",
+            variationTitle: "focus-in-contract-bck",
             keyframes: `@-webkit-keyframes focus-in-contract-bck {
   0% {
     letter-spacing: 1em;
@@ -19844,7 +19844,7 @@ export const data = [
         upperTitle: "Blur-Out",
         variations: [
           {
-            lowerTitle: "text-blur-out",
+            variationTitle: "text-blur-out",
             keyframes: `@-webkit-keyframes text-blur-out {
   0% {
     -webkit-filter: blur(0.01);
@@ -19867,7 +19867,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "blur-out-contract",
+            variationTitle: "blur-out-contract",
             keyframes: `@-webkit-keyframes blur-out-contract {
   0% {
     -webkit-filter: blur(0.01);
@@ -19892,7 +19892,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "blur-out-contract-bck",
+            variationTitle: "blur-out-contract-bck",
             keyframes: `@-webkit-keyframes blur-out-contract-bck {
   0% {
     -webkit-transform: translateZ(0);
@@ -19925,7 +19925,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "blur-out-expand",
+            variationTitle: "blur-out-expand",
             keyframes: `@-webkit-keyframes blur-out-expand {
   0% {
     -webkit-filter: blur(0.01);
@@ -19950,7 +19950,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "blur-out-expand-fwd",
+            variationTitle: "blur-out-expand-fwd",
             keyframes: `@-webkit-keyframes blur-out-expand-fwd {
   0% {
     -webkit-transform: translateZ(0);
@@ -19988,7 +19988,7 @@ export const data = [
         upperTitle: "Flicker",
         variations: [
           {
-            lowerTitle: "text-flicker-in-glow",
+            variationTitle: "text-flicker-in-glow",
             keyframes: `@-webkit-keyframes text-flicker-in-glow {
   0% {
     opacity: 0;
@@ -20241,7 +20241,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-flicker-out-glow",
+            variationTitle: "text-flicker-out-glow",
             keyframes: `@-webkit-keyframes text-flicker-out-glow {
   0% {
     opacity: 1;
@@ -20499,7 +20499,7 @@ export const data = [
         upperTitle: "Shadow-Drop",
         variations: [
           {
-            lowerTitle: "text-shadow-drop-center",
+            variationTitle: "text-shadow-drop-center",
             keyframes: `@-webkit-keyframes text-shadow-drop-center {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20518,7 +20518,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-drop-top",
+            variationTitle: "text-shadow-drop-top",
             keyframes: `@-webkit-keyframes text-shadow-drop-top {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20537,7 +20537,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-drop-tr",
+            variationTitle: "text-shadow-drop-tr",
             keyframes: `@-webkit-keyframes text-shadow-drop-tr {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20556,7 +20556,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-drop-right",
+            variationTitle: "text-shadow-drop-right",
             keyframes: `@-webkit-keyframes text-shadow-drop-right {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20575,7 +20575,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-drop-br",
+            variationTitle: "text-shadow-drop-br",
             keyframes: `@-webkit-keyframes text-shadow-drop-br {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20594,7 +20594,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-drop-bottom",
+            variationTitle: "text-shadow-drop-bottom",
             keyframes: `@-webkit-keyframes text-shadow-drop-bottom {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20613,7 +20613,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-drop-bl",
+            variationTitle: "text-shadow-drop-bl",
             keyframes: `@-webkit-keyframes text-shadow-drop-bl {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20632,7 +20632,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-drop-left",
+            variationTitle: "text-shadow-drop-left",
             keyframes: `@-webkit-keyframes text-shadow-drop-left {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20651,7 +20651,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-drop-tl",
+            variationTitle: "text-shadow-drop-tl",
             keyframes: `@-webkit-keyframes text-shadow-drop-tl {
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -20675,7 +20675,7 @@ export const data = [
         upperTitle: "Shadow-Pop",
         variations: [
           {
-            lowerTitle: "text-shadow-pop-top",
+            variationTitle: "text-shadow-pop-top",
             keyframes: `@-webkit-keyframes text-shadow-pop-top {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
@@ -20702,7 +20702,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-pop-tr",
+            variationTitle: "text-shadow-pop-tr",
             keyframes: `@-webkit-keyframes text-shadow-pop-tr {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
@@ -20729,7 +20729,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-pop-right",
+            variationTitle: "text-shadow-pop-right",
             keyframes: `@-webkit-keyframes text-shadow-pop-right {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
@@ -20756,7 +20756,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-pop-br",
+            variationTitle: "text-shadow-pop-br",
             keyframes: `@-webkit-keyframes text-shadow-pop-br {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
@@ -20783,7 +20783,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-pop-bottom",
+            variationTitle: "text-shadow-pop-bottom",
             keyframes: `@-webkit-keyframes text-shadow-pop-bottom {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
@@ -20810,7 +20810,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-pop-bl",
+            variationTitle: "text-shadow-pop-bl",
             keyframes: `@-webkit-keyframes text-shadow-pop-bl {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
@@ -20837,7 +20837,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-pop-left",
+            variationTitle: "text-shadow-pop-left",
             keyframes: `@-webkit-keyframes text-shadow-pop-left {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
@@ -20864,7 +20864,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-shadow-pop-tl",
+            variationTitle: "text-shadow-pop-tl",
             keyframes: `@-webkit-keyframes text-shadow-pop-tl {
   0% {
     text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
@@ -20896,7 +20896,7 @@ export const data = [
         upperTitle: "Pop-Up",
         variations: [
           {
-            lowerTitle: "text-pop-up-top",
+            variationTitle: "text-pop-up-top",
             keyframes: `@-webkit-keyframes text-pop-up-top {
   0% {
     -webkit-transform: translateY(0);
@@ -20931,7 +20931,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-pop-up-tr",
+            variationTitle: "text-pop-up-tr",
             keyframes: `@-webkit-keyframes text-pop-up-tr {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -20966,7 +20966,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-pop-up-right",
+            variationTitle: "text-pop-up-right",
             keyframes: `@-webkit-keyframes text-pop-up-right {
   0% {
     -webkit-transform: translateX(0);
@@ -21001,7 +21001,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-pop-up-br",
+            variationTitle: "text-pop-up-br",
             keyframes: `@-webkit-keyframes text-pop-up-br {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -21036,7 +21036,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-pop-up-bottom",
+            variationTitle: "text-pop-up-bottom",
             keyframes: `@-webkit-keyframes text-pop-up-bottom {
   0% {
     -webkit-transform: translateY(0);
@@ -21071,7 +21071,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-pop-up-bl",
+            variationTitle: "text-pop-up-bl",
             keyframes: `@-webkit-keyframes text-pop-up-bl {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -21106,7 +21106,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-pop-up-left",
+            variationTitle: "text-pop-up-left",
             keyframes: `@-webkit-keyframes text-pop-up-left {
   0% {
     -webkit-transform: translateX(0);
@@ -21141,7 +21141,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "text-pop-up-tl",
+            variationTitle: "text-pop-up-tl",
             keyframes: `@-webkit-keyframes text-pop-up-tl {
   0% {
     -webkit-transform: translateY(0) translateX(0);
@@ -21188,7 +21188,7 @@ export const data = [
         upperTitle: "Vibrate",
         variations: [
           {
-            lowerTitle: "vibrate-1",
+            variationTitle: "vibrate-1",
             keyframes: `@-webkit-keyframes vibrate-1 {
   0% {
     -webkit-transform: translate(0);
@@ -21243,7 +21243,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "vibrate-2",
+            variationTitle: "vibrate-2",
             keyframes: `@-webkit-keyframes vibrate-2 {
   0% {
     -webkit-transform: translate(0);
@@ -21298,7 +21298,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "vibrate-3",
+            variationTitle: "vibrate-3",
             keyframes: `@-webkit-keyframes vibrate-3 {
   0% {
     -webkit-transform: translate(0);
@@ -21398,7 +21398,7 @@ export const data = [
         upperTitle: "Flicker",
         variations: [
           {
-            lowerTitle: "flicker-1",
+            variationTitle: "flicker-1",
             keyframes: `@-webkit-keyframes flicker-1 {
   0%,
   100% {
@@ -21461,7 +21461,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flicker-2",
+            variationTitle: "flicker-2",
             keyframes: `@-webkit-keyframes flicker-2 {
   0%,
   100% {
@@ -21548,7 +21548,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flicker-3",
+            variationTitle: "flicker-3",
             keyframes: `@-webkit-keyframes flicker-3 {
   0%,
   100% {
@@ -21659,7 +21659,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flicker-4",
+            variationTitle: "flicker-4",
             keyframes: `@-webkit-keyframes flicker-4 {
   0%,
   100% {
@@ -21818,7 +21818,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "flicker-5",
+            variationTitle: "flicker-5",
             keyframes: `@-webkit-keyframes flicker-5 {
   0%,
   100% {
@@ -22342,7 +22342,7 @@ export const data = [
         upperTitle: "Shake",
         variations: [
           {
-            lowerTitle: "shake-horizontal",
+            variationTitle: "shake-horizontal",
             keyframes: `@-webkit-keyframes shake-horizontal {
   0%,
   100% {
@@ -22401,7 +22401,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-vertical",
+            variationTitle: "shake-vertical",
             keyframes: `@-webkit-keyframes shake-vertical {
   0%,
   100% {
@@ -22460,7 +22460,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-lr",
+            variationTitle: "shake-lr",
             keyframes: `@-webkit-keyframes shake-lr {
   0%,
   100% {
@@ -22529,7 +22529,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-top",
+            variationTitle: "shake-top",
             keyframes: `@-webkit-keyframes shake-top {
   0%,
   100% {
@@ -22598,7 +22598,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-tr",
+            variationTitle: "shake-tr",
             keyframes: `@-webkit-keyframes shake-tr {
   0%,
   100% {
@@ -22667,7 +22667,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-right",
+            variationTitle: "shake-right",
             keyframes: `@-webkit-keyframes shake-right {
   0%,
   100% {
@@ -22736,7 +22736,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-br",
+            variationTitle: "shake-br",
             keyframes: `@-webkit-keyframes shake-br {
   0%,
   100% {
@@ -22805,7 +22805,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-bottom",
+            variationTitle: "shake-bottom",
             keyframes: `@-webkit-keyframes shake-bottom {
   0%,
   100% {
@@ -22874,7 +22874,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-bl",
+            variationTitle: "shake-bl",
             keyframes: `@-webkit-keyframes shake-bl {
   0%,
   100% {
@@ -22943,7 +22943,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-left",
+            variationTitle: "shake-left",
             keyframes: `@-webkit-keyframes shake-left {
   0%,
   100% {
@@ -23012,7 +23012,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "shake-tl",
+            variationTitle: "shake-tl",
             keyframes: `@-webkit-keyframes shake-tl {
   0%,
   100% {
@@ -23086,7 +23086,7 @@ export const data = [
         upperTitle: "Jello",
         variations: [
           {
-            lowerTitle: "jello-horizontal",
+            variationTitle: "jello-horizontal",
             keyframes: `@-webkit-keyframes jello-horizontal {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -23149,7 +23149,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "jello-vertical",
+            variationTitle: "jello-vertical",
             keyframes: `@-webkit-keyframes jello-vertical {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -23212,7 +23212,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "jello-diagonal-1",
+            variationTitle: "jello-diagonal-1",
             keyframes: `@-webkit-keyframes jello-diagonal-1 {
   0% {
     -webkit-transform: skew(0deg 0deg);
@@ -23275,7 +23275,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "jello-diagonal-2",
+            variationTitle: "jello-diagonal-2",
             keyframes: `@-webkit-keyframes jello-diagonal-2 {
   0% {
     -webkit-transform: skew(0deg 0deg);
@@ -23343,7 +23343,7 @@ export const data = [
         upperTitle: "Wobble",
         variations: [
           {
-            lowerTitle: "wobble-hor-bottom",
+            variationTitle: "wobble-hor-bottom",
             keyframes: `@-webkit-keyframes wobble-hor-bottom {
   0%,
   100% {
@@ -23404,7 +23404,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "wobble-hor-top",
+            variationTitle: "wobble-hor-top",
             keyframes: `@-webkit-keyframes wobble-hor-top {
   0%,
   100% {
@@ -23465,7 +23465,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "wobble-ver-left",
+            variationTitle: "wobble-ver-left",
             keyframes: `@-webkit-keyframes wobble-ver-left {
   0%,
   100% {
@@ -23526,7 +23526,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "wobble-ver-right",
+            variationTitle: "wobble-ver-right",
             keyframes: `@-webkit-keyframes wobble-ver-right {
   0%,
   100% {
@@ -23592,7 +23592,7 @@ export const data = [
         upperTitle: "Bounce",
         variations: [
           {
-            lowerTitle: "bounce-top",
+            variationTitle: "bounce-top",
             keyframes: `@-webkit-keyframes bounce-top {
   0% {
     -webkit-transform: translateY(-45px);
@@ -23699,7 +23699,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-bottom",
+            variationTitle: "bounce-bottom",
             keyframes: `@-webkit-keyframes bounce-bottom {
   0% {
     -webkit-transform: translateY(45px);
@@ -23806,7 +23806,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-left",
+            variationTitle: "bounce-left",
             keyframes: `@-webkit-keyframes bounce-left {
   0% {
     -webkit-transform: translateX(-48px);
@@ -23915,7 +23915,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bounce-right",
+            variationTitle: "bounce-right",
             keyframes: ` */
 @-webkit-keyframes bounce-right {
   0% {
@@ -24030,7 +24030,7 @@ export const data = [
         upperTitle: "Pulsate",
         variations: [
           {
-            lowerTitle: "heartbeat",
+            variationTitle: "heartbeat",
             keyframes: `@-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -24101,7 +24101,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "pulsate-bck",
+            variationTitle: "pulsate-bck",
             keyframes: `@-webkit-keyframes pulsate-bck {
   0% {
     -webkit-transform: scale(1);
@@ -24132,7 +24132,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "pulsate-fwd",
+            variationTitle: "pulsate-fwd",
             keyframes: `@-webkit-keyframes pulsate-fwd {
   0% {
     -webkit-transform: scale(1);
@@ -24163,7 +24163,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "ping",
+            variationTitle: "ping",
             keyframes: `@-webkit-keyframes ping {
   0% {
     -webkit-transform: scale(0.2);
@@ -24205,7 +24205,7 @@ export const data = [
         upperTitle: "Blink",
         variations: [
           {
-            lowerTitle: "blink-1",
+            variationTitle: "blink-1",
             keyframes: `@-webkit-keyframes blink-1 {
   0%,
   50%,
@@ -24230,7 +24230,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "blink-2",
+            variationTitle: "blink-2",
             keyframes: `@-webkit-keyframes blink-2 {
   0% {
     opacity: 1;
@@ -24266,7 +24266,7 @@ export const data = [
         upperTitle: "Ken-Burns",
         variations: [
           {
-            lowerTitle: "kenburns-top",
+            variationTitle: "kenburns-top",
             keyframes: `@-webkit-keyframes kenburns-top {
   0% {
     -webkit-transform: scale(1) translateY(0);
@@ -24297,7 +24297,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "kenburns-top-right",
+            variationTitle: "kenburns-top-right",
             keyframes: `@-webkit-keyframes kenburns-top-right {
   0% {
     -webkit-transform: scale(1) translate(0, 0);
@@ -24328,7 +24328,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "kenburns-right",
+            variationTitle: "kenburns-right",
             keyframes: `@-webkit-keyframes kenburns-right {
   0% {
     -webkit-transform: scale(1) translate(0, 0);
@@ -24359,7 +24359,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "kenburns-bottom-right",
+            variationTitle: "kenburns-bottom-right",
             keyframes: `@-webkit-keyframes kenburns-bottom-right {
   0% {
     -webkit-transform: scale(1) translate(0, 0);
@@ -24390,7 +24390,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "kenburns-bottom",
+            variationTitle: "kenburns-bottom",
             keyframes: `@-webkit-keyframes kenburns-bottom {
   0% {
     -webkit-transform: scale(1) translateY(0);
@@ -24421,7 +24421,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "kenburns-bottom-left",
+            variationTitle: "kenburns-bottom-left",
             keyframes: `@-webkit-keyframes kenburns-bottom-left {
   0% {
     -webkit-transform: scale(1) translate(0, 0);
@@ -24452,7 +24452,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "kenburns-left",
+            variationTitle: "kenburns-left",
             keyframes: `@-webkit-keyframes kenburns-left {
   0% {
     -webkit-transform: scale(1) translate(0, 0);
@@ -24483,7 +24483,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "kenburns-top-left",
+            variationTitle: "kenburns-top-left",
             keyframes: `@-webkit-keyframes kenburns-top-left {
   0% {
     -webkit-transform: scale(1) translate(0, 0);
@@ -24519,7 +24519,7 @@ export const data = [
         upperTitle: "Bg-Pan",
         variations: [
           {
-            lowerTitle: "bg-pan-left",
+            variationTitle: "bg-pan-left",
             keyframes: `@-webkit-keyframes bg-pan-left {
   0% {
     background-position: 100% 50%;
@@ -24538,7 +24538,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bg-pan-right",
+            variationTitle: "bg-pan-right",
             keyframes: `@-webkit-keyframes bg-pan-right {
   0% {
     background-position: 0% 50%;
@@ -24557,7 +24557,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bg-pan-top",
+            variationTitle: "bg-pan-top",
             keyframes: `@-webkit-keyframes bg-pan-top {
   0% {
     background-position: 50% 100%;
@@ -24576,7 +24576,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bg-pan-bottom",
+            variationTitle: "bg-pan-bottom",
             keyframes: `@-webkit-keyframes bg-pan-bottom {
   0% {
     background-position: 50% 0%;
@@ -24595,7 +24595,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bg-pan-tr",
+            variationTitle: "bg-pan-tr",
             keyframes: `@-webkit-keyframes bg-pan-tr {
   0% {
     background-position: 0% 100%;
@@ -24614,7 +24614,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bg-pan-br",
+            variationTitle: "bg-pan-br",
             keyframes: `@-webkit-keyframes bg-pan-br {
   0% {
     background-position: 0% 0%;
@@ -24633,7 +24633,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bg-pan-bl",
+            variationTitle: "bg-pan-bl",
             keyframes: `@-webkit-keyframes bg-pan-bl {
   0% {
     background-position: 100% 0%;
@@ -24652,7 +24652,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "bg-pan-tl",
+            variationTitle: "bg-pan-tl",
             keyframes: `@-webkit-keyframes bg-pan-tl {
   0% {
     background-position: 100% 100%;
@@ -24676,7 +24676,7 @@ export const data = [
         upperTitle: "Color-Change",
         variations: [
           {
-            lowerTitle: "color-change-2x",
+            variationTitle: "color-change-2x",
             keyframes: `@-webkit-keyframes color-change-2x {
   0% {
     background: #19dcea;
@@ -24695,7 +24695,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "color-change-3x",
+            variationTitle: "color-change-3x",
             keyframes: `@-webkit-keyframes color-change-3x {
   0% {
     background: #19dcea;
@@ -24720,7 +24720,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "color-change-4x",
+            variationTitle: "color-change-4x",
             keyframes: `@-webkit-keyframes color-change-4x {
   0% {
     background: #19dcea;
@@ -24751,7 +24751,7 @@ export const data = [
 }`,
           },
           {
-            lowerTitle: "color-change-5x",
+            variationTitle: "color-change-5x",
             keyframes: `@-webkit-keyframes color-change-5x {
   0% {
     background: #19dcea;
