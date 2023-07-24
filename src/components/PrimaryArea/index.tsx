@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Animation from "./Animation";
 import { useAppSelector } from "../../hooks";
 import { useGlobalContext } from "../../context";
@@ -12,6 +12,7 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
 import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
+import usePrevious from "./usePrevious";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
@@ -19,24 +20,33 @@ type scrollVisibilityApiType = any;
 const PrimaryArea = () => {
   const [animationItems, setAnimationItems] = useState<AnimationGroup[]>([]);
 
-  const allAnimations = useAppSelector((state) => state.animations.animations);
+  const allAnimations = useAppSelector(
+    (state) => state.animationsReducer.animations
+  );
   const { selectedCategory, setSelectedGroup } = useGlobalContext();
 
   useEffect(() => {
     const getObjectByTitle = (selectedCategory: string) => {
       return allAnimations.find(
-        (animation) => animation.title === selectedCategory
+        (animation) => animation.categoryTitle === selectedCategory
       );
     };
 
     const animationByCategory = getObjectByTitle(selectedCategory);
     if (animationByCategory) {
       setAnimationItems(animationByCategory.groups);
-      setSelectedGroup(animationByCategory.groups[0].upperTitle);
+      setSelectedGroup(animationByCategory.groups[0].animationTitle);
     } else {
       setAnimationItems([]);
     }
   }, [allAnimations, selectedCategory, setSelectedGroup]);
+
+  const apiRef = useRef({} as scrollVisibilityApiType);
+  useEffect(() => {
+    apiRef.current?.scrollToItem?.(
+      apiRef.current?.getItemElementById(animationItems[0]?.animationTitle)
+    );
+  }, [animationItems]);
 
   // NOTE: for drag by mouse
   const { dragStart, dragStop, dragMove, dragging } = useDrag();
@@ -62,19 +72,21 @@ const PrimaryArea = () => {
           onMouseDown={() => dragStart}
           onMouseUp={() => dragStop}
           onMouseMove={handleDrag}
+          apiRef={apiRef}
+          className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
         >
-          <div
+          {/* <div
             className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
-          >
-            {animationItems.map(({ upperTitle }) => (
-              <Animation
-                itemId={upperTitle} // NOTE: itemId is required for track items
-                key={upperTitle}
-                upperTitle={upperTitle}
-                dragging={dragging}
-              />
-            ))}
-          </div>
+          > */}
+          {animationItems.map(({ animationTitle }) => (
+            <Animation
+              itemId={animationTitle} // NOTE: itemId is required for track items
+              key={animationTitle}
+              animationTitle={animationTitle}
+              dragging={dragging}
+            />
+          ))}
+          {/* </div> */}
         </ScrollMenu>
       </section>
       <section className={`p-2`}>

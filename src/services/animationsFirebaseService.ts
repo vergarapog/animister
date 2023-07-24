@@ -3,15 +3,15 @@ import { collection, getDocs } from "firebase/firestore";
 
 const animationCollectionRef = collection(db, "animations");
 
-import { Animation } from "../types";
+import { AnimationCategory } from "../types";
 
-const getAllAnimations = async (): Promise<Animation[]> => {
+const getAllAnimations = async (): Promise<AnimationCategory[]> => {
   try {
     const data = await getDocs(animationCollectionRef);
     const filteredData = data.docs.map((doc) => ({
       ...doc.data(),
       id: doc.id,
-    })) as Animation[];
+    })) as AnimationCategory[];
     return filteredData;
   } catch (err) {
     console.error(err);

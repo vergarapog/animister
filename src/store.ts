@@ -3,7 +3,7 @@ import animationsReducer from "./reducers/animationsReducer";
 
 const store = configureStore({
   reducer: {
-    animations: animationsReducer,
+    animationsReducer: animationsReducer,
   },
 });
 

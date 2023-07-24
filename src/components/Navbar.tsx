@@ -3,16 +3,16 @@ import { useGlobalContext } from "../context";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { animationCategories } from "../constants";
 
 const Navbar = () => {
-
-
-  const animations = useAppSelector((state) => state.animations.animations);
+  const animations = useAppSelector(
+    (state) => state.animationsReducer.animations
+  );
   const { selectedCategory, setSelectedCategory, setIsSideBarOpen } =
     useGlobalContext();
   const handleClick = (title: string) => {
     setSelectedCategory(title);
-    console.log("1", title, "2", selectedCategory);
   };
 
   return (
@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
           <div>
             <ul className="flex space-x-2 font-bold">
-              {animations.map((category) => {
+              {animationCategories.map((category) => {
                 if (category.title === selectedCategory) {
                   return (
                     <li
@@ -41,7 +41,7 @@ const Navbar = () => {
                 } else {
                   return (
                     <li
-                      className={`cursor-pointer select-none p-1 underline-offset-4 transition-all hover:scale-110 hover:underline`}
+                      className={`cursor-pointer select-none p-1 underline-offset-4 transition-all hover:scale-110 `}
                       key={category.id}
                       onClick={() => handleClick(category.title)}
                     >
