@@ -23,7 +23,8 @@ const PrimaryArea = () => {
   const allAnimations = useAppSelector(
     (state) => state.animationsReducer.animations
   );
-  const { selectedCategory, setSelectedGroup } = useGlobalContext();
+  const { selectedCategory, selectedGroup, setSelectedGroup } =
+    useGlobalContext();
 
   useEffect(() => {
     const getObjectByTitle = (selectedCategory: string) => {
@@ -91,6 +92,15 @@ const PrimaryArea = () => {
       </section>
       <section className={`p-2`}>
         <div className={`grid  grid-cols-3 gap-3`}>
+          {animationItems[0]?.variations?.map(({ variationTitle }) => {
+            return (
+              <AnimationVariation
+                key={variationTitle}
+                variationTitle={variationTitle}
+              />
+            );
+          })}
+          {/* {console.log(animationItems[0].variations[0])}
           <AnimationVariation />
           <AnimationVariation />
           <AnimationVariation />
@@ -102,7 +112,7 @@ const PrimaryArea = () => {
           <AnimationVariation />
           <AnimationVariation />
           <AnimationVariation />
-          <AnimationVariation />
+          <AnimationVariation /> */}
         </div>
       </section>
       <section className={`grow bg-gray-200`}></section>

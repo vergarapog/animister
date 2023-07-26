@@ -52,7 +52,6 @@ export const selectCount = (state: RootState) =>
 export const initializeAnimations = () => {
   return async (dispatch: Dispatch) => {
     const animations = await animationsFirebaseService.getAllAnimations();
-    console.log(animations);
     // const organizedAnimations = organizeByAnimationType(allAnimations);
     // console.log(organizedAnimations);
     dispatch(setAnimations(animations));
