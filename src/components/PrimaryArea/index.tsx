@@ -36,7 +36,10 @@ const PrimaryArea = () => {
     const animationByCategory = getObjectByTitle(selectedCategory);
     if (animationByCategory) {
       setAnimationItems(animationByCategory.groups);
-      setSelectedGroup(animationByCategory.groups[0].animationTitle);
+      setSelectedGroup({
+        index: 0,
+        animationTitle: animationByCategory.groups[0].animationTitle,
+      });
     } else {
       setAnimationItems([]);
     }
@@ -79,8 +82,9 @@ const PrimaryArea = () => {
           {/* <div
             className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
           > */}
-          {animationItems.map(({ animationTitle }) => (
+          {animationItems.map(({ animationTitle }, index) => (
             <Animation
+              index={index}
               itemId={animationTitle} // NOTE: itemId is required for track items
               key={animationTitle}
               animationTitle={animationTitle}
@@ -92,14 +96,16 @@ const PrimaryArea = () => {
       </section>
       <section className={`p-2`}>
         <div className={`grid  grid-cols-3 gap-3`}>
-          {animationItems[0]?.variations?.map(({ variationTitle }) => {
-            return (
-              <AnimationVariation
-                key={variationTitle}
-                variationTitle={variationTitle}
-              />
-            );
-          })}
+          {animationItems[selectedGroup.index]?.variations?.map(
+            ({ variationTitle }) => {
+              return (
+                <AnimationVariation
+                  key={variationTitle}
+                  variationTitle={variationTitle}
+                />
+              );
+            }
+          )}
           {/* {console.log(animationItems[0].variations[0])}
           <AnimationVariation />
           <AnimationVariation />
