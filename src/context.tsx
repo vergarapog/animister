@@ -43,8 +43,6 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
 
-  console.log(selectedGroup);
-
   return (
     <AppContext.Provider
       value={{

@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback, useMemo } from "react";
 import Animation from "./Animation";
 import { useAppSelector } from "../../hooks";
 import { useGlobalContext } from "../../context";
@@ -12,7 +12,6 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
 import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
-import usePrevious from "./usePrevious";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
@@ -23,28 +22,65 @@ const PrimaryArea = () => {
   const allAnimations = useAppSelector(
     (state) => state.animationsReducer.animations
   );
-  const { selectedCategory, selectedGroup, setSelectedGroup } =
-    useGlobalContext();
 
-  useEffect(() => {
-    const getObjectByTitle = (selectedCategory: string) => {
+  const {
+    selectedCategory,
+    selectedGroup,
+    setSelectedGroup,
+    setSelectedVariation,
+  } = useGlobalContext();
+
+  const getListByCategory = useCallback(
+    (selectedCategory: string) => {
       return allAnimations.find(
         (animation) => animation.categoryTitle === selectedCategory
       );
-    };
+    },
+    [allAnimations]
+  );
 
-    const animationByCategory = getObjectByTitle(selectedCategory);
-    if (animationByCategory) {
-      setAnimationItems(animationByCategory.groups);
+  const animationsByCategory = useMemo(() => {
+    return getListByCategory(selectedCategory);
+  }, [selectedCategory, getListByCategory]);
+
+  useEffect(() => {
+    if (animationsByCategory) {
+      setAnimationItems(animationsByCategory.groups);
       setSelectedGroup({
         index: 0,
-        animationTitle: animationByCategory.groups[0].animationTitle,
+        animationTitle: animationsByCategory.groups[0].animationTitle,
       });
+      setSelectedVariation(
+        animationsByCategory.groups[0].variations[0].variationTitle
+      );
     } else {
       setAnimationItems([]);
     }
-  }, [allAnimations, selectedCategory, setSelectedGroup]);
+  }, [
+    animationsByCategory,
+    selectedCategory,
+    setSelectedGroup,
+    setSelectedVariation,
+    getListByCategory,
+  ]);
 
+  // useEffect(() => {
+  //   if (animationsByCategory) {
+  //     setSelectedVariation(
+  //       animationsByCategory.groups[selectedGroup.index].variations[0]
+  //         .variationTitle
+  //     );
+  //   }
+  // }, [
+  //   animationsByCategory,
+  //   selectedGroup,
+  //   selectedCategory,
+  //   setSelectedGroup,
+  //   setSelectedVariation,
+  //   getListByCategory,
+  // ]);
+
+  //for re-scroll to first animation group on category change
   const apiRef = useRef({} as scrollVisibilityApiType);
   useEffect(() => {
     apiRef.current?.scrollToItem?.(
@@ -79,19 +115,16 @@ const PrimaryArea = () => {
           apiRef={apiRef}
           className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
         >
-          {/* <div
-            className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
-          > */}
-          {animationItems.map(({ animationTitle }, index) => (
+          {animationItems.map(({ animationTitle, variations }, index) => (
             <Animation
               index={index}
               itemId={animationTitle} // NOTE: itemId is required for track items
               key={animationTitle}
               animationTitle={animationTitle}
               dragging={dragging}
+              firstVariationTitle={variations[0].variationTitle}
             />
           ))}
-          {/* </div> */}
         </ScrollMenu>
       </section>
       <section className={`p-2`}>
@@ -106,19 +139,6 @@ const PrimaryArea = () => {
               );
             }
           )}
-          {/* {console.log(animationItems[0].variations[0])}
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation />
-          <AnimationVariation /> */}
         </div>
       </section>
       <section className={`grow bg-gray-200`}></section>
