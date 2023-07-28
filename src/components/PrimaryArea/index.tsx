@@ -99,16 +99,20 @@ const PrimaryArea = () => {
           apiRef={apiRef}
           className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
         >
-          {animationItems.map(({ animationTitle, variations }, index) => (
-            <Animation
-              index={index}
-              itemId={animationTitle} // NOTE: itemId is required for track items
-              key={animationTitle}
-              animationTitle={animationTitle}
-              dragging={dragging}
-              firstVariationTitle={variations[0].variationTitle}
-            />
-          ))}
+          {animationItems.length !== 0 ? (
+            animationItems.map(({ animationTitle, variations }, index) => (
+              <Animation
+                index={index}
+                itemId={animationTitle} // NOTE: itemId is required for track items
+                key={animationTitle}
+                animationTitle={animationTitle}
+                dragging={dragging}
+                firstVariationTitle={variations[0].variationTitle}
+              />
+            ))
+          ) : (
+            <LoadingSkeletons numOfSkeletons={10} />
+          )}
         </ScrollMenu>
       </section>
       <section className={`p-2`}>
@@ -127,6 +131,29 @@ const PrimaryArea = () => {
       </section>
       <section className={`grow bg-gray-200`}></section>
     </main>
+  );
+};
+
+type LoadingSkeletonsProps = {
+  numOfSkeletons: number;
+};
+
+const LoadingSkeletons = ({ numOfSkeletons }: LoadingSkeletonsProps) => {
+  return (
+    <div className="flex">
+      {[...Array(numOfSkeletons)].map((_, index) => {
+        const animationDelay = index * 0.15 + "s"; // Calculate the animation delay for each skeleton
+        return (
+          <div
+            key={index}
+            style={{ animationDelay }}
+            className="min-w mx-2 flex h-32 min-w-[128px] animate-pulse cursor-pointer select-none items-center justify-center rounded-full bg-primary"
+          >
+            {/* <div className="h-5 w-3/4 rounded-md bg-gray-300"></div> */}
+          </div>
+        );
+      })}
+    </div>
   );
 };
 
