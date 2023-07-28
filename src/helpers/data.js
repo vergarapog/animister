@@ -1,11 +1,11 @@
 export const data = [
   {
-    id: "0",
-    title: "Basic",
+    index: "0",
+    categoryTitle: "Basic",
 
     groups: [
       {
-        upperTitle: "Scale-Up",
+        animationTitle: "Scale-Up",
         variations: [
           {
             variationTitle: "scale-up-center",
@@ -432,7 +432,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Scale-Down",
+        animationTitle: "Scale-Down",
         variations: [
           {
             variationTitle: "scale-down-center",
@@ -881,7 +881,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Rotate",
+        animationTitle: "Rotate",
         variations: [
           {
             variationTitle: "rotate-center",
@@ -1520,7 +1520,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Rotate-Scale",
+        animationTitle: "Rotate-Scale",
         variations: [
           {
             variationTitle: "rotate-scale-up",
@@ -1835,7 +1835,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Rotate-90",
+        animationTitle: "Rotate-90",
         variations: [
           {
             variationTitle: "rotate-90-cw",
@@ -2436,7 +2436,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flip",
+        animationTitle: "Flip",
         variations: [
           {
             variationTitle: "flip-horizontal-bottom",
@@ -2809,7 +2809,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flip-2",
+        animationTitle: "Flip-2",
         variations: [
           {
             variationTitle: "flip-2-hor-top-1",
@@ -3311,7 +3311,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flip-Scale",
+        animationTitle: "Flip-Scale",
         variations: [
           {
             variationTitle: "flip-scale-up-hor",
@@ -3565,7 +3565,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flip-Scale-2",
+        animationTitle: "Flip-Scale-2",
         variations: [
           {
             variationTitle: "flip-scale-2-hor-top",
@@ -3742,7 +3742,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Swing",
+        animationTitle: "Swing",
         variations: [
           {
             variationTitle: "swing-top-fwd",
@@ -4244,7 +4244,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide",
+        animationTitle: "Slide",
         variations: [
           {
             variationTitle: "slide-top",
@@ -4434,7 +4434,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-Bck",
+        animationTitle: "Slide-Bck",
         variations: [
           {
             variationTitle: "slide-bck-center",
@@ -4646,7 +4646,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-Fwd",
+        animationTitle: "Slide-Fwd",
         variations: [
           {
             variationTitle: "slide-fwd-center",
@@ -4858,7 +4858,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-Rotate",
+        animationTitle: "Slide-Rotate",
         variations: [
           {
             variationTitle: "slide-rotate-hor-top",
@@ -5203,7 +5203,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Shadow-Drop",
+        animationTitle: "Shadow-Drop",
         variations: [
           {
             variationTitle: "shadow-drop-center",
@@ -5469,7 +5469,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Shadow-Drop-2",
+        animationTitle: "Shadow-Drop-2",
         variations: [
           {
             variationTitle: "shadow-drop-2-center",
@@ -5823,7 +5823,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Shadow-Pop",
+        animationTitle: "Shadow-Pop",
         variations: [
           {
             variationTitle: "shadow-pop-tr",
@@ -6000,7 +6000,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Shadow-Inset",
+        animationTitle: "Shadow-Inset",
         variations: [
           {
             variationTitle: "shadow-inset-center",
@@ -6273,11 +6273,11 @@ export const data = [
     ],
   },
   {
-    id: "1",
-    title: "Entrances",
+    index: "1",
+    categoryTitle: "Entrances",
     groups: [
       {
-        upperTitle: "Scale-In",
+        animationTitle: "Scale-In",
         variations: [
           {
             variationTitle: "scale-in-center",
@@ -6784,7 +6784,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Rotate-In",
+        animationTitle: "Rotate-In",
         variations: [
           {
             variationTitle: "rotate-in-center",
@@ -7204,7 +7204,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Rotate-In-2",
+        animationTitle: "Rotate-In-2",
         variations: [
           {
             variationTitle: "rotate-in-2-cw",
@@ -7652,7 +7652,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Swirl-In",
+        animationTitle: "Swirl-In",
         variations: [
           {
             variationTitle: "swirl-in-fwd",
@@ -8273,7 +8273,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flip-In",
+        animationTitle: "Flip-In",
         variations: [
           {
             variationTitle: "flip-in-hor-bottom",
@@ -8494,7 +8494,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slit-In",
+        animationTitle: "Slit-In",
         variations: [
           {
             variationTitle: "slit-in-vertical",
@@ -8663,7 +8663,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-In",
+        animationTitle: "Slide-In",
         variations: [
           {
             variationTitle: "slide-in-top",
@@ -8884,7 +8884,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-In-Fwd",
+        animationTitle: "Slide-In-Fwd",
         variations: [
           {
             variationTitle: "slide-in-fwd-center",
@@ -9134,7 +9134,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-In-Bck",
+        animationTitle: "Slide-In-Bck",
         variations: [
           {
             variationTitle: "slide-in-bck-center",
@@ -9382,7 +9382,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-In-Blurred",
+        animationTitle: "Slide-In-Blurred",
         variations: [
           {
             variationTitle: "slide-in-blurred-top",
@@ -9731,7 +9731,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-In-Elliptic",
+        animationTitle: "Slide-In-Elliptic",
         variations: [
           {
             variationTitle: "slide-in-elliptic-top-fwd",
@@ -10016,7 +10016,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Bounce-In",
+        animationTitle: "Bounce-In",
         variations: [
           {
             variationTitle: "bounce-in-top",
@@ -10663,7 +10663,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Roll-In",
+        animationTitle: "Roll-In",
         variations: [
           {
             variationTitle: "roll-in-left",
@@ -10776,7 +10776,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Roll-In-Blurred",
+        animationTitle: "Roll-In-Blurred",
         variations: [
           {
             variationTitle: "roll-in-blurred-left",
@@ -10917,7 +10917,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Tilt-In",
+        animationTitle: "Tilt-In",
         variations: [
           {
             variationTitle: "tilt-in-top-1",
@@ -11262,7 +11262,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Tilt-In-Fwd",
+        animationTitle: "Tilt-In-Fwd",
         variations: [
           {
             variationTitle: "tilt-in-fwd-tr",
@@ -11392,7 +11392,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Swing-In",
+        animationTitle: "Swing-In",
         variations: [
           {
             variationTitle: "swing-in-top-fwd",
@@ -11677,7 +11677,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Fade-In",
+        animationTitle: "Fade-In",
         variations: [
           {
             variationTitle: "fade-in",
@@ -11972,7 +11972,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Puff-In",
+        animationTitle: "Puff-In",
         variations: [
           {
             variationTitle: "puff-in-center",
@@ -12426,7 +12426,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flicker-In",
+        animationTitle: "Flicker-In",
         variations: [
           {
             variationTitle: "flicker-in-1",
@@ -12939,11 +12939,11 @@ export const data = [
     ],
   },
   {
-    id: "2",
-    title: "Exits",
+    index: "2",
+    categoryTitle: "Exits",
     groups: [
       {
-        upperTitle: "Scale-Out",
+        animationTitle: "Scale-Out",
         variations: [
           {
             variationTitle: "scale-out-center",
@@ -13450,7 +13450,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Rotate-Out",
+        animationTitle: "Rotate-Out",
         variations: [
           {
             variationTitle: "rotate-out-center",
@@ -13870,7 +13870,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Rotate-Out-2",
+        animationTitle: "Rotate-Out-2",
         variations: [
           {
             variationTitle: "rotate-out-2-cw",
@@ -14263,7 +14263,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Swirl-Out",
+        animationTitle: "Swirl-Out",
         variations: [
           {
             variationTitle: "swirl-out-bck",
@@ -14882,7 +14882,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flip-Out",
+        animationTitle: "Flip-Out",
         variations: [
           {
             variationTitle: "flip-out-hor-top",
@@ -15103,7 +15103,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slit-Out",
+        animationTitle: "Slit-Out",
         variations: [
           {
             variationTitle: "slit-out-vertical",
@@ -15256,7 +15256,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-Out",
+        animationTitle: "Slide-Out",
         variations: [
           {
             variationTitle: "slide-out-top",
@@ -15477,7 +15477,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-Out-Bck",
+        animationTitle: "Slide-Out-Bck",
         variations: [
           {
             variationTitle: "slide-out-bck-center",
@@ -15731,7 +15731,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-Out-Fwd",
+        animationTitle: "Slide-Out-Fwd",
         variations: [
           {
             variationTitle: "slide-out-fwd-center",
@@ -15979,7 +15979,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-Out-Blurred",
+        animationTitle: "Slide-Out-Blurred",
         variations: [
           {
             variationTitle: "slide-out-blurred-top",
@@ -16328,7 +16328,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Slide-Out-Elliptic",
+        animationTitle: "Slide-Out-Elliptic",
         variations: [
           {
             variationTitle: "slide-out-elliptic-top-bck",
@@ -16613,7 +16613,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Bounce-Out",
+        animationTitle: "Bounce-Out",
         variations: [
           {
             variationTitle: "bounce-out-top",
@@ -17268,7 +17268,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Roll-Out",
+        animationTitle: "Roll-Out",
         variations: [
           {
             variationTitle: "roll-out-left",
@@ -17381,7 +17381,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Roll-Out-Blurred",
+        animationTitle: "Roll-Out-Blurred",
         variations: [
           {
             variationTitle: "roll-out-blurred-left",
@@ -17522,7 +17522,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Swing-Out",
+        animationTitle: "Swing-Out",
         variations: [
           {
             variationTitle: "swing-out-top-bck",
@@ -17807,7 +17807,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Fade-Out",
+        animationTitle: "Fade-Out",
         variations: [
           {
             variationTitle: "fade-out",
@@ -18101,7 +18101,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Puff-Out",
+        animationTitle: "Puff-Out",
         variations: [
           {
             variationTitle: "puff-out-center",
@@ -18556,7 +18556,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flicker-Out",
+        animationTitle: "Flicker-Out",
         variations: [
           {
             variationTitle: "flicker-out-1",
@@ -19133,11 +19133,11 @@ export const data = [
     ],
   },
   {
-    id: "3",
-    title: "Text",
+    index: "3",
+    categoryTitle: "Text",
     groups: [
       {
-        upperTitle: "Tracking-In",
+        animationTitle: "Tracking-In",
         variations: [
           {
             variationTitle: "tracking-in-expand",
@@ -19408,7 +19408,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Tracking-Out",
+        animationTitle: "Tracking-Out",
         variations: [
           {
             variationTitle: "tracking-out-contract",
@@ -19677,7 +19677,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Focus-In",
+        animationTitle: "Focus-In",
         variations: [
           {
             variationTitle: "text-focus-in",
@@ -19841,7 +19841,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Blur-Out",
+        animationTitle: "Blur-Out",
         variations: [
           {
             variationTitle: "text-blur-out",
@@ -19985,7 +19985,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flicker",
+        animationTitle: "Flicker",
         variations: [
           {
             variationTitle: "text-flicker-in-glow",
@@ -20496,7 +20496,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Shadow-Drop",
+        animationTitle: "Shadow-Drop",
         variations: [
           {
             variationTitle: "text-shadow-drop-center",
@@ -20672,7 +20672,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Shadow-Pop",
+        animationTitle: "Shadow-Pop",
         variations: [
           {
             variationTitle: "text-shadow-pop-top",
@@ -20893,7 +20893,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Pop-Up",
+        animationTitle: "Pop-Up",
         variations: [
           {
             variationTitle: "text-pop-up-top",
@@ -21181,11 +21181,11 @@ export const data = [
     ],
   },
   {
-    id: "4",
-    title: "Attention",
+    index: "4",
+    categoryTitle: "Attention",
     groups: [
       {
-        upperTitle: "Vibrate",
+        animationTitle: "Vibrate",
         variations: [
           {
             variationTitle: "vibrate-1",
@@ -21395,7 +21395,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Flicker",
+        animationTitle: "Flicker",
         variations: [
           {
             variationTitle: "flicker-1",
@@ -22339,7 +22339,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Shake",
+        animationTitle: "Shake",
         variations: [
           {
             variationTitle: "shake-horizontal",
@@ -23083,7 +23083,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Jello",
+        animationTitle: "Jello",
         variations: [
           {
             variationTitle: "jello-horizontal",
@@ -23340,7 +23340,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Wobble",
+        animationTitle: "Wobble",
         variations: [
           {
             variationTitle: "wobble-hor-bottom",
@@ -23589,7 +23589,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Bounce",
+        animationTitle: "Bounce",
         variations: [
           {
             variationTitle: "bounce-top",
@@ -24027,7 +24027,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Pulsate",
+        animationTitle: "Pulsate",
         variations: [
           {
             variationTitle: "heartbeat",
@@ -24202,7 +24202,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Blink",
+        animationTitle: "Blink",
         variations: [
           {
             variationTitle: "blink-1",
@@ -24259,11 +24259,11 @@ export const data = [
     ],
   },
   {
-    id: "5",
-    title: "Background",
+    index: "5",
+    categoryTitle: "Background",
     groups: [
       {
-        upperTitle: "Ken-Burns",
+        animationTitle: "Ken-Burns",
         variations: [
           {
             variationTitle: "kenburns-top",
@@ -24516,7 +24516,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Bg-Pan",
+        animationTitle: "Bg-Pan",
         variations: [
           {
             variationTitle: "bg-pan-left",
@@ -24673,7 +24673,7 @@ export const data = [
         ],
       },
       {
-        upperTitle: "Color-Change",
+        animationTitle: "Color-Change",
         variations: [
           {
             variationTitle: "color-change-2x",

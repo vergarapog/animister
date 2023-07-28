@@ -4,8 +4,10 @@ import React, { useState, useContext, createContext } from "react";
 interface AppContextType {
   selectedCategory: string;
   setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
-  selectedGroup: string;
-  setSelectedGroup: React.Dispatch<React.SetStateAction<string>>;
+  selectedGroup: { index: number; animationTitle: string };
+  setSelectedGroup: React.Dispatch<
+    React.SetStateAction<{ index: number; animationTitle: string }>
+  >;
   selectedVariation: string;
   setSelectedVariation: React.Dispatch<React.SetStateAction<string>>;
   errorMessage: string;
@@ -17,7 +19,7 @@ interface AppContextType {
 const AppContext = createContext<AppContextType>({
   selectedCategory: "Basic",
   setSelectedCategory: () => {},
-  selectedGroup: "",
+  selectedGroup: { index: 0, animationTitle: "" },
   setSelectedGroup: () => {},
   selectedVariation: "",
   setSelectedVariation: () => {},
@@ -33,7 +35,10 @@ interface AppProviderProps {
 
 const AppProvider = ({ children }: AppProviderProps) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Basic");
-  const [selectedGroup, setSelectedGroup] = useState<string>("");
+  const [selectedGroup, setSelectedGroup] = useState<{
+    index: number;
+    animationTitle: string;
+  }>({ index: 0, animationTitle: "" });
   const [selectedVariation, setSelectedVariation] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);

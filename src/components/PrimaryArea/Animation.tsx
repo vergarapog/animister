@@ -1,30 +1,42 @@
 import { useGlobalContext } from "../../context";
 
 type Props = {
+  index: number;
   itemId: string;
-  upperTitle: string;
+  animationTitle: string;
   dragging: boolean;
+  firstVariationTitle: string;
 };
 
-const Animation = ({ itemId, upperTitle, dragging }: Props) => {
-  const { selectedGroup, setSelectedGroup } = useGlobalContext();
+const Animation = ({
+  index,
+  itemId,
+  animationTitle,
+  dragging,
+  firstVariationTitle,
+}: Props) => {
+  const { selectedGroup, setSelectedGroup, setSelectedVariation } =
+    useGlobalContext();
 
   const handleClick = () => {
     if (dragging) {
       return false;
     }
-    setSelectedGroup(upperTitle);
+    setSelectedGroup({ index: index, animationTitle: animationTitle });
+    setSelectedVariation(firstVariationTitle);
   };
 
   return (
     <div
       key={itemId}
-      className={`min-w flex h-32 min-w-[128px] cursor-pointer select-none items-center justify-center rounded-full  ${
-        selectedGroup === upperTitle ? "bg-accent" : "bg-primary"
+      className={`min-w mx-2 flex h-32 min-w-[128px] cursor-pointer select-none items-center justify-center rounded-full  ${
+        selectedGroup.animationTitle === animationTitle
+          ? "bg-accent"
+          : "bg-primary"
       }`}
       onClick={handleClick}
     >
-      <div>{upperTitle}</div>
+      <div>{animationTitle}</div>
     </div>
   );
 };
