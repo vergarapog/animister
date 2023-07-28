@@ -17,8 +17,6 @@ import AnimationVariation from "./AnimationVariation";
 type scrollVisibilityApiType = any;
 
 const PrimaryArea = () => {
-  const [animationItems, setAnimationItems] = useState<AnimationGroup[]>([]);
-
   const allAnimations = useAppSelector(
     (state) => state.animationsReducer.animations
   );
@@ -29,6 +27,8 @@ const PrimaryArea = () => {
     setSelectedGroup,
     setSelectedVariation,
   } = useGlobalContext();
+
+  const [animationItems, setAnimationItems] = useState<AnimationGroup[]>([]);
 
   const getListByCategory = useCallback(
     (selectedCategory: string) => {
@@ -63,22 +63,6 @@ const PrimaryArea = () => {
     setSelectedVariation,
     getListByCategory,
   ]);
-
-  // useEffect(() => {
-  //   if (animationsByCategory) {
-  //     setSelectedVariation(
-  //       animationsByCategory.groups[selectedGroup.index].variations[0]
-  //         .variationTitle
-  //     );
-  //   }
-  // }, [
-  //   animationsByCategory,
-  //   selectedGroup,
-  //   selectedCategory,
-  //   setSelectedGroup,
-  //   setSelectedVariation,
-  //   getListByCategory,
-  // ]);
 
   //for re-scroll to first animation group on category change
   const apiRef = useRef({} as scrollVisibilityApiType);
