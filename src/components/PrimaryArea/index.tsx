@@ -111,13 +111,13 @@ const PrimaryArea = () => {
               />
             ))
           ) : (
-            <LoadingSkeletons numOfSkeletons={10} />
+            <LoadingSkeletonsAnimationGroup numOfSkeletons={10} />
           )}
         </ScrollMenu>
       </section>
       <section className={`p-2`}>
         <div className={`grid  grid-cols-3 gap-3`}>
-          {animationItems[selectedGroup.index]?.variations?.map(
+          {/* {animationItems[selectedGroup.index]?.variations?.map(
             ({ variationTitle }) => {
               return (
                 <AnimationVariation
@@ -126,6 +126,20 @@ const PrimaryArea = () => {
                 />
               );
             }
+          )} */}
+          {animationItems.length !== 0 ? (
+            animationItems[selectedGroup.index]?.variations?.map(
+              ({ variationTitle }) => {
+                return (
+                  <AnimationVariation
+                    key={variationTitle}
+                    variationTitle={variationTitle}
+                  />
+                );
+              }
+            )
+          ) : (
+            <LoadingSkeletonsVariation numOfSkeletons={18} />
           )}
         </div>
       </section>
@@ -134,11 +148,13 @@ const PrimaryArea = () => {
   );
 };
 
-type LoadingSkeletonsProps = {
+type LoadingSkeletonsAnimationGroupProps = {
   numOfSkeletons: number;
 };
 
-const LoadingSkeletons = ({ numOfSkeletons }: LoadingSkeletonsProps) => {
+const LoadingSkeletonsAnimationGroup = ({
+  numOfSkeletons,
+}: LoadingSkeletonsAnimationGroupProps) => {
   return (
     <div className="flex">
       {[...Array(numOfSkeletons)].map((_, index) => {
@@ -149,11 +165,37 @@ const LoadingSkeletons = ({ numOfSkeletons }: LoadingSkeletonsProps) => {
             style={{ animationDelay }}
             className="min-w mx-2 flex h-32 min-w-[128px] animate-pulse cursor-pointer select-none items-center justify-center rounded-full bg-primary"
           >
-            {/* <div className="h-5 w-3/4 rounded-md bg-gray-300"></div> */}
+            <div className="h-5 w-3/4 animate-pulse rounded-md bg-gray-300 opacity-50"></div>
           </div>
         );
       })}
     </div>
+  );
+};
+
+type LoadingSkeletonsVariationProps = {
+  numOfSkeletons: number;
+};
+
+const LoadingSkeletonsVariation = ({
+  numOfSkeletons,
+}: LoadingSkeletonsVariationProps) => {
+  return (
+    <>
+      {[...Array(numOfSkeletons)].map((_, index) => {
+        const animationDelay = index * 0.15 + "s"; // Calculate the animation delay for each skeleton
+        return (
+          <div
+            key={index}
+            style={{ animationDelay }}
+            // className="min-w mx-2 flex h-32 min-w-[128px] animate-pulse cursor-pointer select-none items-center justify-center rounded-full bg-primary"
+            className="flex animate-pulse items-center justify-center rounded bg-gray-200 p-6"
+          >
+            {/* <div className="h-5 w-3/4 animate-pulse rounded-md bg-gray-200 opacity-50 "></div> */}
+          </div>
+        );
+      })}
+    </>
   );
 };
 
