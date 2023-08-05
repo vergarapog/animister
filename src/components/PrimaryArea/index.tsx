@@ -143,7 +143,9 @@ const PrimaryArea = () => {
           )}
         </div>
       </section>
-      <section className={`grow bg-gray-200`}></section>
+      <section className={`relative grow bg-gray-200`}>
+        <div className="absolute left-1/2 top-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/2 animate-[scale-up-center_1s_ease-in-out_infinite]  bg-primary"></div>
+      </section>
     </main>
   );
 };
