@@ -1,4 +1,3 @@
-import { useAppSelector } from "../hooks";
 import { useGlobalContext } from "../context";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,9 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { animationCategories } from "../constants";
 
 const Navbar = () => {
-  const animations = useAppSelector(
-    (state) => state.animationsReducer.animations
-  );
   const { selectedCategory, setSelectedCategory, setIsSideBarOpen } =
     useGlobalContext();
   const handleClick = (title: string) => {
@@ -52,33 +48,6 @@ const Navbar = () => {
               })}
             </ul>
           </div>
-          {/* <div>
-            <ul className="flex space-x-2 font-bold">
-              {animations.map((category) => {
-                if (category.title === selectedCategory) {
-                  return (
-                    <li
-                      className={`cursor-pointer select-none rounded bg-accent p-1 `}
-                      key={category.id}
-                      onClick={() => handleClick(category.title)}
-                    >
-                      {category.title}
-                    </li>
-                  );
-                } else {
-                  return (
-                    <li
-                      className={`cursor-pointer select-none p-1 underline-offset-4 transition-all hover:scale-110 hover:underline`}
-                      key={category.id}
-                      onClick={() => handleClick(category.title)}
-                    >
-                      {category.title}
-                    </li>
-                  );
-                }
-              })}
-            </ul>
-          </div> */}
         </div>
         <div onClick={() => setIsSideBarOpen(true)}>
           <FontAwesomeIcon

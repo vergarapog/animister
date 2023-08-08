@@ -1,6 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 import { useEffect, useState, useRef, useCallback, useMemo } from "react";
+
 import Animation from "./Animation";
+import AnimatedObject from "./AnimatedObject";
+
 import { useAppSelector } from "../../hooks";
 import { useGlobalContext } from "../../context";
 import { AnimationGroup } from "../../types";
@@ -25,10 +28,13 @@ const PrimaryArea = () => {
     selectedCategory,
     selectedGroup,
     setSelectedGroup,
+    selectedVariation,
     setSelectedVariation,
   } = useGlobalContext();
 
   const [animationItems, setAnimationItems] = useState<AnimationGroup[]>([]);
+
+  const animationCSS = `${selectedVariation} 0.4s ease forwards`;
 
   const getListByCategory = useCallback(
     (selectedCategory: string) => {
@@ -117,16 +123,6 @@ const PrimaryArea = () => {
       </section>
       <section className={`p-2`}>
         <div className={`grid  grid-cols-3 gap-3`}>
-          {/* {animationItems[selectedGroup.index]?.variations?.map(
-            ({ variationTitle }) => {
-              return (
-                <AnimationVariation
-                  key={variationTitle}
-                  variationTitle={variationTitle}
-                />
-              );
-            }
-          )} */}
           {animationItems.length !== 0 ? (
             animationItems[selectedGroup.index]?.variations?.map(
               ({ variationTitle }) => {
@@ -144,7 +140,7 @@ const PrimaryArea = () => {
         </div>
       </section>
       <section className={`relative grow bg-gray-200`}>
-        <div className="absolute left-1/2 top-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/2 animate-[scale-up-center_1s_ease-in-out_infinite]  bg-primary"></div>
+        <AnimatedObject objectType="circle" animationCSS={animationCSS} />
       </section>
     </main>
   );
