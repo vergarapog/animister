@@ -15,6 +15,7 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
 import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
+import Options from "./Options";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
@@ -140,7 +141,8 @@ const PrimaryArea = () => {
         </div>
       </section>
       <section className={`relative grow bg-gray-200`}>
-        <AnimatedObject objectType="circle" animationCSS={animationCSS} />
+        <Options />
+        <AnimatedObject animationCSS={animationCSS} />
       </section>
     </main>
   );

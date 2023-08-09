@@ -26,3 +26,8 @@ export interface Variation {
   variationTitle: string;
   keyframes: string;
 }
+
+// export type OptionsFormValues = {
+//   object: "box" | "circle"
+//   duration: string
+// }
