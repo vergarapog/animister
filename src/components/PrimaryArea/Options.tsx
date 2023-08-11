@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAppSelector, useAppDispatch } from "../../hooks";
 import {
   setObjectType,
@@ -22,6 +22,14 @@ const Options = () => {
   } = useAppSelector((state) => state.optionsReducer);
 
   const [isInfinite, setIsInfinite] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (isInfinite) {
+      dispatch(setIterationCount("infinite"));
+    } else {
+      dispatch(setIterationCount("1"));
+    }
+  }, [isInfinite]);
 
   const dispatch = useAppDispatch();
 
@@ -60,11 +68,6 @@ const Options = () => {
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     setIsInfinite((prev) => !prev);
-    if (isInfinite) {
-      dispatch(setIterationCount("infinite"));
-    } else {
-      dispatch(setIterationCount("1"));
-    }
   };
 
   const handleDirectionChange = (
