@@ -4,19 +4,33 @@ import { useAppSelector } from "../../hooks";
 import { useState, useEffect } from "react";
 
 const AnimatedObject = () => {
-  const { objectType, duration } = useAppSelector(
-    (state) => state.optionsReducer
-  );
+  const {
+    duration,
+    objectType,
+    timingFunction,
+    delay,
+    iterationCount,
+    direction,
+    fillMode,
+  } = useAppSelector((state) => state.optionsReducer);
 
   const { selectedVariation } = useGlobalContext();
 
-  const animationCSS = `${selectedVariation} ${duration}s ease forwards`;
+  const animationCSS = `${selectedVariation} ${duration}s ${timingFunction} ${delay}s ${iterationCount} ${direction} ${fillMode}`;
 
   //force react to remount by key treating it as new instance , to replay the animation
   const [key, setKey] = useState(0);
   useEffect(() => {
     setKey((prevKey) => prevKey + 1);
-  }, [objectType, duration]);
+  }, [
+    objectType,
+    duration,
+    timingFunction,
+    delay,
+    iterationCount,
+    direction,
+    fillMode,
+  ]);
 
   switch (objectType) {
     case "box":
