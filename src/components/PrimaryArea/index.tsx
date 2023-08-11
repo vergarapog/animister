@@ -29,13 +29,10 @@ const PrimaryArea = () => {
     selectedCategory,
     selectedGroup,
     setSelectedGroup,
-    selectedVariation,
     setSelectedVariation,
   } = useGlobalContext();
 
   const [animationItems, setAnimationItems] = useState<AnimationGroup[]>([]);
-
-  const animationCSS = `${selectedVariation} 0.4s ease forwards`;
 
   const getListByCategory = useCallback(
     (selectedCategory: string) => {
@@ -142,7 +139,7 @@ const PrimaryArea = () => {
       </section>
       <section className={`relative grow bg-gray-200`}>
         <Options />
-        <AnimatedObject animationCSS={animationCSS} />
+        <AnimatedObject />
       </section>
     </main>
   );

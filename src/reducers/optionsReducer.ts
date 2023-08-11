@@ -7,7 +7,7 @@ interface OptionsSliceState {
 
 const initialState: OptionsSliceState = {
   objectType: "box",
-  duration: "1",
+  duration: "0.4",
 };
 
 export const selectedAnimationSlice = createSlice({
@@ -18,7 +18,7 @@ export const selectedAnimationSlice = createSlice({
       state.objectType = action.payload;
     },
     setDuration: (state, action) => {
-      state.objectType = action.payload;
+      state.duration = action.payload;
     },
   },
 });

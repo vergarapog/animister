@@ -1,20 +1,22 @@
+import { useGlobalContext } from "../../context";
 import assertNever from "../../helpers/assertNever";
 import { useAppSelector } from "../../hooks";
 import { useState, useEffect } from "react";
 
-type Props = {
-  animationCSS: string;
-};
+const AnimatedObject = () => {
+  const { objectType, duration } = useAppSelector(
+    (state) => state.optionsReducer
+  );
 
-const AnimatedObject = ({ animationCSS }: Props) => {
-  const objectType = useAppSelector((state) => state.optionsReducer.objectType);
+  const { selectedVariation } = useGlobalContext();
 
-  //force react to remount by key treatint it as new instance , to replay the animation
+  const animationCSS = `${selectedVariation} ${duration}s ease forwards`;
+
+  //force react to remount by key treating it as new instance , to replay the animation
   const [key, setKey] = useState(0);
-
   useEffect(() => {
     setKey((prevKey) => prevKey + 1);
-  }, [objectType]);
+  }, [objectType, duration]);
 
   switch (objectType) {
     case "box":

@@ -8,19 +8,24 @@ const Options = () => {
 
   const dispatch = useAppDispatch();
 
-  // const handleObjectTypeChange = (
-  //   e: React.ChangeEventHandler<HTMLSelectElement>
+  const handleObjectTypeChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const newObjectType = event.target.value;
+    dispatch(setObjectType(newObjectType));
+  };
+
+  const handleDurationChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newDuration = event.target.value;
+    dispatch(setDuration(newDuration));
+  };
+
+  // const handleObjectTypeChange: React.ChangeEventHandler<HTMLSelectElement> = (
+  //   e
   // ) => {
   //   const newObjectType = e.target.value;
   //   dispatch(setObjectType(newObjectType));
   // };
-
-  const handleObjectTypeChange: React.ChangeEventHandler<HTMLSelectElement> = (
-    e
-  ) => {
-    const newObjectType = e.target.value;
-    dispatch(setObjectType(newObjectType));
-  };
 
   return (
     <div className="absolute left-6 top-6 h-64 w-48 bg-white text-primarydark">
@@ -53,6 +58,7 @@ const Options = () => {
             className="w-full px-2 outline outline-1"
             placeholder="duration in seconds"
             value={duration}
+            onChange={handleDurationChange}
           />
         </div>
       </section>
