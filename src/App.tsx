@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useAppDispatch } from "./hooks";
 import { initializeAnimations } from "./reducers/animationsReducer";
 
-import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import styles from "./style";
