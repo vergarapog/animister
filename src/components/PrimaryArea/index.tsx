@@ -120,7 +120,7 @@ const PrimaryArea = () => {
         </ScrollMenu>
       </section>
       <section className={`p-2`}>
-        <div className={`grid  grid-cols-3 gap-3`}>
+        <div className={`grid  grid-cols-6 gap-1`}>
           {animationItems.length !== 0 ? (
             animationItems[selectedGroup.index]?.variations?.map(
               ({ variationTitle }) => {

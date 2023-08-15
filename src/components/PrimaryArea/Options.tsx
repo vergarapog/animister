@@ -29,6 +29,7 @@ const Options = () => {
     } else {
       dispatch(setIterationCount("1"));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInfinite]);
 
   const dispatch = useAppDispatch();
