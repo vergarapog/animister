@@ -14,15 +14,15 @@ const Navbar = () => {
   return (
     <nav className={`px-4 py-2 text-sm uppercase`}>
       {/* <Auth /> */}
-      <div className={`flex items-center justify-between`}>
+      <div className={`flex flex-col items-center justify-between md:flex-row`}>
         <div className={`flex items-center space-x-5`}>
           <div
-            className={`select-none rounded-full bg-white px-2 text-3xl font-semibold text-black`}
+            className={`select-none rounded-full bg-white px-2 font-semibold text-black md:text-3xl`}
           >
             B
           </div>
           <div>
-            <ul className="flex space-x-2 font-bold">
+            <ul className="flex space-x-2  font-bold">
               {animationCategories.map((category) => {
                 if (category.title === selectedCategory) {
                   return (
@@ -51,9 +51,8 @@ const Navbar = () => {
         </div>
         <div onClick={() => setIsSideBarOpen(true)}>
           <FontAwesomeIcon
-            className={`cursor-pointer`}
+            className={`cursor-pointer text-xl md:text-2xl`}
             icon="bars"
-            size="2xl"
           />
         </div>
       </div>

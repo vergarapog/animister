@@ -13,8 +13,10 @@ const AnimationVariation = ({ variationTitle }: Props) => {
 
   return (
     <div
-      className={`cursor-pointer select-none rounded p-4 text-center text-primarydark hover:bg-accent hover:text-white ${
-        selectedVariation === variationTitle ? "bg-accent text-white" : ""
+      className={`cursor-pointer select-none whitespace-nowrap rounded p-1 text-center  text-sm text-primarydark  hover:text-accent md:p-2 md:text-sm ${
+        selectedVariation === variationTitle
+          ? "bg-accent text-white hover:text-gray-50"
+          : ""
       }`}
       onClick={handleClick}
     >

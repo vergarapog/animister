@@ -17,6 +17,7 @@ import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
 import Options from "./Options";
 
+//need to enable any because react-horizontal-scrolling library doesnt have updated types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
 
@@ -120,7 +121,9 @@ const PrimaryArea = () => {
         </ScrollMenu>
       </section>
       <section className={`p-2`}>
-        <div className={`grid  grid-cols-6 gap-1`}>
+        <div
+          className={`flex space-x-2 overflow-x-scroll scrollbar-hide md:grid  md:grid-cols-4  md:space-x-0 lg:grid-cols-6 `}
+        >
           {animationItems.length !== 0 ? (
             animationItems[selectedGroup.index]?.variations?.map(
               ({ variationTitle }) => {
@@ -137,6 +140,7 @@ const PrimaryArea = () => {
           )}
         </div>
       </section>
+
       <section className={`relative grow bg-gray-200`}>
         <Options />
         <AnimatedObject />
