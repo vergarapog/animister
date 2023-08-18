@@ -29,7 +29,7 @@ const Animation = ({
   return (
     <div
       key={itemId}
-      className={`min-w mx-2 flex h-32 min-w-[128px] cursor-pointer select-none items-center justify-center rounded-full  ${
+      className={`h-83min-w-[90px] mx-2 flex cursor-pointer  select-none items-center  justify-center whitespace-nowrap rounded-full px-2 py-1 text-center md:h-32 md:min-w-[128px]  ${
         selectedGroup.animationTitle === animationTitle
           ? "bg-accent"
           : "bg-primary"
