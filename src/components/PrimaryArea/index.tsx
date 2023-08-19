@@ -17,6 +17,9 @@ import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
 import Options from "./Options";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AnimationControls from "./AnimationControls";
+
 //need to enable any because react-horizontal-scrolling library doesnt have updated types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
@@ -144,6 +147,7 @@ const PrimaryArea = () => {
       <section className={`relative grow bg-gray-200`}>
         <Options />
         <AnimatedObject />
+        <AnimationControls />
       </section>
     </main>
   );

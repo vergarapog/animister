@@ -8,9 +8,16 @@ import styles from "./style";
 import PrimaryArea from "./components/PrimaryArea";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faCircleXmark,
+  faArrowRotateRight,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBars, faCircleXmark);
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
+
+library.add(faBars, faCircleXmark, faArrowRotateRight, faHeart, faCode);
 
 function App() {
   const dispatch = useAppDispatch();
