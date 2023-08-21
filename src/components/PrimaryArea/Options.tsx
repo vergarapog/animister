@@ -84,7 +84,7 @@ const Options = () => {
   };
 
   return (
-    <div className="absolute left-6 top-6 h-[500px] w-56 bg-white text-primarydark shadow-xl">
+    <div className="absolute left-6 top-6 h-[500px] w-56 select-none bg-white text-primarydark shadow-xl">
       <section className="p-3">
         <div className={`py-2 text-lg uppercase`}>Options</div>
         <div>

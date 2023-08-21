@@ -14,9 +14,10 @@ import {
   faArrowRotateRight,
   faCode,
   faHeart,
+  faX,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBars, faCircleXmark, faArrowRotateRight, faHeart, faCode);
+library.add(faBars, faCircleXmark, faArrowRotateRight, faHeart, faCode, faX);
 
 function App() {
   const dispatch = useAppDispatch();

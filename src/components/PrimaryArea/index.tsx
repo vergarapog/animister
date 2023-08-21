@@ -17,8 +17,8 @@ import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
 import Options from "./Options";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AnimationControls from "./AnimationControls";
+import GeneratedCodeWindow from "./GeneratedCodeWindow";
 
 //need to enable any because react-horizontal-scrolling library doesnt have updated types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -148,6 +148,7 @@ const PrimaryArea = () => {
         <Options />
         <AnimatedObject />
         <AnimationControls />
+        <GeneratedCodeWindow />
       </section>
     </main>
   );
