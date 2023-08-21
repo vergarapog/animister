@@ -13,9 +13,8 @@ import {
   faCircleXmark,
   faArrowRotateRight,
   faCode,
+  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
-
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 library.add(faBars, faCircleXmark, faArrowRotateRight, faHeart, faCode);
 

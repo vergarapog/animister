@@ -1,7 +1,8 @@
 import { useGlobalContext } from "../../context";
 import assertNever from "../../helpers/assertNever";
-import { useAppSelector } from "../../hooks";
+import { useAppSelector, useAppDispatch } from "../../hooks";
 import { useState, useEffect } from "react";
+import { remountKey } from "../../reducers/animatedObjectReducer";
 
 const AnimatedObject = () => {
   const {
@@ -14,14 +15,19 @@ const AnimatedObject = () => {
     fillMode,
   } = useAppSelector((state) => state.optionsReducer);
 
+  const { key } = useAppSelector((state) => state.animatedObjectReducer);
+
+  const dispatch = useAppDispatch();
+
   const { selectedVariation } = useGlobalContext();
 
   const animationCSS = `${selectedVariation} ${duration}s ${timingFunction} ${delay}s ${iterationCount} ${direction} ${fillMode}`;
 
   //force react to remount by key treating it as new instance , to replay the animation
-  const [key, setKey] = useState(0);
+  // const [key, setKey] = useState(0);
   useEffect(() => {
-    setKey((prevKey) => prevKey + 1);
+    // setKey((prevKey) => prevKey + 1);
+    dispatch(remountKey());
   }, [
     objectType,
     duration,
@@ -30,6 +36,7 @@ const AnimatedObject = () => {
     iterationCount,
     direction,
     fillMode,
+    dispatch,
   ]);
 
   switch (objectType) {

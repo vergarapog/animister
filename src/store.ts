@@ -2,11 +2,13 @@ import { configureStore } from "@reduxjs/toolkit";
 
 import animationsReducer from "./reducers/animationsReducer";
 import optionsReducer from "./reducers/optionsReducer";
+import animatedObjectReducer from "./reducers/animatedObjectReducer";
 
 const store = configureStore({
   reducer: {
     animationsReducer: animationsReducer,
     optionsReducer: optionsReducer,
+    animatedObjectReducer: animatedObjectReducer,
   },
 });
 
