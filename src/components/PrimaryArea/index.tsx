@@ -4,7 +4,7 @@ import { useEffect, useState, useRef, useCallback, useMemo } from "react";
 import Animation from "./Animation";
 import AnimatedObject from "./AnimatedObject";
 
-import { useAppSelector } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import { useGlobalContext } from "../../context";
 import { AnimationGroup } from "../../types";
 
@@ -19,6 +19,7 @@ import Options from "./Options";
 
 import AnimationControls from "./AnimationControls";
 import GeneratedCodeWindow from "./GeneratedCodeWindow";
+import { setKeyframes } from "../../reducers/animatedObjectReducer";
 
 //need to enable any because react-horizontal-scrolling library doesnt have updated types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -28,6 +29,8 @@ const PrimaryArea = () => {
   const allAnimations = useAppSelector(
     (state) => state.animationsReducer.animations
   );
+
+  const dispatch = useAppDispatch();
 
   const {
     selectedCategory,
@@ -61,6 +64,9 @@ const PrimaryArea = () => {
       setSelectedVariation(
         animationsByCategory.groups[0].variations[0].variationTitle
       );
+      dispatch(
+        setKeyframes(animationsByCategory.groups[0].variations[0].keyframes)
+      );
     } else {
       setAnimationItems([]);
     }
@@ -70,6 +76,7 @@ const PrimaryArea = () => {
     setSelectedGroup,
     setSelectedVariation,
     getListByCategory,
+    dispatch,
   ]);
 
   //for re-scroll to first animation group on category change
@@ -129,11 +136,12 @@ const PrimaryArea = () => {
         >
           {animationItems.length !== 0 ? (
             animationItems[selectedGroup.index]?.variations?.map(
-              ({ variationTitle }) => {
+              ({ variationTitle, keyframes }) => {
                 return (
                   <AnimationVariation
                     key={variationTitle}
                     variationTitle={variationTitle}
+                    keyframes={keyframes}
                   />
                 );
               }

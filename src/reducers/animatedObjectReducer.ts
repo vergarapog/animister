@@ -2,13 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 
 interface animateObjectSliceState {
   key: number;
-  class: string;
+  className: string;
   keyframes: string;
 }
 
 const initialState: animateObjectSliceState = {
   key: 0,
-  class: "",
+  className: "",
   keyframes: "",
 };
 
@@ -19,10 +19,17 @@ export const animationObjectSlice = createSlice({
     remountKey: (state) => {
       state.key = state.key + 1;
     },
+    setClassname: (state, action) => {
+      state.className = action.payload;
+    },
+    setKeyframes: (state, action) => {
+      state.keyframes = action.payload;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { remountKey } = animationObjectSlice.actions;
+export const { remountKey, setClassname, setKeyframes } =
+  animationObjectSlice.actions;
 
 export default animationObjectSlice.reducer;

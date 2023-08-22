@@ -1,14 +1,20 @@
 import { useGlobalContext } from "../../context";
+import { useAppDispatch } from "../../hooks";
+import { setKeyframes } from "../../reducers/animatedObjectReducer";
 
 type Props = {
   variationTitle: string;
+  keyframes: string;
 };
 
-const AnimationVariation = ({ variationTitle }: Props) => {
+const AnimationVariation = ({ variationTitle, keyframes }: Props) => {
   const { selectedVariation, setSelectedVariation } = useGlobalContext();
+
+  const dispatch = useAppDispatch();
 
   const handleClick = () => {
     setSelectedVariation(variationTitle);
+    dispatch(setKeyframes(keyframes));
   };
 
   return (
