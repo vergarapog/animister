@@ -29,14 +29,14 @@ function App() {
   return (
     <div className="relative w-full overflow-x-hidden font-montserrat text-textoffwhite">
       <Sidebar />
-      <div className="flex h-screen flex-col">
+      <div className="flex  flex-col">
         <div className={`${styles.flexCenter} bg-primary`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />
           </div>
         </div>
         <div className={`flex flex-grow justify-center`}>
-          <div className={`${styles.boxWidth}`}>
+          <div className={`${styles.boxWidth} `}>
             <PrimaryArea />
           </div>
         </div>
