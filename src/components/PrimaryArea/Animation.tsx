@@ -1,4 +1,6 @@
 import { useGlobalContext } from "../../context";
+import { useAppDispatch } from "../../hooks";
+import { setKeyframes } from "../../reducers/animatedObjectReducer";
 
 type Props = {
   index: number;
@@ -6,6 +8,7 @@ type Props = {
   animationTitle: string;
   dragging: boolean;
   firstVariationTitle: string;
+  variationKeyframes: string;
 };
 
 const Animation = ({
@@ -14,9 +17,12 @@ const Animation = ({
   animationTitle,
   dragging,
   firstVariationTitle,
+  variationKeyframes,
 }: Props) => {
   const { selectedGroup, setSelectedGroup, setSelectedVariation } =
     useGlobalContext();
+
+  const dispatch = useAppDispatch();
 
   const handleClick = () => {
     if (dragging) {
@@ -24,6 +30,7 @@ const Animation = ({
     }
     setSelectedGroup({ index: index, animationTitle: animationTitle });
     setSelectedVariation(firstVariationTitle);
+    dispatch(setKeyframes(variationKeyframes));
   };
 
   return (

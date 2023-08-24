@@ -13,6 +13,13 @@ const GeneratedCodeWindow = () => {
     setIsGeneratedCodeWindowOpen(false);
   };
 
+  const animationName = className.split(" ")[0];
+
+  const classNameText = `.${animationName} {
+    -webkit-animation: ${className}
+    animation: ${className}
+  }`;
+
   return (
     <div
       className={`absolute left-1/2 top-1/2 z-40 h-[95%] w-[95%] -translate-y-1/2 bg-white text-primarydark transition-all duration-500 ${
@@ -28,10 +35,22 @@ const GeneratedCodeWindow = () => {
           />
         </button>
       </div>
-      <div className="p-5">
-        <div>{className}</div>
-        <div>
-          <pre className="h-64 overflow-y-scroll">{keyframes}</pre>
+      <div className="space-y-8 p-10 pt-0">
+        <div className="space-y-4">
+          <pre className="h-32  overflow-y-scroll bg-gray-100 p-5">
+            {classNameText}
+          </pre>
+          <button className="bg-primary px-2 py-1 text-sm uppercase tracking-wide text-white">
+            Copy Class
+          </button>
+        </div>
+        <div className="space-y-4">
+          <pre className="h-64 overflow-y-scroll bg-gray-100 p-5">
+            {keyframes}
+          </pre>
+          <button className="bg-primary px-2 py-1 text-sm uppercase tracking-wide text-white">
+            Copy Class
+          </button>
         </div>
       </div>
     </div>

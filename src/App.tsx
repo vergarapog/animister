@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="relative w-full overflow-x-hidden font-montserrat text-textoffwhite">
       <Sidebar />
-      <div className="flex  flex-col">
+      <div className="flex flex-col">
         <div className={`${styles.flexCenter} bg-primary`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />

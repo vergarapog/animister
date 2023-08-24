@@ -123,6 +123,7 @@ const PrimaryArea = () => {
                 animationTitle={animationTitle}
                 dragging={dragging}
                 firstVariationTitle={variations[0].variationTitle}
+                variationKeyframes={variations[0].keyframes}
               />
             ))
           ) : (
@@ -152,7 +153,7 @@ const PrimaryArea = () => {
         </div>
       </section>
 
-      <section className={`relative h-[600px] bg-gray-200`}>
+      <section className={`relative h-[650px] bg-gray-200`}>
         <Options />
         <AnimatedObject />
         <AnimationControls />
