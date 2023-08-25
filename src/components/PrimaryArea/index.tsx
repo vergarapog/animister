@@ -10,7 +10,7 @@ import { AnimationGroup } from "../../types";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore, need to ignore because react-horizontal-scrolling library doesnt have updated types
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
 import useDrag from "./useDrag";

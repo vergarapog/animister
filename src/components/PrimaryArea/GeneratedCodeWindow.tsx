@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useGlobalContext } from "../../context";
 import { useAppSelector } from "../../hooks";
+import { useState } from "react";
 
 const GeneratedCodeWindow = () => {
   const { className, keyframes } = useAppSelector(
@@ -14,11 +15,31 @@ const GeneratedCodeWindow = () => {
   };
 
   const animationName = className.split(" ")[0];
-
   const classNameText = `.${animationName} {
     -webkit-animation: ${className}
     animation: ${className}
   }`;
+
+  const [isClassNameCopied, setIsClassNameCopied] = useState<boolean>(false);
+  const [isKeyframesCopied, setIsKeyframesCopied] = useState<boolean>(false);
+
+  const copyToClipboardClassName = () => {
+    navigator.clipboard.writeText(classNameText);
+    setIsClassNameCopied(true);
+
+    setTimeout(() => {
+      setIsClassNameCopied(false);
+    }, 2000);
+  };
+
+  const copyToClipboardKeyframes = () => {
+    navigator.clipboard.writeText(keyframes);
+    setIsKeyframesCopied(true);
+
+    setTimeout(() => {
+      setIsKeyframesCopied(false);
+    }, 2000);
+  };
 
   return (
     <div
@@ -40,16 +61,22 @@ const GeneratedCodeWindow = () => {
           <pre className="h-32  overflow-y-scroll bg-gray-100 p-5">
             {classNameText}
           </pre>
-          <button className="bg-primary px-2 py-1 text-sm uppercase tracking-wide text-white">
-            Copy Class
+          <button
+            className="bg-primary px-2 py-1 text-sm uppercase tracking-wide text-white"
+            onClick={copyToClipboardClassName}
+          >
+            {isClassNameCopied ? "Class Copied!" : "Copy Class"}
           </button>
         </div>
         <div className="space-y-4">
           <pre className="h-64 overflow-y-scroll bg-gray-100 p-5">
             {keyframes}
           </pre>
-          <button className="bg-primary px-2 py-1 text-sm uppercase tracking-wide text-white">
-            Copy Class
+          <button
+            className="bg-primary px-2 py-1 text-sm uppercase tracking-wide text-white"
+            onClick={copyToClipboardKeyframes}
+          >
+            {isKeyframesCopied ? "Keyframes copied!" : "Copy Keyframes"}
           </button>
         </div>
       </div>
