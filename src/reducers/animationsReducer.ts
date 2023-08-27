@@ -1,8 +1,8 @@
 import { Dispatch, PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { AnimationCategory } from "../types";
 
-// import animationsFirebaseService from "../services/animationsFirebaseService"; // use when online
-import { data } from "../helpers/data"; // use when offline
+import animationsFirebaseService from "../services/animationsFirebaseService"; // use when online
+// import { data } from "../helpers/data"; // use when offline
 
 import type { RootState } from "../store";
 
@@ -53,8 +53,8 @@ export const selectCount = (state: RootState) =>
 
 export const initializeAnimations = () => {
   return async (dispatch: Dispatch) => {
-    // const animations = await animationsFirebaseService.getAllAnimations(); // use when online
-    const animations = data; // use when offline
+    const animations = await animationsFirebaseService.getAllAnimations(); // use when online
+    // const animations = data; // use when offline
 
     // const organizedAnimations = organizeByAnimationType(allAnimations);
     // console.log(organizedAnimations);

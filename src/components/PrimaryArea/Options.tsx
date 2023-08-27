@@ -29,7 +29,7 @@ const Options = () => {
     } else {
       dispatch(setIterationCount("1"));
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInfinite]);
 
   const dispatch = useAppDispatch();
@@ -65,9 +65,7 @@ const Options = () => {
     dispatch(setIterationCount(newIterationCount));
   };
 
-  const handleIterationInfinite = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
+  const handleIterationInfinite = () => {
     setIsInfinite((prev) => !prev);
   };
 
@@ -86,7 +84,7 @@ const Options = () => {
   };
 
   return (
-    <div className="absolute left-6 top-6 h-[500px] w-56 bg-white text-primarydark">
+    <div className="absolute left-4 top-4 h-[450px] w-56 select-none bg-white text-primarydark shadow-xl">
       <section className="p-3">
         <div className={`py-2 text-lg uppercase`}>Options</div>
         <div>
@@ -162,12 +160,13 @@ const Options = () => {
                 onChange={handleIterationCountChange}
               />
             </div>
-            <div className="">
+            <div className="" onClick={handleIterationInfinite}>
               <label htmlFor="iterationCount">infinite</label>
               <input
                 type="checkbox"
                 checked={isInfinite}
-                onChange={handleIterationInfinite}
+                readOnly={true}
+                // onChange={handleIterationInfinite}
               />
             </div>
           </div>

@@ -8,9 +8,16 @@ import styles from "./style";
 import PrimaryArea from "./components/PrimaryArea";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faCircleXmark,
+  faArrowRotateRight,
+  faCode,
+  faHeart,
+  faX,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBars, faCircleXmark);
+library.add(faBars, faCircleXmark, faArrowRotateRight, faHeart, faCode, faX);
 
 function App() {
   const dispatch = useAppDispatch();
@@ -22,14 +29,14 @@ function App() {
   return (
     <div className="relative w-full overflow-x-hidden font-montserrat text-textoffwhite">
       <Sidebar />
-      <div className="flex h-screen flex-col">
+      <div className="flex flex-col">
         <div className={`${styles.flexCenter} bg-primary`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />
           </div>
         </div>
         <div className={`flex flex-grow justify-center`}>
-          <div className={`${styles.boxWidth}`}>
+          <div className={`${styles.boxWidth} `}>
             <PrimaryArea />
           </div>
         </div>

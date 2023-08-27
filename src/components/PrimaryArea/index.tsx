@@ -4,18 +4,22 @@ import { useEffect, useState, useRef, useCallback, useMemo } from "react";
 import Animation from "./Animation";
 import AnimatedObject from "./AnimatedObject";
 
-import { useAppSelector } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import { useGlobalContext } from "../../context";
 import { AnimationGroup } from "../../types";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore, need to ignore because react-horizontal-scrolling library doesnt have updated types
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
 import useDrag from "./useDrag";
 import AnimationVariation from "./AnimationVariation";
 import Options from "./Options";
+
+import AnimationControls from "./AnimationControls";
+import GeneratedCodeWindow from "./GeneratedCodeWindow";
+import { setKeyframes } from "../../reducers/animatedObjectReducer";
 
 //need to enable any because react-horizontal-scrolling library doesnt have updated types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -25,6 +29,8 @@ const PrimaryArea = () => {
   const allAnimations = useAppSelector(
     (state) => state.animationsReducer.animations
   );
+
+  const dispatch = useAppDispatch();
 
   const {
     selectedCategory,
@@ -58,6 +64,9 @@ const PrimaryArea = () => {
       setSelectedVariation(
         animationsByCategory.groups[0].variations[0].variationTitle
       );
+      dispatch(
+        setKeyframes(animationsByCategory.groups[0].variations[0].keyframes)
+      );
     } else {
       setAnimationItems([]);
     }
@@ -67,6 +76,7 @@ const PrimaryArea = () => {
     setSelectedGroup,
     setSelectedVariation,
     getListByCategory,
+    dispatch,
   ]);
 
   //for re-scroll to first animation group on category change
@@ -113,6 +123,7 @@ const PrimaryArea = () => {
                 animationTitle={animationTitle}
                 dragging={dragging}
                 firstVariationTitle={variations[0].variationTitle}
+                variationKeyframes={variations[0].keyframes}
               />
             ))
           ) : (
@@ -122,15 +133,16 @@ const PrimaryArea = () => {
       </section>
       <section className={`p-2`}>
         <div
-          className={`flex space-x-2 overflow-x-scroll scrollbar-hide md:grid  md:grid-cols-4  md:space-x-0 lg:grid-cols-6 `}
+          className={`flex gap-1 space-x-2 overflow-x-scroll scrollbar-hide  md:grid  md:grid-cols-4 md:space-x-0 lg:grid-cols-6`}
         >
           {animationItems.length !== 0 ? (
             animationItems[selectedGroup.index]?.variations?.map(
-              ({ variationTitle }) => {
+              ({ variationTitle, keyframes }) => {
                 return (
                   <AnimationVariation
                     key={variationTitle}
                     variationTitle={variationTitle}
+                    keyframes={keyframes}
                   />
                 );
               }
@@ -141,9 +153,11 @@ const PrimaryArea = () => {
         </div>
       </section>
 
-      <section className={`relative grow bg-gray-200`}>
+      <section className={`relative h-[650px] bg-gray-200`}>
         <Options />
         <AnimatedObject />
+        <AnimationControls />
+        <GeneratedCodeWindow />
       </section>
     </main>
   );

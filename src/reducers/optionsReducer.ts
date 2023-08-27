@@ -20,8 +20,8 @@ const initialState: OptionsSliceState = {
   fillMode: "forwards",
 };
 
-export const selectedAnimationSlice = createSlice({
-  name: "selectedAnimation",
+export const OptionsSlice = createSlice({
+  name: "optionsSlice",
   initialState: initialState,
   reducers: {
     setObjectType: (state, action) => {
@@ -57,6 +57,6 @@ export const {
   setIterationCount,
   setDirection,
   setFillMode,
-} = selectedAnimationSlice.actions;
+} = OptionsSlice.actions;
 
-export default selectedAnimationSlice.reducer;
+export default OptionsSlice.reducer;

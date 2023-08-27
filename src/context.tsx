@@ -14,6 +14,8 @@ interface AppContextType {
   setErrorMessage: React.Dispatch<React.SetStateAction<string>>;
   isSideBarOpen: boolean;
   setIsSideBarOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isGeneratedCodeWindowOpen: boolean;
+  setIsGeneratedCodeWindowOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const AppContext = createContext<AppContextType>({
@@ -27,6 +29,8 @@ const AppContext = createContext<AppContextType>({
   setErrorMessage: () => {},
   isSideBarOpen: false,
   setIsSideBarOpen: () => {},
+  isGeneratedCodeWindowOpen: false,
+  setIsGeneratedCodeWindowOpen: () => {},
 });
 
 interface AppProviderProps {
@@ -42,6 +46,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [selectedVariation, setSelectedVariation] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
+  const [isGeneratedCodeWindowOpen, setIsGeneratedCodeWindowOpen] =
+    useState<boolean>(false);
 
   return (
     <AppContext.Provider
@@ -56,6 +62,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
         setErrorMessage,
         isSideBarOpen,
         setIsSideBarOpen,
+        isGeneratedCodeWindowOpen,
+        setIsGeneratedCodeWindowOpen,
       }}
     >
       {children}
