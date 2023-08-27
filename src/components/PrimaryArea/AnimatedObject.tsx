@@ -15,8 +15,6 @@ const AnimatedObject = () => {
     fillMode,
   } = useAppSelector((state) => state.optionsReducer);
 
-  const { key } = useAppSelector((state) => state.animatedObjectReducer);
-
   const dispatch = useAppDispatch();
 
   const { selectedVariation } = useGlobalContext();
@@ -28,9 +26,9 @@ const AnimatedObject = () => {
   }, [animationCSS, dispatch]);
 
   //force react to remount by key treating it as new instance , to replay the animation
-  // const [key, setKey] = useState(0);
+  const { key } = useAppSelector((state) => state.animatedObjectReducer);
+
   useEffect(() => {
-    // setKey((prevKey) => prevKey + 1);
     dispatch(remountKey());
   }, [
     objectType,
@@ -49,7 +47,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={` absolute left-1/2 top-1/3 h-32 w-32  bg-primary`}
+          className={`absolute left-1/2 top-1/3 h-32 w-32  bg-primary`}
         ></div>
       );
 
@@ -58,7 +56,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={` absolute left-1/2 top-1/3 h-32 w-32  rounded-full bg-primary`}
+          className={`absolute left-1/2 top-1/3 h-32 w-32  rounded-full bg-primary`}
         ></div>
       );
 

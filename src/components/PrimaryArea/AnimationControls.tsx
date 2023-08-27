@@ -24,20 +24,20 @@ const AnimationControls = () => {
     <div className="absolute right-10 top-6 flex space-x-4">
       <div>
         <FontAwesomeIcon
-          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary md:text-xl`}
+          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-110 hover:animate-[rotate-center_0.4s_ease-in] md:text-xl`}
           icon="arrow-rotate-right"
           onClick={handleReplayAnimation}
         />
       </div>
       <div>
         <FontAwesomeIcon
-          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary md:text-xl`}
+          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
           icon="heart"
         />
       </div>
       <div>
         <FontAwesomeIcon
-          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary md:text-xl`}
+          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
           icon="code"
           onClick={handleOpenGeneratedCodeWindow}
         />

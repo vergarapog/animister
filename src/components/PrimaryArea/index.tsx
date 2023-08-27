@@ -133,7 +133,7 @@ const PrimaryArea = () => {
       </section>
       <section className={`p-2`}>
         <div
-          className={`flex space-x-2 overflow-x-scroll scrollbar-hide md:grid  md:grid-cols-4  md:space-x-0 lg:grid-cols-6 `}
+          className={`flex gap-1 space-x-2 overflow-x-scroll scrollbar-hide  md:grid  md:grid-cols-4 md:space-x-0 lg:grid-cols-6`}
         >
           {animationItems.length !== 0 ? (
             animationItems[selectedGroup.index]?.variations?.map(

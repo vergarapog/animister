@@ -29,7 +29,7 @@ const GeneratedCodeWindow = () => {
 
     setTimeout(() => {
       setIsClassNameCopied(false);
-    }, 2000);
+    }, 1500);
   };
 
   const copyToClipboardKeyframes = () => {
@@ -38,7 +38,7 @@ const GeneratedCodeWindow = () => {
 
     setTimeout(() => {
       setIsKeyframesCopied(false);
-    }, 2000);
+    }, 1500);
   };
 
   return (
@@ -48,9 +48,9 @@ const GeneratedCodeWindow = () => {
       }`}
     >
       <div className="flex w-full justify-end ">
-        <button className="">
+        <button className="p-5">
           <FontAwesomeIcon
-            className="p-5 text-xl text-primary"
+            className="rounded-full p-1.5 text-xl text-primary transition-all hover:scale-125 hover:bg-primarydark hover:text-white"
             icon="x"
             onClick={handleCloseGeneratedCodeWindow}
           />
@@ -62,7 +62,9 @@ const GeneratedCodeWindow = () => {
             {classNameText}
           </pre>
           <button
-            className="bg-primary px-2 py-1 text-sm uppercase tracking-wide text-white"
+            className={` px-2 py-1 text-sm uppercase tracking-wide text-white transition-all ${
+              isClassNameCopied ? "scale-105 bg-green-400 " : "bg-primary"
+            }`}
             onClick={copyToClipboardClassName}
           >
             {isClassNameCopied ? "Class Copied!" : "Copy Class"}
@@ -73,7 +75,9 @@ const GeneratedCodeWindow = () => {
             {keyframes}
           </pre>
           <button
-            className="bg-primary px-2 py-1 text-sm uppercase tracking-wide text-white"
+            className={` px-2 py-1 text-sm uppercase tracking-wide text-white transition-all ${
+              isKeyframesCopied ? "scale-105 bg-green-400 " : "bg-primary"
+            }`}
             onClick={copyToClipboardKeyframes}
           >
             {isKeyframesCopied ? "Keyframes copied!" : "Copy Keyframes"}
