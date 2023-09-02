@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     dispatch(initializeAnimations());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="relative w-full overflow-x-hidden font-montserrat text-textoffwhite">
