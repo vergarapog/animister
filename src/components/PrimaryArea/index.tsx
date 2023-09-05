@@ -37,9 +37,9 @@ const PrimaryArea = () => {
     selectedGroup,
     setSelectedGroup,
     setSelectedVariation,
+    animationItemsList,
+    setAnimationItemsList,
   } = useGlobalContext();
-
-  const [animationItems, setAnimationItems] = useState<AnimationGroup[]>([]);
 
   const getListByCategory = useCallback(
     (selectedCategory: string) => {
@@ -56,7 +56,7 @@ const PrimaryArea = () => {
 
   useEffect(() => {
     if (animationsByCategory) {
-      setAnimationItems(animationsByCategory.groups);
+      setAnimationItemsList(animationsByCategory.groups);
       setSelectedGroup({
         index: 0,
         animationTitle: animationsByCategory.groups[0].animationTitle,
@@ -68,7 +68,7 @@ const PrimaryArea = () => {
         setKeyframes(animationsByCategory.groups[0].variations[0].keyframes)
       );
     } else {
-      setAnimationItems([]);
+      setAnimationItemsList([]);
     }
   }, [
     animationsByCategory,
@@ -77,15 +77,16 @@ const PrimaryArea = () => {
     setSelectedVariation,
     getListByCategory,
     dispatch,
+    setAnimationItemsList,
   ]);
 
   //for re-scroll to first animation group on category change
   const apiRef = useRef({} as scrollVisibilityApiType);
   useEffect(() => {
     apiRef.current?.scrollToItem?.(
-      apiRef.current?.getItemElementById(animationItems[0]?.animationTitle)
+      apiRef.current?.getItemElementById(animationItemsList[0]?.animationTitle)
     );
-  }, [animationItems]);
+  }, [animationItemsList]);
 
   // NOTE: for drag by mouse
   const { dragStart, dragStop, dragMove, dragging } = useDrag();
@@ -114,8 +115,8 @@ const PrimaryArea = () => {
           apiRef={apiRef}
           className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
         >
-          {animationItems.length !== 0 ? (
-            animationItems.map(({ animationTitle, variations }, index) => (
+          {animationItemsList.length !== 0 ? (
+            animationItemsList.map(({ animationTitle, variations }, index) => (
               <Animation
                 index={index}
                 itemId={animationTitle} // NOTE: itemId is required for track items
@@ -135,8 +136,8 @@ const PrimaryArea = () => {
         <div
           className={`flex gap-1 space-x-2 overflow-x-scroll scrollbar-hide  md:grid  md:grid-cols-4 md:space-x-0 lg:grid-cols-6`}
         >
-          {animationItems.length !== 0 ? (
-            animationItems[selectedGroup.index]?.variations?.map(
+          {animationItemsList.length !== 0 ? (
+            animationItemsList[selectedGroup.index]?.variations?.map(
               ({ variationTitle, keyframes }) => {
                 return (
                   <AnimationVariation

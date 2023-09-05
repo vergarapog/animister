@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import React, { useState, useContext, createContext } from "react";
+import { AnimationGroup } from "./types";
 
 interface AppContextType {
   selectedCategory: string;
@@ -16,6 +17,8 @@ interface AppContextType {
   setIsSideBarOpen: React.Dispatch<React.SetStateAction<boolean>>;
   isGeneratedCodeWindowOpen: boolean;
   setIsGeneratedCodeWindowOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  animationItemsList: AnimationGroup[];
+  setAnimationItemsList: React.Dispatch<React.SetStateAction<AnimationGroup[]>>;
 }
 
 const AppContext = createContext<AppContextType>({
@@ -31,6 +34,8 @@ const AppContext = createContext<AppContextType>({
   setIsSideBarOpen: () => {},
   isGeneratedCodeWindowOpen: false,
   setIsGeneratedCodeWindowOpen: () => {},
+  animationItemsList: [],
+  setAnimationItemsList: () => {},
 });
 
 interface AppProviderProps {
@@ -48,6 +53,9 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
   const [isGeneratedCodeWindowOpen, setIsGeneratedCodeWindowOpen] =
     useState<boolean>(false);
+  const [animationItemsList, setAnimationItemsList] = useState<
+    AnimationGroup[]
+  >([]);
 
   return (
     <AppContext.Provider
@@ -64,6 +72,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
         setIsSideBarOpen,
         isGeneratedCodeWindowOpen,
         setIsGeneratedCodeWindowOpen,
+        animationItemsList,
+        setAnimationItemsList,
       }}
     >
       {children}

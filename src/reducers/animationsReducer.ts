@@ -53,7 +53,7 @@ export const selectCount = (state: RootState) =>
 
 export const initializeAnimations = () => {
   return async (dispatch: Dispatch) => {
-    const online = false; //set to true when online, set to false for debugging without internet
+    const online = true; //set to true when online, set to false for debugging without internet
 
     let animations = [];
 
