@@ -1,12 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-import { useEffect, useState, useRef, useCallback, useMemo } from "react";
+import { useEffect, useRef, useCallback, useMemo } from "react";
 
 import Animation from "./Animation";
 import AnimatedObject from "./AnimatedObject";
 
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { useGlobalContext } from "../../context";
-import { AnimationGroup } from "../../types";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore, need to ignore because react-horizontal-scrolling library doesnt have updated types
