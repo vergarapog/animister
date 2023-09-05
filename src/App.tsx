@@ -17,6 +17,7 @@ import {
   faHeart,
   faX,
 } from "@fortawesome/free-solid-svg-icons";
+import Backdrop from "./components/Backdrop";
 
 library.add(faBars, faCircleXmark, faArrowRotateRight, faHeart, faCode, faX);
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
+      <Backdrop />
     </div>
   );
 }

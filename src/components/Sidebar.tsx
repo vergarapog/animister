@@ -6,11 +6,11 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`absolute z-50 p-4 transition-all ${
+      className={`absolute z-50 bg-white  p-4 text-primarydark transition-all ${
         isSideBarOpen ? "fixed right-0" : "-right-52"
-      } h-screen w-52 bg-accent`}
+      } h-screen w-52`}
     >
-      <div className="flex h-full flex-col">
+      <div className=" flex h-full flex-col">
         <div
           className={`flex justify-end`}
           onClick={() => setIsSideBarOpen(false)}
@@ -23,8 +23,8 @@ const Sidebar = () => {
             />
           </div>
         </div>
-        <div className="flex flex-1 items-center justify-center">
-          <ul className="flex flex-col space-y-5 text-2xl">
+        <div className="my-32 flex flex-1 items-start justify-center ">
+          <ul className="items flex flex-col space-y-5 text-2xl">
             <Link to="/" className="cursor-pointer">
               Home
             </Link>
