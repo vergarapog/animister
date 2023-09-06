@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAppDispatch } from "../../hooks";
 import { remountKey } from "../../reducers/animatedObjectReducer";
@@ -36,7 +35,7 @@ const AnimationControls = () => {
       </div>
       <div>
         <FontAwesomeIcon
-          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
+          className={`cursor-pointer rounded-full bg-white px-2 py-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
           icon="code"
           onClick={handleOpenGeneratedCodeWindow}
         />

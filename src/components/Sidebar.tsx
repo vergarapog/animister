@@ -15,13 +15,13 @@ const Sidebar = () => {
           className={`flex justify-end`}
           onClick={() => setIsSideBarOpen(false)}
         >
-          <div>
+          <button>
             <FontAwesomeIcon
-              className={`cursor-pointer`}
-              icon="circle-xmark"
-              size="2xl"
+              className=" px-2 py-1.5 text-xl text-primary transition-all  hover:bg-primarydark hover:text-white"
+              icon="x"
+              size="xl"
             />
-          </div>
+          </button>
         </div>
         <div className="my-32 flex flex-1 items-start justify-center ">
           <ul className="items flex flex-col space-y-5 text-2xl">

@@ -11,7 +11,6 @@ import About from "./pages/About";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBars,
-  faCircleXmark,
   faArrowRotateRight,
   faCode,
   faHeart,
@@ -19,7 +18,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Backdrop from "./components/Backdrop";
 
-library.add(faBars, faCircleXmark, faArrowRotateRight, faHeart, faCode, faX);
+library.add(faBars, faArrowRotateRight, faHeart, faCode, faX);
 
 function App() {
   const dispatch = useAppDispatch();
