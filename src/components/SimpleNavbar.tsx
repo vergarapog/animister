@@ -19,7 +19,7 @@ const SimpleNavbar = () => {
         </div>
         <div onClick={() => setIsSideBarOpen(true)} className="self-center">
           <FontAwesomeIcon
-            className={`cursor-pointer text-xl md:text-2xl`}
+            className={`cursor-pointer text-xl transition-all hover:scale-y-[1.3] md:text-2xl`}
             icon="bars"
           />
         </div>
