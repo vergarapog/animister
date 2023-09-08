@@ -10,7 +10,7 @@ const About = () => {
         </div>
       </div>
       <div className={`flex flex-grow justify-center`}>
-        <div className={`w-full p-8 text-primarydark md:max-w-[900px]`}>
+        <div className={`w-full p-8 text-primarydark md:max-w-[850px]`}>
           <div className="space-y-5 text-justify md:text-lg">
             <div className="my-4 text-4xl uppercase md:my-8 md:text-5xl">
               About
