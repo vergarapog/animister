@@ -50,7 +50,7 @@ const GeneratedCodeWindow = () => {
       <div className="flex w-full justify-end ">
         <button className="p-5">
           <FontAwesomeIcon
-            className="rounded-full px-2 py-1.5 text-xl text-primary transition-all hover:scale-125 hover:bg-primarydark hover:text-white"
+            className=" px-2 py-1.5 text-xl text-primary transition-all  hover:bg-primarydark hover:text-white"
             icon="x"
             onClick={handleCloseGeneratedCodeWindow}
           />

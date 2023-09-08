@@ -24,7 +24,7 @@ const Navbar = () => {
           >
             B
           </div>
-          <div className=" overflow-x-scroll  scrollbar-hide">
+          <div className=" overflow-x-scroll font-bold scrollbar-hide">
             <ul className="flex space-x-2 ">
               {animationCategories.map((category) => {
                 if (category.title === selectedCategory) {
@@ -54,7 +54,7 @@ const Navbar = () => {
         </div>
         <div onClick={() => setIsSideBarOpen(true)} className="self-center">
           <FontAwesomeIcon
-            className={`cursor-pointer text-xl md:text-2xl`}
+            className={`cursor-pointer text-xl transition-all hover:scale-y-[1.3] md:text-2xl`}
             icon="bars"
           />
         </div>
@@ -72,12 +72,12 @@ const Navbar = () => {
 
           <div onClick={() => setIsSideBarOpen(true)} className="self-center">
             <FontAwesomeIcon
-              className={`cursor-pointer text-xl md:text-2xl`}
+              className={`cursor-pointer text-xl transition-all hover:scale-y-[1.3] md:text-2xl`}
               icon="bars"
             />
           </div>
         </div>
-        <div className=" overflow-x-scroll  scrollbar-hide">
+        <div className=" overflow-x-scroll font-bold scrollbar-hide">
           <ul className="flex space-x-2 ">
             {animationCategories.map((category) => {
               if (category.title === selectedCategory) {
