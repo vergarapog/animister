@@ -1,13 +1,23 @@
 import { useGlobalContext } from "../context";
 
 const Backdrop = () => {
-  const { isSideBarOpen, setIsSideBarOpen } = useGlobalContext();
+  const {
+    isSideBarOpen,
+    isGeneratedCodeWindowOpen,
+    setIsSideBarOpen,
+    setIsGeneratedCodeWindowOpen,
+  } = useGlobalContext();
 
-  if (isSideBarOpen) {
+  const closeSideBarAndGeneratedCodeWindow = () => {
+    setIsSideBarOpen(false);
+    setIsGeneratedCodeWindowOpen(false);
+  };
+
+  if (isSideBarOpen || isGeneratedCodeWindowOpen) {
     return (
       <div
         className="fixed left-0 top-0 h-screen w-screen bg-black opacity-40"
-        onClick={() => setIsSideBarOpen(false)}
+        onClick={closeSideBarAndGeneratedCodeWindow}
       ></div>
     );
   }
