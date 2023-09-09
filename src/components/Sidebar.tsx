@@ -23,12 +23,13 @@ const Sidebar = () => {
             />
           </button>
         </div>
-        <div className="my-10 self-center">
+        <div className="my-12 self-center">
           <Link to="/" onClick={() => setIsSideBarOpen(false)}>
-            <button className="btn btn-primary btn-ghost btn-shine">B</button>
+            <button className="btn btn-primary btn-ghost btn-shine">B</button>{" "}
+            {/**D */}
           </Link>
         </div>
-        <div className="flex flex-1 items-start justify-center p-12">
+        <div className="flex flex-1 items-start justify-center p-8">
           <ul className="items flex flex-col space-y-6 text-2xl">
             <li>
               <Link
