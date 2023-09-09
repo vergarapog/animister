@@ -8,9 +8,9 @@ const Sidebar = () => {
     <aside
       className={`absolute z-50 bg-white  p-4 text-primarydark transition-all ${
         isSideBarOpen ? "fixed right-0" : "-right-80"
-      } h-screen w-80 `}
+      } h-screen w-80`}
     >
-      <div className="p- flex h-full flex-col border border-primarydark border-opacity-50 p-5">
+      <div className="flex h-full flex-col border border-primarydark border-opacity-50 p-5">
         <div
           className={`flex justify-end`}
           onClick={() => setIsSideBarOpen(false)}
@@ -23,8 +23,12 @@ const Sidebar = () => {
             />
           </button>
         </div>
-
-        <div className="m-4 flex flex-1 items-start justify-center p-24">
+        <div className="my-10 self-center">
+          <Link to="/" onClick={() => setIsSideBarOpen(false)}>
+            <button className="btn btn-primary btn-ghost btn-shine">B</button>
+          </Link>
+        </div>
+        <div className="flex flex-1 items-start justify-center p-12">
           <ul className="items flex flex-col space-y-6 text-2xl">
             <li>
               <Link
