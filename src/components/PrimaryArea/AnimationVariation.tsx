@@ -21,7 +21,7 @@ const AnimationVariation = ({ variationTitle, keyframes }: Props) => {
     <div
       className={`cursor-pointer select-none whitespace-nowrap rounded p-1 text-center  text-sm text-primarydark  hover:text-accent md:p-2 md:text-sm ${
         selectedVariation === variationTitle
-          ? "bg-accent text-white hover:text-gray-50"
+          ? "bg-accent font-bold text-white hover:text-gray-50"
           : ""
       }`}
       onClick={handleClick}
