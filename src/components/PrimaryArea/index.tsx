@@ -13,6 +13,7 @@ import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import "./hideScrollbar.css";
 import useDrag from "./useDrag";
+
 import AnimationVariation from "./AnimationVariation";
 import Options from "./Options";
 
@@ -133,7 +134,9 @@ const PrimaryArea = () => {
       </section>
       <section className={`p-2`}>
         <div
-          className={`flex gap-1 space-x-2 overflow-x-scroll scrollbar-hide  md:grid  md:grid-cols-4 md:space-x-0 lg:grid-cols-6`}
+          className={`flex ${
+            animationItemsList.length !== 0 ? "gap-0" : "gap-1"
+          } space-x-2 overflow-x-scroll scrollbar-hide  md:grid  md:grid-cols-4 md:space-x-0 lg:grid-cols-6`}
         >
           {animationItemsList.length !== 0 ? (
             animationItemsList[selectedGroup.index]?.variations?.map(
