@@ -16,7 +16,7 @@ const Backdrop = () => {
   if (isSideBarOpen || isGeneratedCodeWindowOpen) {
     return (
       <div
-        className="fixed left-0 top-0 h-screen w-screen bg-black opacity-40"
+        className="fixed left-0 top-0 z-[49] h-screen w-screen bg-black opacity-40"
         onClick={closeSideBarAndGeneratedCodeWindow}
       ></div>
     );

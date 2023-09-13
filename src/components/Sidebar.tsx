@@ -1,11 +1,32 @@
 import { useGlobalContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
 const Sidebar = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useGlobalContext();
+  const sidebarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const disableScroll = (e: WheelEvent) => {
+      e.preventDefault();
+    };
+
+    const sidebarElement = sidebarRef.current;
+
+    if (isSideBarOpen) {
+      sidebarElement?.addEventListener("wheel", disableScroll);
+    } else {
+      sidebarElement?.removeEventListener("wheel", disableScroll);
+    }
+
+    return () => {
+      sidebarElement?.removeEventListener("wheel", disableScroll);
+    };
+  }, [isSideBarOpen]);
 
   return (
     <aside
+      ref={sidebarRef}
       className={`absolute z-50 bg-white p-7 text-primarydark transition-all ${
         isSideBarOpen ? "fixed right-0" : "-right-80"
       } h-screen w-80`}
