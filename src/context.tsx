@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import React, { useState, useContext, createContext } from "react";
+import React, { useState, useEffect, useContext, createContext } from "react";
 import { AnimationGroup } from "./types";
 
 interface AppContextType {
@@ -56,6 +56,15 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [animationItemsList, setAnimationItemsList] = useState<
     AnimationGroup[]
   >([]);
+
+  useEffect(() => {
+    document.body.style.overflow = isSideBarOpen ? "hidden" : "auto";
+
+    // Clean up the effect when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isSideBarOpen]);
 
   return (
     <AppContext.Provider

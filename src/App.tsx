@@ -28,7 +28,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="relative w-full overflow-x-hidden font-montserrat text-textoffwhite">
+    <div className="relative h-screen w-full overflow-x-hidden font-montserrat text-textoffwhite">
       <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
