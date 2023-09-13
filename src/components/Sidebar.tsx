@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 const Sidebar = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useGlobalContext();
-  const sidebarRef = useRef<HTMLDivElement>(null);
 
+  //the useRef and useEffect is for ignoring scroll of background when mouse is inside the sidebar
+  const sidebarRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const disableScroll = (e: WheelEvent) => {
       e.preventDefault();
