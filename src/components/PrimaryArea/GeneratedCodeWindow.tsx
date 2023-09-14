@@ -43,7 +43,7 @@ const GeneratedCodeWindow = () => {
 
   return (
     <div
-      className={`absolute left-1/2 top-1/2 z-40 h-[95%] w-[95%] -translate-y-1/2 bg-white text-primarydark transition-all duration-500 ${
+      className={`absolute left-1/2 top-1/2 z-50 h-[95%] w-[95%] -translate-y-1/2 bg-white text-primarydark transition-all duration-500  ${
         isGeneratedCodeWindowOpen ? "-translate-x-1/2" : "translate-x-full"
       }`}
     >
