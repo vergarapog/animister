@@ -28,13 +28,35 @@ export const animationsSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { setAnimations, clearAnimations } = animationsSlice.actions;
 
-// Other code such as selectors can use the imported `RootState` type
 export const selectCount = (state: RootState) =>
   state.animationsReducer.animations;
 
+export const initializeAnimations = () => {
+  return async (dispatch: Dispatch) => {
+    const online = true; //set to true when online, set to false for debugging without internet
+
+    let animations = [];
+
+    if (online) {
+      animations = await animationsFirebaseService.getAllAnimations(); // use when online
+    } else {
+      animations = data; // use when offline
+    }
+
+    // console.log(animations);
+    dispatch(setAnimations(animations));
+  };
+};
+
+export default animationsSlice.reducer;
+
+//
+//
+//
+//Legacy
+//
 // const organizeByAnimationType = (allAnimations: Animation[]) => {
 //   const organizedAnimations = allAnimations.reduce((acc, curr) => {
 //     const animationType = curr.animationType;
@@ -51,30 +73,11 @@ export const selectCount = (state: RootState) =>
 //   return organizedAnimations;
 // };
 
-export const initializeAnimations = () => {
-  return async (dispatch: Dispatch) => {
-    const online = true; //set to true when online, set to false for debugging without internet
-
-    let animations = [];
-
-    if (online) {
-      animations = await animationsFirebaseService.getAllAnimations(); // use when online
-    } else {
-      animations = data; // use when offline
-    }
-
-    // const organizedAnimations = organizeByAnimationType(allAnimations);
-    // console.log(organizedAnimations);
-    dispatch(setAnimations(animations));
-  };
-};
-
-// get from json-server
+// get from json-server ////////////////////////////
+//
 // export const initializeAnimations = () => {
 //   return async (dispatch: Dispatch) => {
 //     const animations = await animationsService.getAll();
 //     dispatch(setAnimations(animations));
 //   };
 // };
-
-export default animationsSlice.reducer;

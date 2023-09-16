@@ -20,11 +20,13 @@ export interface AnimationCategory {
 export interface AnimationGroup {
   animationTitle: string;
   variations: Variation[];
+  isFavorite?: boolean;
 }
 
 export interface Variation {
   variationTitle: string;
   keyframes: string;
+  isFavorite?: boolean;
 }
 
 // export type OptionsFormValues = {
