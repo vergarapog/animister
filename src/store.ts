@@ -3,12 +3,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import animationsReducer from "./reducers/animationsReducer";
 import optionsReducer from "./reducers/optionsReducer";
 import animatedObjectReducer from "./reducers/animatedObjectReducer";
+import favoritesReducer from "./reducers/favoritesReducer";
 
 const store = configureStore({
   reducer: {
     animationsReducer: animationsReducer,
     optionsReducer: optionsReducer,
     animatedObjectReducer: animatedObjectReducer,
+    favoritesReducer: favoritesReducer,
   },
 });
 
