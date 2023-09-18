@@ -6,13 +6,17 @@ import { useGlobalContext } from "../../context";
 // type Props = {}
 
 const AnimationControls = () => {
+  const { setIsGeneratedCodeWindowOpen } = useGlobalContext();
+
   const dispatch = useAppDispatch();
 
   const handleReplayAnimation = () => {
     dispatch(remountKey());
   };
 
-  const { setIsGeneratedCodeWindowOpen } = useGlobalContext();
+  const handleFavoriteAnimation = () => {
+    // dispatch(toggleIsFavorite("Scale-Down"));
+  };
 
   const handleOpenGeneratedCodeWindow = () => {
     setIsGeneratedCodeWindowOpen(true);
@@ -31,6 +35,7 @@ const AnimationControls = () => {
         <FontAwesomeIcon
           className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
           icon="heart"
+          onClick={handleFavoriteAnimation}
         />
       </div>
       <div>
