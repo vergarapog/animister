@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useGlobalContext } from "../../context";
-import { useAppDispatch } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import { setKeyframes } from "../../reducers/animatedObjectReducer";
 
 type Props = {
@@ -20,10 +20,17 @@ const Animation = ({
   firstVariationTitle,
   variationKeyframes,
 }: Props) => {
+  const favoriteAnimations = useAppSelector(
+    (state) => state.favoritesReducer.favoriteAnimations
+  );
   const { selectedGroup, setSelectedGroup, setSelectedVariation } =
     useGlobalContext();
 
   const dispatch = useAppDispatch();
+
+  const isFavorite = favoriteAnimations.find((animation) => {
+    return animation.animationTitle === animationTitle;
+  });
 
   const handleClick = () => {
     if (dragging) {
@@ -45,7 +52,7 @@ const Animation = ({
       onClick={handleClick}
     >
       <div>{animationTitle}</div>
-      {false && (
+      {isFavorite && (
         <div>
           <FontAwesomeIcon
             className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}

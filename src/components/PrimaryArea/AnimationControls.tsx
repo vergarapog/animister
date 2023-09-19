@@ -1,12 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAppDispatch } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import { remountKey } from "../../reducers/animatedObjectReducer";
 import { useGlobalContext } from "../../context";
+import { addFavorite, removeFavorite } from "../../reducers/favoritesReducer";
 
 // type Props = {}
 
 const AnimationControls = () => {
-  const { setIsGeneratedCodeWindowOpen } = useGlobalContext();
+  const favoriteAnimations = useAppSelector(
+    (state) => state.favoritesReducer.favoriteAnimations
+  );
+  const { setIsGeneratedCodeWindowOpen, selectedGroup } = useGlobalContext();
+
+  const isFavorite = favoriteAnimations.find((animation) => {
+    return animation.animationTitle === selectedGroup.animationTitle;
+  });
 
   const dispatch = useAppDispatch();
 
@@ -15,7 +23,11 @@ const AnimationControls = () => {
   };
 
   const handleFavoriteAnimation = () => {
-    // dispatch(toggleIsFavorite("Scale-Down"));
+    if (!isFavorite) {
+      dispatch(addFavorite(selectedGroup.animationTitle));
+    } else {
+      dispatch(removeFavorite(selectedGroup.animationTitle));
+    }
   };
 
   const handleOpenGeneratedCodeWindow = () => {
