@@ -28,7 +28,7 @@ const Animation = ({
 
   const dispatch = useAppDispatch();
 
-  const isFavorite = favoriteAnimations.find((animation) => {
+  const isAnimationFavorite = favoriteAnimations.find((animation) => {
     return animation.animationTitle === animationTitle;
   });
 
@@ -52,7 +52,7 @@ const Animation = ({
       onClick={handleClick}
     >
       <div>{animationTitle}</div>
-      {isFavorite && (
+      {isAnimationFavorite && (
         <div>
           <FontAwesomeIcon
             className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}

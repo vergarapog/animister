@@ -14,11 +14,37 @@ export const favoritesSlice = createSlice({
   initialState: initialState,
   reducers: {
     addFavorite: (state, action) => {
-      const newFavorite = {
-        animationTitle: action.payload,
-        variations: [],
-      };
-      state.favoriteAnimations.push(newFavorite);
+      const doesAnimationTitleAlreadyExist = state.favoriteAnimations.find(
+        (animationGroup) => {
+          return (
+            animationGroup.animationTitle === action.payload.animationTitle
+          );
+        }
+      );
+
+      if (doesAnimationTitleAlreadyExist) {
+        console.log("already in array");
+        for (const animationGroup of state.favoriteAnimations) {
+          if (animationGroup.animationTitle === action.payload.animationTitle) {
+            animationGroup.variations.push({
+              variationTitle: action.payload.variation,
+            });
+            break;
+          }
+        }
+      } else {
+        console.log("new in array");
+
+        const newFavorite = {
+          animationTitle: action.payload.animationTitle,
+          variations: [
+            {
+              variationTitle: action.payload.variation,
+            },
+          ],
+        };
+        state.favoriteAnimations.push(newFavorite);
+      }
     },
     removeFavorite: (state, action) => {
       state.favoriteAnimations = state.favoriteAnimations.filter(

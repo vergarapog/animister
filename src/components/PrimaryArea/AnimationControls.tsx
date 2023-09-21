@@ -10,11 +10,12 @@ const AnimationControls = () => {
   const favoriteAnimations = useAppSelector(
     (state) => state.favoritesReducer.favoriteAnimations
   );
-  const { setIsGeneratedCodeWindowOpen, selectedGroup } = useGlobalContext();
+  const { setIsGeneratedCodeWindowOpen, selectedGroup, selectedVariation } =
+    useGlobalContext();
 
-  const isFavorite = favoriteAnimations.find((animation) => {
-    return animation.animationTitle === selectedGroup.animationTitle;
-  });
+  // const isFavorite = favoriteAnimations.find((animation) => {
+  //   return animation.animationTitle === selectedGroup.animationTitle;
+  // });
 
   const dispatch = useAppDispatch();
 
@@ -23,11 +24,22 @@ const AnimationControls = () => {
   };
 
   const handleFavoriteAnimation = () => {
-    if (!isFavorite) {
-      dispatch(addFavorite(selectedGroup.animationTitle));
-    } else {
-      dispatch(removeFavorite(selectedGroup.animationTitle));
-    }
+    // if (!isFavorite) {
+    //   dispatch(
+    //     addFavorite({
+    //       animationTitle: selectedGroup.animationTitle,
+    //       variatio: selectedVariation,
+    //     })
+    //   );
+    // } else {
+    // dispatch(removeFavorite(selectedGroup.animationTitle));
+    // }
+    dispatch(
+      addFavorite({
+        animationTitle: selectedGroup.animationTitle,
+        variation: selectedVariation,
+      })
+    );
   };
 
   const handleOpenGeneratedCodeWindow = () => {
