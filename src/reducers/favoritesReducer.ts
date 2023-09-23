@@ -14,6 +14,7 @@ export const favoritesSlice = createSlice({
   initialState: initialState,
   reducers: {
     addFavorite: (state, action) => {
+      //check first if animation group is already a favorite
       const doesAnimationTitleAlreadyExist = state.favoriteAnimations.find(
         (animationGroup) => {
           return (
@@ -23,23 +24,51 @@ export const favoritesSlice = createSlice({
       );
 
       if (doesAnimationTitleAlreadyExist) {
-        console.log("already in array");
         for (const animationGroup of state.favoriteAnimations) {
           if (animationGroup.animationTitle === action.payload.animationTitle) {
-            animationGroup.variations.push({
-              variationTitle: action.payload.variation,
-            });
-            break;
+            // const variationsReduced = animationGroup.variations.reduce<
+            //   string[]
+            // >((accu, curr) => {
+            //   return [...accu, curr.variationTitle];
+            // }, []);
+
+            const variationIndex = animationGroup.variations.findIndex(
+              (variation) =>
+                variation.variationTitle === action.payload.variationTitle
+            );
+
+            if (variationIndex !== -1) {
+              // Delete the variation from the array
+              animationGroup.variations.splice(variationIndex, 1);
+            } else {
+              animationGroup.variations.push({
+                variationTitle: action.payload.variationTitle,
+              });
+            }
+            return;
           }
         }
       } else {
-        console.log("new in array");
+        // for (const animationGroup of state.favoriteAnimations) {
+        //   if (animationGroup.animationTitle === action.payload.animationTitle) {
+        //     // Find the index of the variation to delete
+        //     const variationIndex = animationGroup.variations.findIndex(
+        //       (variation) =>
+        //         variation.variationTitle === action.payload.variationTitleTitle
+        //     );
 
+        //     // Check if the variation exists
+        //     if (variationIndex !== -1) {
+        //       // Delete the variation from the array
+        //       animationGroup.variations.splice(variationIndex, 1);
+        //     }
+        //   }
+        // }
         const newFavorite = {
           animationTitle: action.payload.animationTitle,
           variations: [
             {
-              variationTitle: action.payload.variation,
+              variationTitle: action.payload.variationTitle,
             },
           ],
         };

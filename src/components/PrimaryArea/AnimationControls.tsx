@@ -37,7 +37,7 @@ const AnimationControls = () => {
     dispatch(
       addFavorite({
         animationTitle: selectedGroup.animationTitle,
-        variation: selectedVariation,
+        variationTitle: selectedVariation,
       })
     );
   };

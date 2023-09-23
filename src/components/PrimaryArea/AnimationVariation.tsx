@@ -20,8 +20,6 @@ const AnimationVariation = ({ variationTitle, keyframes }: Props) => {
       return animation.animationTitle === selectedGroup.animationTitle;
     });
     if (selectedGroupVariations) {
-      console.log(selectedGroupVariations.variations);
-      console.log(variationTitle);
       return selectedGroupVariations.variations.find(
         (variation) => variation.variationTitle === variationTitle
       );
@@ -31,7 +29,6 @@ const AnimationVariation = ({ variationTitle, keyframes }: Props) => {
   };
 
   const isVariationFavorite = checkIfVariationFavorite();
-  console.log(checkIfVariationFavorite());
 
   const dispatch = useAppDispatch();
 
