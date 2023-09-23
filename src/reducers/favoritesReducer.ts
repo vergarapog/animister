@@ -24,11 +24,14 @@ export const favoritesSlice = createSlice({
       );
 
       if (doesAnimationTitleAlreadyExist) {
+        //if already a favorite, iterate it with an index, so that you can access its variations or delete it
         for (let i = 0; i < state.favoriteAnimations.length; i++) {
+          //code to find the animation group equal to the payload request
           if (
             state.favoriteAnimations[i].animationTitle ===
             action.payload.animationTitle
           ) {
+            //code to find the index of the variation equal to the payload request
             const variationIndex = state.favoriteAnimations[
               i
             ].variations.findIndex(
@@ -36,13 +39,17 @@ export const favoritesSlice = createSlice({
                 variation.variationTitle === action.payload.variationTitle
             );
 
+            //if a duplicate variation is found, its index will not be equal to -1, instead it will give its index in the array
             if (variationIndex !== -1) {
-              // Delete the variation from the array
+              //delete the duplicate variation from the array
               state.favoriteAnimations[i].variations.splice(variationIndex, 1);
+
+              //after deleting a duplicate, check if there is other favorite variations in the animation group. If none, delete the animation group from the favorites
               if (state.favoriteAnimations[i].variations.length === 0) {
                 state.favoriteAnimations.splice(i, 1);
               }
             } else {
+              //if no duplicate is found, add the favorite variation from the payload request
               state.favoriteAnimations[i].variations.push({
                 variationTitle: action.payload.variationTitle,
               });
@@ -51,6 +58,7 @@ export const favoritesSlice = createSlice({
           }
         }
       } else {
+        //if animation group isnt a favorite, push it to the state with its first favorite variation
         const newFavorite = {
           animationTitle: action.payload.animationTitle,
           variations: [
