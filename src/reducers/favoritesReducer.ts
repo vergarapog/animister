@@ -24,24 +24,26 @@ export const favoritesSlice = createSlice({
       );
 
       if (doesAnimationTitleAlreadyExist) {
-        for (const animationGroup of state.favoriteAnimations) {
-          if (animationGroup.animationTitle === action.payload.animationTitle) {
-            // const variationsReduced = animationGroup.variations.reduce<
-            //   string[]
-            // >((accu, curr) => {
-            //   return [...accu, curr.variationTitle];
-            // }, []);
-
-            const variationIndex = animationGroup.variations.findIndex(
+        for (let i = 0; i < state.favoriteAnimations.length; i++) {
+          if (
+            state.favoriteAnimations[i].animationTitle ===
+            action.payload.animationTitle
+          ) {
+            const variationIndex = state.favoriteAnimations[
+              i
+            ].variations.findIndex(
               (variation) =>
                 variation.variationTitle === action.payload.variationTitle
             );
 
             if (variationIndex !== -1) {
               // Delete the variation from the array
-              animationGroup.variations.splice(variationIndex, 1);
+              state.favoriteAnimations[i].variations.splice(variationIndex, 1);
+              if (state.favoriteAnimations[i].variations.length === 0) {
+                state.favoriteAnimations.splice(i, 1);
+              }
             } else {
-              animationGroup.variations.push({
+              state.favoriteAnimations[i].variations.push({
                 variationTitle: action.payload.variationTitle,
               });
             }
@@ -49,21 +51,6 @@ export const favoritesSlice = createSlice({
           }
         }
       } else {
-        // for (const animationGroup of state.favoriteAnimations) {
-        //   if (animationGroup.animationTitle === action.payload.animationTitle) {
-        //     // Find the index of the variation to delete
-        //     const variationIndex = animationGroup.variations.findIndex(
-        //       (variation) =>
-        //         variation.variationTitle === action.payload.variationTitleTitle
-        //     );
-
-        //     // Check if the variation exists
-        //     if (variationIndex !== -1) {
-        //       // Delete the variation from the array
-        //       animationGroup.variations.splice(variationIndex, 1);
-        //     }
-        //   }
-        // }
         const newFavorite = {
           animationTitle: action.payload.animationTitle,
           variations: [
