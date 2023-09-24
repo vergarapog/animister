@@ -24,14 +24,14 @@ export const favoritesSlice = createSlice({
       );
 
       if (doesAnimationTitleAlreadyExist) {
-        //if already a favorite, iterate it with an index, so that you can access its variations or delete it
+        //if already a favorite, iterate and find the animationGroup with its index, so that you can access its variations or delete it
         for (let i = 0; i < state.favoriteAnimations.length; i++) {
-          //code to find the animation group equal to the payload request
+          //if statement to find the animation group equal to the payload animationTitle
           if (
             state.favoriteAnimations[i].animationTitle ===
             action.payload.animationTitle
           ) {
-            //code to find the index of the variation equal to the payload request
+            //once animationGroup is found, run this if statement to check if the variation the user wants to add from payload.variationTitle already exist
             const variationIndex = state.favoriteAnimations[
               i
             ].variations.findIndex(
@@ -41,7 +41,7 @@ export const favoritesSlice = createSlice({
 
             //if a duplicate variation is found, its index will not be equal to -1, instead it will give its index in the array
             if (variationIndex !== -1) {
-              //delete the duplicate variation from the array
+              //delete the duplicate variation from the array with its index
               state.favoriteAnimations[i].variations.splice(variationIndex, 1);
 
               //after deleting a duplicate, check if there is other favorite variations in the animation group. If none, delete the animation group from the favorites
@@ -58,7 +58,7 @@ export const favoritesSlice = createSlice({
           }
         }
       } else {
-        //if animation group isnt a favorite, push it to the state with its first favorite variation
+        //if animation group isnt a favorite, push the animation group to the state with its first favorite variation
         const newFavorite = {
           animationTitle: action.payload.animationTitle,
           variations: [
