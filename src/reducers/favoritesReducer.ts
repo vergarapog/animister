@@ -13,7 +13,7 @@ export const favoritesSlice = createSlice({
   name: "favoritesSlice",
   initialState: initialState,
   reducers: {
-    addFavorite: (state, action) => {
+    toggleFavorite: (state, action) => {
       //check first if animation group is already a favorite
       const doesAnimationTitleAlreadyExist = state.favoriteAnimations.find(
         (animationGroup) => {
@@ -81,6 +81,6 @@ export const favoritesSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { addFavorite, removeFavorite } = favoritesSlice.actions;
+export const { toggleFavorite, removeFavorite } = favoritesSlice.actions;
 
 export default favoritesSlice.reducer;

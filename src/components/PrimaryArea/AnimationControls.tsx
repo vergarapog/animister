@@ -2,7 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { remountKey } from "../../reducers/animatedObjectReducer";
 import { useGlobalContext } from "../../context";
-import { addFavorite, removeFavorite } from "../../reducers/favoritesReducer";
+import {
+  toggleFavorite,
+  removeFavorite,
+} from "../../reducers/favoritesReducer";
 
 // type Props = {}
 
@@ -26,7 +29,7 @@ const AnimationControls = () => {
   const handleFavoriteAnimation = () => {
     // if (!isFavorite) {
     //   dispatch(
-    //     addFavorite({
+    //     toggleFavorite({
     //       animationTitle: selectedGroup.animationTitle,
     //       variatio: selectedVariation,
     //     })
@@ -35,7 +38,7 @@ const AnimationControls = () => {
     // dispatch(removeFavorite(selectedGroup.animationTitle));
     // }
     dispatch(
-      addFavorite({
+      toggleFavorite({
         animationTitle: selectedGroup.animationTitle,
         variationTitle: selectedVariation,
       })
