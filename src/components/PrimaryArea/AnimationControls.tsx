@@ -2,23 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { remountKey } from "../../reducers/animatedObjectReducer";
 import { useGlobalContext } from "../../context";
-import {
-  toggleFavorite,
-  removeFavorite,
-} from "../../reducers/favoritesReducer";
-
-// type Props = {}
+import { toggleFavorite } from "../../reducers/favoritesReducer";
 
 const AnimationControls = () => {
-  const favoriteAnimations = useAppSelector(
-    (state) => state.favoritesReducer.favoriteAnimations
-  );
   const { setIsGeneratedCodeWindowOpen, selectedGroup, selectedVariation } =
     useGlobalContext();
-
-  // const isFavorite = favoriteAnimations.find((animation) => {
-  //   return animation.animationTitle === selectedGroup.animationTitle;
-  // });
 
   const dispatch = useAppDispatch();
 
@@ -27,16 +15,6 @@ const AnimationControls = () => {
   };
 
   const handleFavoriteAnimation = () => {
-    // if (!isFavorite) {
-    //   dispatch(
-    //     toggleFavorite({
-    //       animationTitle: selectedGroup.animationTitle,
-    //       variatio: selectedVariation,
-    //     })
-    //   );
-    // } else {
-    // dispatch(removeFavorite(selectedGroup.animationTitle));
-    // }
     dispatch(
       toggleFavorite({
         animationTitle: selectedGroup.animationTitle,

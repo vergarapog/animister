@@ -70,17 +70,10 @@ export const favoritesSlice = createSlice({
         state.favoriteAnimations.push(newFavorite);
       }
     },
-    removeFavorite: (state, action) => {
-      state.favoriteAnimations = state.favoriteAnimations.filter(
-        (animation) => {
-          return animation.animationTitle !== action.payload;
-        }
-      );
-    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { toggleFavorite, removeFavorite } = favoritesSlice.actions;
+export const { toggleFavorite } = favoritesSlice.actions;
 
 export default favoritesSlice.reducer;
