@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAppDispatch, useAppSelector } from "../../hooks";
+import { useAppDispatch } from "../../hooks";
 import { remountKey } from "../../reducers/animatedObjectReducer";
 import { useGlobalContext } from "../../context";
 import { toggleFavorite } from "../../reducers/favoritesReducer";

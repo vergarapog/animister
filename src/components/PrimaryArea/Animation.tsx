@@ -28,6 +28,7 @@ const Animation = ({
 
   const dispatch = useAppDispatch();
 
+  //this gets the whole animationGroup object, so you can count the variation array length to display the number of favorites in the group
   const isAnimationFavorite = favoriteAnimations.find((animation) => {
     return animation.animationTitle === animationTitle;
   });
@@ -44,22 +45,22 @@ const Animation = ({
   return (
     <div
       key={itemId}
-      className={`mx-2 flex min-w-[90px] cursor-pointer select-none items-center  justify-center  rounded-full px-1 py-1 text-center text-sm font-bold tracking-wide md:h-28 md:w-28  ${
+      className={`relative mx-2 flex min-w-[90px] cursor-pointer select-none  items-center justify-center rounded-full px-1 py-1 text-center text-sm font-bold tracking-wide md:h-28 md:w-28  ${
         selectedGroup.animationTitle === animationTitle
           ? "bg-accent"
           : "bg-primary"
       }`}
       onClick={handleClick}
     >
-      <div>{animationTitle}</div>
       {isAnimationFavorite && (
-        <div>
-          <FontAwesomeIcon
-            className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
-            icon="heart"
-          />
+        <div className={`absolute left-1/2 top-6 -translate-x-1/2`}>
+          {isAnimationFavorite.variations.length}{" "}
+          <FontAwesomeIcon icon="heart" />
         </div>
       )}
+      <div>
+        <div>{animationTitle}</div>
+      </div>
     </div>
   );
 };

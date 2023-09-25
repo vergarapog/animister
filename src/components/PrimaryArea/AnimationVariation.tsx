@@ -46,15 +46,10 @@ const AnimationVariation = ({ variationTitle, keyframes }: Props) => {
       }`}
       onClick={handleClick}
     >
-      <div>{variationTitle}</div>
-      {isVariationFavorite && (
-        <div>
-          <FontAwesomeIcon
-            className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
-            icon="heart"
-          />
-        </div>
-      )}
+      <div>
+        {variationTitle}{" "}
+        {isVariationFavorite && <FontAwesomeIcon className={``} icon="heart" />}
+      </div>
     </div>
   );
 };
