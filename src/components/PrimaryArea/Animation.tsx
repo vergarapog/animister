@@ -29,7 +29,8 @@ const Animation = ({
   const dispatch = useAppDispatch();
 
   //this gets the whole animationGroup object, so you can count the variation array length to display the number of favorites in the group
-  const isAnimationFavorite = favoriteAnimations.find((animation) => {
+  //the returned thruthy/falsy value (object | undefined ) is used to display via shortcircuit the heart icon at line 56
+  const selectedAnimationGroupObject = favoriteAnimations.find((animation) => {
     return animation.animationTitle === animationTitle;
   });
 
@@ -52,9 +53,9 @@ const Animation = ({
       }`}
       onClick={handleClick}
     >
-      {isAnimationFavorite && (
+      {selectedAnimationGroupObject && (
         <div className={`absolute left-1/2 top-6 -translate-x-1/2`}>
-          {isAnimationFavorite.variations.length}{" "}
+          {selectedAnimationGroupObject.variations.length}{" "}
           <FontAwesomeIcon icon="heart" />
         </div>
       )}

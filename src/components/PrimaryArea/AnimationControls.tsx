@@ -1,14 +1,27 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAppDispatch } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import { remountKey } from "../../reducers/animatedObjectReducer";
 import { useGlobalContext } from "../../context";
 import { toggleFavorite } from "../../reducers/favoritesReducer";
 
 const AnimationControls = () => {
+  const favoriteAnimations = useAppSelector((state) => {
+    return state.favoritesReducer.favoriteAnimations;
+  });
   const { setIsGeneratedCodeWindowOpen, selectedGroup, selectedVariation } =
     useGlobalContext();
 
   const dispatch = useAppDispatch();
+
+  const selectedAnimationGroupObject = favoriteAnimations.find((animation) => {
+    return animation.animationTitle === selectedGroup.animationTitle;
+  });
+
+  const arrayOfVariations = selectedAnimationGroupObject?.variations.map(
+    (variation) => {
+      return variation.variationTitle;
+    }
+  );
 
   const handleReplayAnimation = () => {
     dispatch(remountKey());
@@ -38,7 +51,11 @@ const AnimationControls = () => {
       </div>
       <div>
         <FontAwesomeIcon
-          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
+          className={`cursor-pointer rounded-full ${
+            arrayOfVariations?.includes(selectedVariation)
+              ? "bg-accent text-primarydark"
+              : "bg-white text-primary"
+          } p-2 text-xl  transition-all hover:scale-125 md:text-xl`}
           icon="heart"
           onClick={handleFavoriteAnimation}
         />
