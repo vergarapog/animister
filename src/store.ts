@@ -5,13 +5,27 @@ import optionsReducer from "./reducers/optionsReducer";
 import animatedObjectReducer from "./reducers/animatedObjectReducer";
 import favoritesReducer from "./reducers/favoritesReducer";
 
+import { persistReducer } from "redux-persist";
+import { combineReducers } from "@reduxjs/toolkit";
+import storage from "redux-persist/lib/storage";
+
+const persistConfig = {
+  key: "root",
+  storage,
+  whitelist: ["favoritesReducer"],
+};
+
+const reducer = combineReducers({
+  animationsReducer: animationsReducer,
+  optionsReducer: optionsReducer,
+  animatedObjectReducer: animatedObjectReducer,
+  favoritesReducer: favoritesReducer,
+});
+
+const persistedReducer = persistReducer(persistConfig, reducer);
+
 const store = configureStore({
-  reducer: {
-    animationsReducer: animationsReducer,
-    optionsReducer: optionsReducer,
-    animatedObjectReducer: animatedObjectReducer,
-    favoritesReducer: favoritesReducer,
-  },
+  reducer: persistedReducer,
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
