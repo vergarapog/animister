@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from "../../hooks";
 import { remountKey } from "../../reducers/animatedObjectReducer";
 import { useGlobalContext } from "../../context";
 import { toggleFavorite } from "../../reducers/favoritesReducer";
+import { useMatch } from "react-router-dom";
 
 const AnimationControls = () => {
   const favoriteAnimations = useAppSelector((state) => {
@@ -22,6 +23,8 @@ const AnimationControls = () => {
       return variation.variationTitle;
     }
   );
+
+  const isFavoritesPage = useMatch("/favorites");
 
   const handleReplayAnimation = () => {
     dispatch(remountKey());
@@ -49,17 +52,19 @@ const AnimationControls = () => {
           onClick={handleReplayAnimation}
         />
       </div>
-      <div>
-        <FontAwesomeIcon
-          className={`cursor-pointer rounded-full ${
-            arrayOfVariations?.includes(selectedVariation)
-              ? "bg-accent text-primarydark"
-              : "bg-white text-primary"
-          } p-2 text-xl  transition-all hover:scale-125 md:text-xl`}
-          icon="heart"
-          onClick={handleFavoriteAnimation}
-        />
-      </div>
+      {!isFavoritesPage && (
+        <div>
+          <FontAwesomeIcon
+            className={`cursor-pointer rounded-full ${
+              arrayOfVariations?.includes(selectedVariation)
+                ? "bg-primary text-accent"
+                : "bg-white text-primary"
+            } p-2 text-xl  transition-all hover:scale-125 md:text-xl`}
+            icon="heart"
+            onClick={handleFavoriteAnimation}
+          />
+        </div>
+      )}
       <div>
         <FontAwesomeIcon
           className={`cursor-pointer rounded-full bg-white px-2 py-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}

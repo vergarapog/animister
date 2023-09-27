@@ -3,6 +3,7 @@ import { useGlobalContext } from "../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { animationCategories } from "../constants";
+import NavbarControls from "./NavbarControls";
 
 const Navbar = () => {
   const { selectedCategory, setSelectedCategory, setIsSideBarOpen } =
@@ -52,11 +53,16 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div onClick={() => setIsSideBarOpen(true)} className="self-center">
-          <FontAwesomeIcon
-            className={`cursor-pointer text-xl transition-all hover:scale-y-[1.3] md:text-2xl`}
-            icon="bars"
-          />
+        <div className="flex items-center">
+          <div className="h-8">
+            <NavbarControls />
+          </div>
+          <div onClick={() => setIsSideBarOpen(true)} className="">
+            <FontAwesomeIcon
+              className={`cursor-pointer text-xl transition-all hover:scale-y-[1.3] md:text-2xl`}
+              icon="bars"
+            />
+          </div>
         </div>
       </div>
       {/* Mobile Version of Navbar*/}
@@ -70,11 +76,14 @@ const Navbar = () => {
             B
           </div>
 
-          <div onClick={() => setIsSideBarOpen(true)} className="self-center">
-            <FontAwesomeIcon
-              className={`cursor-pointer text-xl transition-all hover:scale-y-[1.3] md:text-2xl`}
-              icon="bars"
-            />
+          <div className="flex items-center">
+            <NavbarControls />
+            <div onClick={() => setIsSideBarOpen(true)} className="self-center">
+              <FontAwesomeIcon
+                className={`cursor-pointer text-xl transition-all hover:scale-y-[1.3] md:text-2xl`}
+                icon="bars"
+              />
+            </div>
           </div>
         </div>
         <div className=" overflow-x-scroll font-bold scrollbar-hide">

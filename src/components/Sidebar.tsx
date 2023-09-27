@@ -52,7 +52,7 @@ const Sidebar = () => {
           </Link>
         </div>
         <div className="flex flex-1 items-start justify-center p-8">
-          <ul className="items flex flex-col space-y-6 text-2xl">
+          <ul className="items flex flex-col space-y-6 text-center text-2xl">
             <li>
               <Link
                 to="/"
@@ -69,6 +69,15 @@ const Sidebar = () => {
                 onClick={() => setIsSideBarOpen(false)}
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/favorites"
+                className="cursor-pointer rounded px-4 py-2  transition-all hover:line-through"
+                onClick={() => setIsSideBarOpen(false)}
+              >
+                Favorites
               </Link>
             </li>
           </ul>

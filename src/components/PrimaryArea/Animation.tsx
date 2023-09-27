@@ -9,7 +9,7 @@ type Props = {
   animationTitle: string;
   dragging: boolean;
   firstVariationTitle: string;
-  variationKeyframes: string;
+  variationKeyframes: string | undefined;
 };
 
 const Animation = ({

@@ -20,6 +20,7 @@ import Options from "./Options";
 import AnimationControls from "./AnimationControls";
 import GeneratedCodeWindow from "./GeneratedCodeWindow";
 import { setKeyframes } from "../../reducers/animatedObjectReducer";
+import { useMatch } from "react-router-dom";
 
 //need to enable any because react-horizontal-scrolling library doesnt have updated types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -28,6 +29,10 @@ type scrollVisibilityApiType = any;
 const PrimaryArea = () => {
   const allAnimations = useAppSelector(
     (state) => state.animationsReducer.animations
+  );
+
+  const favorites = useAppSelector(
+    (state) => state.favoritesReducer.favoriteAnimations
   );
 
   const dispatch = useAppDispatch();
@@ -54,8 +59,18 @@ const PrimaryArea = () => {
     return getListByCategory(selectedCategory);
   }, [selectedCategory, getListByCategory]);
 
+  const inFavorites = useMatch("/favorites");
+
   useEffect(() => {
-    if (animationsByCategory) {
+    if (inFavorites) {
+      setAnimationItemsList(favorites);
+      setSelectedGroup({
+        index: 0,
+        animationTitle: favorites[0].animationTitle,
+      });
+      setSelectedVariation(favorites[0].variations[0].variationTitle);
+      dispatch(setKeyframes(favorites[0].variations[0].keyframes));
+    } else if (animationsByCategory) {
       setAnimationItemsList(animationsByCategory.groups);
       setSelectedGroup({
         index: 0,
@@ -78,6 +93,7 @@ const PrimaryArea = () => {
     getListByCategory,
     dispatch,
     setAnimationItemsList,
+    inFavorites,
   ]);
 
   //for re-scroll to first animation group on category change

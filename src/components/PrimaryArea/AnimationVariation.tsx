@@ -5,7 +5,7 @@ import { setKeyframes } from "../../reducers/animatedObjectReducer";
 
 type Props = {
   variationTitle: string;
-  keyframes: string;
+  keyframes: string | undefined;
 };
 
 const AnimationVariation = ({ variationTitle, keyframes }: Props) => {
