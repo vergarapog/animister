@@ -36,7 +36,8 @@ export const favoritesSlice = createSlice({
               i
             ].variations.findIndex(
               (variation) =>
-                variation.variationTitle === action.payload.variationTitle
+                variation.variationTitle ===
+                action.payload.variation.variationTitle
             );
 
             //if a duplicate variation is found, its index will not be equal to -1, instead it will give its index in the array
@@ -51,7 +52,8 @@ export const favoritesSlice = createSlice({
             } else {
               //if no duplicate is found, add the favorite variation from the payload request
               state.favoriteAnimations[i].variations.push({
-                variationTitle: action.payload.variationTitle,
+                variationTitle: action.payload.variation.variationTitle,
+                keyframes: action.payload.variation.keyframes,
               });
             }
             return;
@@ -63,7 +65,8 @@ export const favoritesSlice = createSlice({
           animationTitle: action.payload.animationTitle,
           variations: [
             {
-              variationTitle: action.payload.variationTitle,
+              variationTitle: action.payload.variation.variationTitle,
+              keyframes: action.payload.variation.keyframes,
             },
           ],
         };

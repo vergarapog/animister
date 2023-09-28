@@ -9,6 +9,11 @@ const AnimationControls = () => {
   const favoriteAnimations = useAppSelector((state) => {
     return state.favoritesReducer.favoriteAnimations;
   });
+
+  const { keyframes } = useAppSelector((state) => {
+    return state.animatedObjectReducer;
+  });
+
   const { setIsGeneratedCodeWindowOpen, selectedGroup, selectedVariation } =
     useGlobalContext();
 
@@ -34,7 +39,7 @@ const AnimationControls = () => {
     dispatch(
       toggleFavorite({
         animationTitle: selectedGroup.animationTitle,
-        variationTitle: selectedVariation,
+        variation: { variationTitle: selectedVariation, keyframes: keyframes },
       })
     );
   };

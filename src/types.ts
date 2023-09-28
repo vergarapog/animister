@@ -25,7 +25,7 @@ export interface AnimationGroup {
 
 export interface Variation {
   variationTitle: string;
-  keyframes?: string;
+  keyframes: string;
   isFavorite?: boolean;
 }
 

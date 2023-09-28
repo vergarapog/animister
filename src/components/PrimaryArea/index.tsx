@@ -85,6 +85,7 @@ const PrimaryArea = () => {
     } else {
       setAnimationItemsList([]);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     animationsByCategory,
     selectedCategory,
