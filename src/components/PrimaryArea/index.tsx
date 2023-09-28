@@ -46,6 +46,7 @@ const PrimaryArea = () => {
     setAnimationItemsList,
   } = useGlobalContext();
 
+  //these two useCallback and useMemo functions are in charge when a user changes the category from the navbar
   const getListByCategory = useCallback(
     (selectedCategory: string) => {
       return allAnimations.find(
@@ -59,6 +60,7 @@ const PrimaryArea = () => {
     return getListByCategory(selectedCategory);
   }, [selectedCategory, getListByCategory]);
 
+  //check if in favorites page
   const inFavorites = useMatch("/favorites");
 
   useEffect(() => {
@@ -85,6 +87,7 @@ const PrimaryArea = () => {
     } else {
       setAnimationItemsList([]);
     }
+    //disable warning so favorites variable dependency will not cause re-render when favoriting a variation
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     animationsByCategory,
