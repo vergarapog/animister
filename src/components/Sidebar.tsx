@@ -48,7 +48,6 @@ const Sidebar = () => {
         <div className="my-12 self-center">
           <Link to="/" onClick={() => setIsSideBarOpen(false)}>
             <button className="btn btn-primary btn-ghost btn-shine">B</button>{" "}
-            {/**D */}
           </Link>
         </div>
         <div className="flex flex-1 items-start justify-center p-8">
