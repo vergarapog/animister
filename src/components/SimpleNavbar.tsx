@@ -7,8 +7,7 @@ import NavbarControls from "./NavbarControls";
 const SimpleNavbar = () => {
   const { setIsSideBarOpen } = useGlobalContext();
 
-  //check if in favorites page
-  const inFavoritesPage = useMatch("/favorites");
+  const inAboutPage = useMatch("/about");
 
   return (
     <nav className={`bg-primary px-2 py-3 text-sm uppercase md:px-4 md:py-2`}>
@@ -25,9 +24,13 @@ const SimpleNavbar = () => {
           </Link>
         </div>
         <div className="flex items-center">
-          <div className="h-8">
-            <NavbarControls />
-          </div>
+          {inAboutPage ? (
+            <></>
+          ) : (
+            <div className="h-8">
+              <NavbarControls />
+            </div>
+          )}
           <div onClick={() => setIsSideBarOpen(true)} className="">
             <FontAwesomeIcon
               className={`cursor-pointer text-xl transition-all hover:scale-y-[1.3] md:text-2xl`}
