@@ -1,14 +1,34 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useGlobalContext } from "../../context";
-import { useAppDispatch } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import { setKeyframes } from "../../reducers/animatedObjectReducer";
 
 type Props = {
   variationTitle: string;
-  keyframes: string;
+  keyframes: string | undefined;
 };
 
 const AnimationVariation = ({ variationTitle, keyframes }: Props) => {
-  const { selectedVariation, setSelectedVariation } = useGlobalContext();
+  const favoriteAnimations = useAppSelector(
+    (state) => state.favoritesReducer.favoriteAnimations
+  );
+  const { selectedGroup, selectedVariation, setSelectedVariation } =
+    useGlobalContext();
+
+  const checkIfVariationFavorite = () => {
+    const selectedGroupVariations = favoriteAnimations.find((animation) => {
+      return animation.animationTitle === selectedGroup.animationTitle;
+    });
+    if (selectedGroupVariations) {
+      return selectedGroupVariations.variations.find(
+        (variation) => variation.variationTitle === variationTitle
+      );
+    } else {
+      return false;
+    }
+  };
+
+  const isVariationFavorite = checkIfVariationFavorite();
 
   const dispatch = useAppDispatch();
 
@@ -26,7 +46,10 @@ const AnimationVariation = ({ variationTitle, keyframes }: Props) => {
       }`}
       onClick={handleClick}
     >
-      <div>{variationTitle}</div>
+      <div>
+        {variationTitle}{" "}
+        {isVariationFavorite && <FontAwesomeIcon className={``} icon="heart" />}
+      </div>
     </div>
   );
 };

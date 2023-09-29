@@ -20,6 +20,7 @@ import Options from "./Options";
 import AnimationControls from "./AnimationControls";
 import GeneratedCodeWindow from "./GeneratedCodeWindow";
 import { setKeyframes } from "../../reducers/animatedObjectReducer";
+import { Link, useMatch } from "react-router-dom";
 
 //need to enable any because react-horizontal-scrolling library doesnt have updated types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -28,6 +29,10 @@ type scrollVisibilityApiType = any;
 const PrimaryArea = () => {
   const allAnimations = useAppSelector(
     (state) => state.animationsReducer.animations
+  );
+
+  const favorites = useAppSelector(
+    (state) => state.favoritesReducer.favoriteAnimations
   );
 
   const dispatch = useAppDispatch();
@@ -41,6 +46,7 @@ const PrimaryArea = () => {
     setAnimationItemsList,
   } = useGlobalContext();
 
+  //these two useCallback and useMemo functions are in charge when a user changes the category from the navbar
   const getListByCategory = useCallback(
     (selectedCategory: string) => {
       return allAnimations.find(
@@ -54,8 +60,22 @@ const PrimaryArea = () => {
     return getListByCategory(selectedCategory);
   }, [selectedCategory, getListByCategory]);
 
+  //check if in favorites page, used to resuse this component to only display favorites when on favorites page, triggered by useEffect
+
+  const inFavoritesPage = useMatch("/favorites");
+
   useEffect(() => {
-    if (animationsByCategory) {
+    if (inFavoritesPage) {
+      setAnimationItemsList(favorites);
+      if (favorites.length !== 0) {
+        setSelectedGroup({
+          index: 0,
+          animationTitle: favorites[0].animationTitle,
+        });
+        setSelectedVariation(favorites[0].variations[0].variationTitle);
+        dispatch(setKeyframes(favorites[0].variations[0].keyframes));
+      }
+    } else if (animationsByCategory) {
       setAnimationItemsList(animationsByCategory.groups);
       setSelectedGroup({
         index: 0,
@@ -70,6 +90,8 @@ const PrimaryArea = () => {
     } else {
       setAnimationItemsList([]);
     }
+    //disable warning so favorites variable dependency will not cause re-render when favoriting a variation
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     animationsByCategory,
     selectedCategory,
@@ -78,6 +100,7 @@ const PrimaryArea = () => {
     getListByCategory,
     dispatch,
     setAnimationItemsList,
+    inFavoritesPage,
   ]);
 
   //for re-scroll to first animation group on category change
@@ -154,6 +177,23 @@ const PrimaryArea = () => {
             <LoadingSkeletonsVariation numOfSkeletons={18} />
           )}
         </div>
+        {inFavoritesPage && favorites.length === 0 && (
+          <div className="flex h-64 items-center justify-center text-primarydark">
+            <div className="space-y-7">
+              <div className="text-2xl">
+                This space is waiting for your favorites. Add some now!
+              </div>
+              <div className="text-center text-2xl transition-all ">
+                Back to{" "}
+                <Link to="/">
+                  <span className="rounded bg-accent p-1 text-white underline transition-all hover:p-3">
+                    Home
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </section>
 
       <section className={`relative h-[750px] bg-gray-200`}>

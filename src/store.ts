@@ -3,13 +3,43 @@ import { configureStore } from "@reduxjs/toolkit";
 import animationsReducer from "./reducers/animationsReducer";
 import optionsReducer from "./reducers/optionsReducer";
 import animatedObjectReducer from "./reducers/animatedObjectReducer";
+import favoritesReducer from "./reducers/favoritesReducer";
+
+import {
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from "redux-persist";
+import { combineReducers } from "@reduxjs/toolkit";
+import storage from "redux-persist/lib/storage";
+
+const persistConfig = {
+  key: "root",
+  storage,
+  whitelist: ["favoritesReducer"],
+};
+
+const reducer = combineReducers({
+  animationsReducer: animationsReducer,
+  optionsReducer: optionsReducer,
+  animatedObjectReducer: animatedObjectReducer,
+  favoritesReducer: favoritesReducer,
+});
+
+const persistedReducer = persistReducer(persistConfig, reducer);
 
 const store = configureStore({
-  reducer: {
-    animationsReducer: animationsReducer,
-    optionsReducer: optionsReducer,
-    animatedObjectReducer: animatedObjectReducer,
-  },
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

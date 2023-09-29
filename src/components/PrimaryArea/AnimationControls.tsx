@@ -1,18 +1,48 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAppDispatch } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import { remountKey } from "../../reducers/animatedObjectReducer";
 import { useGlobalContext } from "../../context";
-
-// type Props = {}
+import { toggleFavorite } from "../../reducers/favoritesReducer";
+import { useMatch } from "react-router-dom";
 
 const AnimationControls = () => {
+  const favoriteAnimations = useAppSelector((state) => {
+    return state.favoritesReducer.favoriteAnimations;
+  });
+
+  const { keyframes } = useAppSelector((state) => {
+    return state.animatedObjectReducer;
+  });
+
+  const { setIsGeneratedCodeWindowOpen, selectedGroup, selectedVariation } =
+    useGlobalContext();
+
   const dispatch = useAppDispatch();
+
+  const selectedAnimationGroupObject = favoriteAnimations.find((animation) => {
+    return animation.animationTitle === selectedGroup.animationTitle;
+  });
+
+  const arrayOfVariations = selectedAnimationGroupObject?.variations.map(
+    (variation) => {
+      return variation.variationTitle;
+    }
+  );
+
+  const isFavoritesPage = useMatch("/favorites");
 
   const handleReplayAnimation = () => {
     dispatch(remountKey());
   };
 
-  const { setIsGeneratedCodeWindowOpen } = useGlobalContext();
+  const handleFavoriteAnimation = () => {
+    dispatch(
+      toggleFavorite({
+        animationTitle: selectedGroup.animationTitle,
+        variation: { variationTitle: selectedVariation, keyframes: keyframes },
+      })
+    );
+  };
 
   const handleOpenGeneratedCodeWindow = () => {
     setIsGeneratedCodeWindowOpen(true);
@@ -27,12 +57,19 @@ const AnimationControls = () => {
           onClick={handleReplayAnimation}
         />
       </div>
-      <div>
-        <FontAwesomeIcon
-          className={`cursor-pointer rounded-full bg-white p-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}
-          icon="heart"
-        />
-      </div>
+      {!isFavoritesPage && (
+        <div>
+          <FontAwesomeIcon
+            className={`cursor-pointer rounded-full ${
+              arrayOfVariations?.includes(selectedVariation)
+                ? "bg-primary text-accent"
+                : "bg-white text-primary"
+            } p-2 text-xl  transition-all hover:scale-125 md:text-xl`}
+            icon="heart"
+            onClick={handleFavoriteAnimation}
+          />
+        </div>
+      )}
       <div>
         <FontAwesomeIcon
           className={`cursor-pointer rounded-full bg-white px-2 py-2 text-xl text-primary transition-all hover:scale-125 md:text-xl`}

@@ -7,6 +7,7 @@ import Sidebar from "./components/Sidebar";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Favorites from "./pages/Favorites";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -15,10 +16,22 @@ import {
   faCode,
   faHeart,
   faX,
+  faFilter,
+  faTrash,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import Backdrop from "./components/Backdrop";
 
-library.add(faBars, faArrowRotateRight, faHeart, faCode, faX);
+library.add(
+  faBars,
+  faArrowRotateRight,
+  faHeart,
+  faCode,
+  faX,
+  faFilter,
+  faTrash,
+  faDownload
+);
 
 function App() {
   const dispatch = useAppDispatch();
@@ -33,6 +46,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/favorites" element={<Favorites />} />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
       <Backdrop />
