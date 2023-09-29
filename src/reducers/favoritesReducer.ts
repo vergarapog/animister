@@ -73,10 +73,13 @@ export const favoritesSlice = createSlice({
         state.favoriteAnimations.push(newFavorite);
       }
     },
+    clearFavorites: (state) => {
+      state.favoriteAnimations = [];
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { toggleFavorite } = favoritesSlice.actions;
+export const { toggleFavorite, clearFavorites } = favoritesSlice.actions;
 
 export default favoritesSlice.reducer;
