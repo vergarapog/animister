@@ -60,7 +60,8 @@ const PrimaryArea = () => {
     return getListByCategory(selectedCategory);
   }, [selectedCategory, getListByCategory]);
 
-  //check if in favorites page
+  //check if in favorites page, used to resuse this component to only display favorites when on favorites page, triggered by useEffect
+
   const inFavoritesPage = useMatch("/favorites");
 
   useEffect(() => {
@@ -137,23 +138,21 @@ const PrimaryArea = () => {
           apiRef={apiRef}
           className={`flex space-x-4 overflow-x-scroll p-2 scrollbar-hide`}
         >
-          {animationItemsList.length !== 0
-            ? animationItemsList.map(
-                ({ animationTitle, variations }, index) => (
-                  <Animation
-                    index={index}
-                    itemId={animationTitle} // NOTE: itemId is required for track items
-                    key={animationTitle}
-                    animationTitle={animationTitle}
-                    dragging={dragging}
-                    firstVariationTitle={variations[0].variationTitle}
-                    variationKeyframes={variations[0].keyframes}
-                  />
-                )
-              )
-            : !inFavoritesPage && (
-                <LoadingSkeletonsAnimationGroup numOfSkeletons={10} />
-              )}
+          {animationItemsList.length !== 0 ? (
+            animationItemsList.map(({ animationTitle, variations }, index) => (
+              <Animation
+                index={index}
+                itemId={animationTitle} // NOTE: itemId is required for track items
+                key={animationTitle}
+                animationTitle={animationTitle}
+                dragging={dragging}
+                firstVariationTitle={variations[0].variationTitle}
+                variationKeyframes={variations[0].keyframes}
+              />
+            ))
+          ) : (
+            <LoadingSkeletonsAnimationGroup numOfSkeletons={10} />
+          )}
         </ScrollMenu>
       </section>
       <section className={`p-2`}>
@@ -162,21 +161,21 @@ const PrimaryArea = () => {
             animationItemsList.length !== 0 ? "gap-0" : "gap-1"
           } space-x-2 overflow-x-scroll scrollbar-hide  md:grid  md:grid-cols-4 md:space-x-0 lg:grid-cols-6`}
         >
-          {animationItemsList.length !== 0
-            ? animationItemsList[selectedGroup.index]?.variations?.map(
-                ({ variationTitle, keyframes }) => {
-                  return (
-                    <AnimationVariation
-                      key={variationTitle}
-                      variationTitle={variationTitle}
-                      keyframes={keyframes}
-                    />
-                  );
-                }
-              )
-            : !inFavoritesPage && (
-                <LoadingSkeletonsVariation numOfSkeletons={18} />
-              )}
+          {animationItemsList.length !== 0 ? (
+            animationItemsList[selectedGroup.index]?.variations?.map(
+              ({ variationTitle, keyframes }) => {
+                return (
+                  <AnimationVariation
+                    key={variationTitle}
+                    variationTitle={variationTitle}
+                    keyframes={keyframes}
+                  />
+                );
+              }
+            )
+          ) : (
+            <LoadingSkeletonsVariation numOfSkeletons={18} />
+          )}
         </div>
         {inFavoritesPage && favorites.length === 0 && (
           <div className="flex h-64 items-center justify-center text-primarydark">
