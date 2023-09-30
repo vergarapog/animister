@@ -27,10 +27,10 @@ const Favorites = () => {
               <div className="text-2xl">
                 This space is waiting for your favorites. Add some now!
               </div>
-              <div className="text-center text-2xl transition-all ">
+              <div className="text-center text-2xl transition-all">
                 Back to{" "}
                 <Link to="/">
-                  <span className="rounded bg-accent p-1 text-white underline transition-all hover:p-3">
+                  <span className="rounded bg-primary p-1 text-white underline transition-all hover:bg-accent hover:px-3">
                     Home
                   </span>
                 </Link>
