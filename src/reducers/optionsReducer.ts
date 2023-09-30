@@ -1,7 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface OptionsSliceState {
-  objectType: "box" | "circle";
+  objectType:
+    | "box"
+    | "box light"
+    | "circle"
+    | "image"
+    | "button"
+    | "text"
+    | "letter";
   duration: string;
   timingFunction: string;
   delay: string;

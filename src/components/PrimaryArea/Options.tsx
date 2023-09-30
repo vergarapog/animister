@@ -100,7 +100,12 @@ const Options = () => {
             >
               <optgroup label="2D objects">
                 <option>box</option>
+                <option>box light</option>
                 <option>circle</option>
+                <option>image</option>
+                <option>button</option>
+                <option>text</option>
+                <option>letter</option>
               </optgroup>
               <optgroup label="3D objects">
                 <option>card</option>
