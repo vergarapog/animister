@@ -84,7 +84,7 @@ const Options = () => {
   };
 
   return (
-    <div className="absolute left-4 top-4 h-[450px] w-56 select-none bg-white text-primarydark shadow-xl">
+    <div className="absolute left-4 top-4 z-10 h-[450px] w-56 select-none bg-white text-primarydark shadow-xl">
       <section className="p-3">
         <div className={`py-2 text-lg uppercase`}>Options</div>
         <div>
@@ -106,6 +106,12 @@ const Options = () => {
                 <option>button</option>
                 <option>text</option>
                 <option>letter</option>
+                <option>bg gradient horizontal</option>
+                <option>bg gradient vertical</option>
+                <option>bg gradient diagonal</option>
+                <option>bg flat color</option>
+                <option>bg image</option>
+                <option>cover image</option>
               </optgroup>
               <optgroup label="3D objects">
                 <option>card</option>

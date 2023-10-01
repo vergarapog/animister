@@ -8,7 +8,13 @@ interface OptionsSliceState {
     | "image"
     | "button"
     | "text"
-    | "letter";
+    | "letter"
+    | "bg gradient horizontal"
+    | "bg gradient vertical"
+    | "bg gradient diagonal"
+    | "bg flat color"
+    | "bg image"
+    | "cover image";
   duration: string;
   timingFunction: string;
   delay: string;
