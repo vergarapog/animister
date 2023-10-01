@@ -196,7 +196,7 @@ const PrimaryArea = () => {
         )}
       </section>
 
-      <section className={`relative h-[750px] bg-gray-200`}>
+      <section className={`relative h-[750px] bg-[#dfdfdf]`}>
         <Options />
         <AnimatedObject />
         <AnimationControls />

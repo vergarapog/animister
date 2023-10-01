@@ -104,7 +104,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3 text-9xl font-bold text-accent`}
+          className={`absolute left-1/2 top-1/3 text-9xl font-bold text-white`}
         >
           <button>B</button>
         </div>
