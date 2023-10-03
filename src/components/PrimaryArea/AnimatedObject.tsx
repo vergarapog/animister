@@ -173,6 +173,30 @@ const AnimatedObject = () => {
         </div>
       );
 
+    case "3D Card":
+      return (
+        <div key={key} className={`card-container`}>
+          <div className="the-card" style={{ animation: animationCSS }}>
+            <div className="the-front">front</div>
+            <div className="the-back">back</div>
+          </div>
+        </div>
+      );
+
+    case "3D Cube":
+      return (
+        <div key={key} className={`cube-container`}>
+          <div className="cube-area" style={{ animation: animationCSS }}>
+            <div className="cube cube-front">1</div>
+            <div className="cube cube-right">5</div>
+            <div className="cube cube-back">3</div>
+            <div className="cube cube-left">6</div>
+            <div className="cube cube-top">2</div>
+            <div className="cube cube-bottom">4</div>
+          </div>
+        </div>
+      );
+
     default:
       return assertNever(objectType);
   }

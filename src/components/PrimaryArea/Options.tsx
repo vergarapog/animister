@@ -114,9 +114,8 @@ const Options = () => {
                 <option>cover image</option>
               </optgroup>
               <optgroup label="3D objects">
-                <option>card</option>
-                <option>diamond</option>
-                <option>spade</option>
+                <option>3D Card</option>
+                <option>3D Cube</option>
               </optgroup>
             </select>
           </div>

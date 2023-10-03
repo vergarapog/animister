@@ -14,7 +14,9 @@ interface OptionsSliceState {
     | "bg gradient diagonal"
     | "bg flat color"
     | "bg image"
-    | "cover image";
+    | "cover image"
+    | "3D Card"
+    | "3D Cube";
   duration: string;
   timingFunction: string;
   delay: string;
