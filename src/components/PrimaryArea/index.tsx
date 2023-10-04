@@ -26,6 +26,8 @@ import { Link, useMatch } from "react-router-dom";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
 
+import usePreventBodyScroll from "./usePreventBodyScroll";
+
 const PrimaryArea = () => {
   const allAnimations = useAppSelector(
     (state) => state.animationsReducer.animations
@@ -122,10 +124,13 @@ const PrimaryArea = () => {
         }
       });
 
+  const { enableScroll, disableScroll } = usePreventBodyScroll();
+
   return (
     <main className={`flex h-full flex-col pt-2`}>
       <section
-        onMouseLeave={dragStop}
+        onMouseEnter={disableScroll}
+        onMouseLeave={enableScroll}
         className={`${
           dragging ? "cursor-grabbing" : "cursor-pointer"
         } border-b-[1.5px] pb-2`}
@@ -196,7 +201,7 @@ const PrimaryArea = () => {
         )}
       </section>
 
-      <section className={`relative h-[750px] bg-gray-200`}>
+      <section className={`relative h-[750px] overflow-hidden bg-[#dfdfdf]`}>
         <Options />
         <AnimatedObject />
         <AnimationControls />

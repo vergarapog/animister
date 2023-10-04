@@ -82,3 +82,122 @@
 .btn-shine:hover::before {
   transform: translateX(100%);
 }
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Custom CSS for flip card */
+.card-container {
+  position: absolute;
+
+  top: 33%;
+  left: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.the-card {
+  /* position: absolute; */
+  width: 175px;
+  height: 175px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+
+  font-size: 2rem;
+}
+
+.the-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #ffc728;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.the-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: blue;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*End of  Custom CSS for flip card */
+
+/* Custom CSS for 3D Cube */
+
+.cube-container {
+  position: absolute;
+
+  top: 33%;
+  left: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.cube-area {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.cube-area .cube {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.cube-area .cube.cube-front {
+  transform: translateX(-75px) translateY(-75px) translateZ(75px);
+  background: rgba(255, 16, 107, 0.5);
+}
+
+.cube-area .cube.cube-back {
+  transform: translateX(-75px) translateY(-75px) translateZ(-75px);
+  background: rgba(1, 251, 236, 0.5);
+}
+
+.cube-area .cube.cube-right {
+  transform: translateY(-75px) rotateY(90deg);
+  background: rgba(4, 255, 116, 0.5);
+}
+
+.cube-area .cube.cube-left {
+  transform: translateY(-75px) translateX(-150px) rotateY(90deg);
+  background: rgba(216, 255, 0, 0.5);
+}
+
+.cube-area .cube.cube-top {
+  transform: translateX(-75px) translateY(-150px) rotateX(90deg);
+  background: rgba(0, 6, 246, 0.5);
+}
+
+.cube-area .cube.cube-bottom {
+  transform: translateX(-75px) rotateX(90deg);
+  background: rgba(255, 30, 0, 0.5);
+}
+/* End of Custom CSS for 3D Cube */

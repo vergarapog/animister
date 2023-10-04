@@ -1,7 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface OptionsSliceState {
-  objectType: "box" | "circle";
+  objectType:
+    | "box"
+    | "box light"
+    | "circle"
+    | "image"
+    | "button"
+    | "text"
+    | "letter"
+    | "bg gradient horizontal"
+    | "bg gradient vertical"
+    | "bg gradient diagonal"
+    | "bg flat color"
+    | "bg image"
+    | "cover image"
+    | "3D Card"
+    | "3D Cube";
   duration: string;
   timingFunction: string;
   delay: string;
