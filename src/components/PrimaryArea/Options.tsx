@@ -9,6 +9,8 @@ import {
   setDirection,
   setFillMode,
 } from "../../reducers/optionsReducer";
+import { useGlobalContext } from "../../context";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Options = () => {
   const {
@@ -85,10 +87,24 @@ const Options = () => {
     dispatch(setFillMode(newFillMode));
   };
 
+  const { isOptionsOpen, setIsOptionsOpen } = useGlobalContext();
+
   return (
-    <div className="absolute left-4 top-4 z-10 h-[450px] w-56 select-none bg-white text-primarydark shadow-xl">
+    <div
+      className={`absolute ${
+        isOptionsOpen ? "left-4" : "-left-full"
+      } top-4 z-20 h-[450px] w-56 select-none bg-white text-primarydark shadow-xl transition-all`}
+    >
       <section className="p-3">
-        <div className={`py-1 text-lg uppercase`}>Options</div>
+        <div className="flex items-center justify-between ">
+          <div className={`py-1 text-lg uppercase`}>Options</div>
+          <div
+            className="cursor-pointer px-2 py-1 hover:bg-primarydark hover:text-white"
+            onClick={() => setIsOptionsOpen(false)}
+          >
+            <FontAwesomeIcon icon="eye-slash" />
+          </div>
+        </div>
         <div className="space-y-1">
           <div>
             <label htmlFor="objectType" className="text-sm">
