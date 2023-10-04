@@ -43,7 +43,8 @@ const Options = () => {
 
   const handleDurationChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newDuration = event.target.value;
-    dispatch(setDuration(newDuration));
+    const sanitizedValue = newDuration.replace(/[^0-9.]/g, "");
+    dispatch(setDuration(sanitizedValue));
   };
 
   const handleTimingFunctionChange = (
@@ -55,7 +56,8 @@ const Options = () => {
 
   const handleDelayChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newDelay = event.target.value;
-    dispatch(setDelay(newDelay));
+    const sanitizedValue = newDelay.replace(/[^0-9.]/g, "");
+    dispatch(setDelay(sanitizedValue));
   };
 
   const handleIterationCountChange = (
@@ -86,15 +88,16 @@ const Options = () => {
   return (
     <div className="absolute left-4 top-4 z-10 h-[450px] w-56 select-none bg-white text-primarydark shadow-xl">
       <section className="p-3">
-        <div className={`py-2 text-lg uppercase`}>Options</div>
-        <div>
+        <div className={`py-1 text-lg uppercase`}>Options</div>
+        <div className="space-y-1">
           <div>
-            <label htmlFor="objectType">select object</label>
-
+            <label htmlFor="objectType" className="text-sm">
+              select object
+            </label>
             <select
               name="objectType"
               id="objectType"
-              className="w-full px-1 outline outline-1"
+              className="w-full bg-gray-200  px-1"
               value={objectType}
               onChange={handleObjectTypeChange}
             >
@@ -121,22 +124,29 @@ const Options = () => {
           </div>
 
           <div>
-            <label htmlFor="duration">duration</label>
-            <input
-              type="string"
-              className="w-full px-2 outline outline-1"
-              placeholder="duration in seconds"
-              value={duration}
-              onChange={handleDurationChange}
-            />
+            <label className="text-sm" htmlFor="duration">
+              duration
+            </label>
+            <div className="flex">
+              <input
+                type="string"
+                className="w-full bg-gray-200 px-2"
+                placeholder="duration in seconds"
+                value={duration}
+                onChange={handleDurationChange}
+              />
+              <span className="ml-3 text-primarydark">seconds</span>
+            </div>
           </div>
 
           <div>
-            <label htmlFor="timingFunction">timing-function</label>
+            <label className="text-sm" htmlFor="timingFunction">
+              timing-function
+            </label>
             <select
               name="timingFunction"
               id="timingFunction"
-              className="w-full px-1 outline outline-1"
+              className="w-full bg-gray-200 px-1"
               value={timingFunction}
               onChange={handleTimingFunctionChange}
             >
@@ -151,43 +161,52 @@ const Options = () => {
           </div>
 
           <div>
-            <label htmlFor="delay">delay</label>
-            <input
-              type="text"
-              className="w-full px-2 outline outline-1"
-              value={delay}
-              onChange={handleDelayChange}
-            />
-          </div>
-
-          <div className="grid grid-cols-2">
-            <div className="">
-              <label htmlFor="iterationCount">iteration count</label>
+            <label className="text-sm" htmlFor="delay">
+              delay
+            </label>
+            <div className="flex">
               <input
                 type="text"
-                className="w-full px-2 outline outline-1"
+                className="w-full bg-gray-200 px-2"
+                value={delay}
+                onChange={handleDelayChange}
+              />
+              <span className="ml-3 text-primarydark">seconds</span>
+            </div>
+          </div>
+
+          <div className="flex items-end">
+            <div className="mr-3">
+              <label className="text-sm" htmlFor="iterationCount">
+                iteration count
+              </label>
+              <input
+                type="text"
+                className="w-full bg-gray-200 px-2"
                 value={iterationCount}
                 onChange={handleIterationCountChange}
               />
             </div>
-            <div className="" onClick={handleIterationInfinite}>
-              <label htmlFor="iterationCount">infinite</label>
-              <input
-                type="checkbox"
-                checked={isInfinite}
-                readOnly={true}
-                // onChange={handleIterationInfinite}
-              />
+            <div
+              className="flex items-center justify-center"
+              onClick={handleIterationInfinite}
+            >
+              <input type="checkbox" checked={isInfinite} readOnly={true} />
+              <label className="ml-1 text-sm" htmlFor="iterationCount">
+                infinite
+              </label>
             </div>
           </div>
         </div>
 
         <div>
-          <label htmlFor="direction">direction</label>
+          <label className="text-sm" htmlFor="direction">
+            direction
+          </label>
           <select
             name="direction"
             id="direction"
-            className="w-full px-1 outline outline-1"
+            className="w-full bg-gray-200 px-1"
             value={direction}
             onChange={handleDirectionChange}
           >
@@ -199,11 +218,13 @@ const Options = () => {
         </div>
 
         <div>
-          <label htmlFor="fillMode">fill-mode</label>
+          <label className="text-sm" htmlFor="fillMode">
+            fill-mode
+          </label>
           <select
             name="fillMode"
             id="fillMode"
-            className="w-full px-1 outline outline-1"
+            className="w-full bg-gray-200 px-1"
             value={fillMode}
             onChange={handleFillModeChange}
           >
