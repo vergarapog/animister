@@ -27,6 +27,7 @@ import { Link, useMatch } from "react-router-dom";
 type scrollVisibilityApiType = any;
 
 import usePreventBodyScroll from "./usePreventBodyScroll";
+import OptionsToggle from "./OptionsToggle";
 
 const PrimaryArea = () => {
   const allAnimations = useAppSelector(
@@ -202,6 +203,7 @@ const PrimaryArea = () => {
       </section>
 
       <section className={`relative h-[750px] overflow-hidden bg-[#dfdfdf]`}>
+        <OptionsToggle />
         <Options />
         <AnimatedObject />
         <AnimationControls />

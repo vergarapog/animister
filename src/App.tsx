@@ -19,6 +19,8 @@ import {
   faFilter,
   faTrash,
   faDownload,
+  faGear,
+  faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
 import Backdrop from "./components/Backdrop";
 
@@ -30,7 +32,9 @@ library.add(
   faX,
   faFilter,
   faTrash,
-  faDownload
+  faDownload,
+  faGear,
+  faEyeSlash
 );
 
 function App() {

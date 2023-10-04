@@ -15,6 +15,8 @@ interface AppContextType {
   setErrorMessage: React.Dispatch<React.SetStateAction<string>>;
   isSideBarOpen: boolean;
   setIsSideBarOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isOptionsOpen: boolean;
+  setIsOptionsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   isGeneratedCodeWindowOpen: boolean;
   setIsGeneratedCodeWindowOpen: React.Dispatch<React.SetStateAction<boolean>>;
   animationItemsList: AnimationGroup[];
@@ -32,6 +34,8 @@ const AppContext = createContext<AppContextType>({
   setErrorMessage: () => {},
   isSideBarOpen: false,
   setIsSideBarOpen: () => {},
+  isOptionsOpen: false,
+  setIsOptionsOpen: () => {},
   isGeneratedCodeWindowOpen: false,
   setIsGeneratedCodeWindowOpen: () => {},
   animationItemsList: [],
@@ -51,6 +55,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [selectedVariation, setSelectedVariation] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
+  const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(false);
   const [isGeneratedCodeWindowOpen, setIsGeneratedCodeWindowOpen] =
     useState<boolean>(false);
   const [animationItemsList, setAnimationItemsList] = useState<
@@ -79,6 +84,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
         setErrorMessage,
         isSideBarOpen,
         setIsSideBarOpen,
+        isOptionsOpen,
+        setIsOptionsOpen,
         isGeneratedCodeWindowOpen,
         setIsGeneratedCodeWindowOpen,
         animationItemsList,
