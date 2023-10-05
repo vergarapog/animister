@@ -55,7 +55,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [selectedVariation, setSelectedVariation] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
-  const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(false);
+  const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(true);
   const [isGeneratedCodeWindowOpen, setIsGeneratedCodeWindowOpen] =
     useState<boolean>(false);
   const [animationItemsList, setAnimationItemsList] = useState<
