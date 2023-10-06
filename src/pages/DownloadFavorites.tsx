@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Variation } from "../types";
 import { useState, useEffect } from "react";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const DownloadFavorites = () => {
   const favorites = useAppSelector(
@@ -84,7 +85,8 @@ const DownloadFavorites = () => {
           <SimpleNavbar />
         </div>
       </div>
-      <main className={`flex flex-grow justify-center `}>
+      <Breadcrumbs routeName="Download" />
+      <main className={`flex flex-grow justify-center`}>
         <section className={`w-full p-8 text-primarydark md:max-w-[850px]`}>
           <article className="space-y-5 text-justify md:text-lg">
             <h1 className="my-4 text-4xl uppercase md:my-8 md:text-5xl">
