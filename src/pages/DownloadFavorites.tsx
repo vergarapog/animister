@@ -132,12 +132,12 @@ const FavoriteBlock = ({
   handleDeleteFavorite,
 }: FavoriteBlockProps) => {
   return (
-    <button className="mr-3 mt-3 bg-gray-200 px-2 py-1 text-sm">
-      {variationTitle}{" "}
+    <button className="mr-3 mt-3 flex items-center bg-gray-200 px-2 pt-1 text-sm">
+      <p>{variationTitle}</p>
       <span className="ml-2">
         <FontAwesomeIcon
           icon="x"
-          className="text-sm"
+          className="p-1 text-sm hover:bg-accent hover:text-white"
           onClick={() => handleDeleteFavorite(variationTitle)}
         />
       </span>
