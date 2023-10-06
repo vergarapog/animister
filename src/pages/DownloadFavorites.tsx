@@ -47,6 +47,36 @@ const DownloadFavorites = () => {
     }, 1500);
   };
 
+  if (downloadList.length === 0) {
+    return (
+      <div className="flex flex-col">
+        <div className={`${styles.flexCenter} bg-primary`}>
+          <div className={`${styles.boxWidth}`}>
+            <SimpleNavbar />
+          </div>
+        </div>
+        <main className={`flex flex-grow justify-center text-primarydark`}>
+          <section className={`w-full p-8 text-primarydark md:max-w-[850px]`}>
+            <h1 className="my-4 text-4xl uppercase md:my-8 md:text-5xl">
+              OHHH NO
+            </h1>
+            <div className="">
+              <h1 className="mb-4 text-xl uppercase md:my-8 md:text-2xl">
+                How about picking some animations first :)
+              </h1>
+              <Link
+                to="/"
+                className="py-1 font-bold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-white"
+              >
+                Go back
+              </Link>
+            </div>
+          </section>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col">
       <div className={`${styles.flexCenter} bg-primary`}>
