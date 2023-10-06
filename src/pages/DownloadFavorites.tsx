@@ -4,24 +4,38 @@ import { useAppSelector } from "../hooks";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Variation } from "../types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const DownloadFavorites = () => {
   const favorites = useAppSelector(
     (state) => state.favoritesReducer.favoriteAnimations
   );
 
-  const allVariationsOfFavorites = favorites.reduce(
-    (accu: Variation[], curr) => {
-      return [...accu, ...curr.variations];
-    },
-    []
-  );
+  const [downloadList, setDownloadList] = useState<Variation[]>([]);
+
+  useEffect(() => {
+    const allVariationsOfFavorites = favorites.reduce(
+      (accu: Variation[], curr) => {
+        return [...accu, ...curr.variations];
+      },
+      []
+    );
+
+    setDownloadList(allVariationsOfFavorites);
+  }, []);
+
+  const handleDeleteFavorite = (variationTitle: string) => {
+    const filteredDownloadList = downloadList.filter((item) => {
+      return item.variationTitle !== variationTitle;
+    });
+
+    setDownloadList(filteredDownloadList);
+  };
 
   const [isKeyframesCopied, setIsKeyframesCopied] = useState<boolean>(false);
 
   const copyToClipboardKeyframes = () => {
-    const allKeyframes = allVariationsOfFavorites.map((variation) => {
+    const allKeyframes = downloadList.map((variation) => {
       return variation.keyframes;
     });
 
@@ -51,16 +65,22 @@ const DownloadFavorites = () => {
                 These are your favorites so far
               </p>
               <ul className="flex flex-wrap">
-                {allVariationsOfFavorites.map((variation) => {
+                {downloadList.map((variation) => {
                   return (
                     <li>
                       <FavoriteBlock
                         variationTitle={variation.variationTitle}
+                        handleDeleteFavorite={handleDeleteFavorite}
                       />
                     </li>
                   );
                 })}
               </ul>
+              <p className="text-md">
+                You can remove animations from the download queue by clicking on
+                the 'x' button. Worry not though – this will not remove them
+                from your favourites list!
+              </p>
               <div className="py-5">
                 <Link
                   to="/"
@@ -74,7 +94,7 @@ const DownloadFavorites = () => {
 
           <article className="flex h-[400px] flex-col justify-center space-y-4 bg-gray-200">
             <pre className="mx-2 h-[350px] overflow-y-scroll p-5">
-              {allVariationsOfFavorites.map((variation) => {
+              {downloadList.map((variation) => {
                 return <div>{variation.keyframes} </div>;
               })}
             </pre>
@@ -104,14 +124,22 @@ const DownloadFavorites = () => {
 
 type FavoriteBlockProps = {
   variationTitle: string;
+  handleDeleteFavorite: (variationTitle: string) => void;
 };
 
-const FavoriteBlock = ({ variationTitle }: FavoriteBlockProps) => {
+const FavoriteBlock = ({
+  variationTitle,
+  handleDeleteFavorite,
+}: FavoriteBlockProps) => {
   return (
     <button className="mr-3 mt-3 bg-gray-200 px-2 py-1 text-sm">
       {variationTitle}{" "}
       <span className="ml-2">
-        <FontAwesomeIcon icon="x" className="text-sm" />
+        <FontAwesomeIcon
+          icon="x"
+          className="text-sm"
+          onClick={() => handleDeleteFavorite(variationTitle)}
+        />
       </span>
     </button>
   );
