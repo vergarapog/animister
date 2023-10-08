@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link, useMatch } from "react-router-dom";
+import { Link, useMatch, useNavigate } from "react-router-dom";
 import { clearFavorites } from "../reducers/favoritesReducer";
 import { useAppDispatch } from "../hooks";
 
@@ -10,9 +10,14 @@ const NavbarControls = () => {
   const inFavoritesPage = useMatch("/favorites");
   const inDownloadFavoritesPage = useMatch("/download");
 
+  const navigate = useNavigate();
+
   const handleClearFavorites = () => {
     if (confirm("Are you sure you want to delete your favorites?")) {
       dispatch(clearFavorites());
+    }
+    if (inDownloadFavoritesPage) {
+      navigate("/");
     }
   };
 
