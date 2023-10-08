@@ -23,6 +23,7 @@ import {
   faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
 import Backdrop from "./components/Backdrop";
+import DownloadFavorites from "./pages/DownloadFavorites";
 
 library.add(
   faBars,
@@ -51,6 +52,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/download" element={<DownloadFavorites />} />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
       <Backdrop />

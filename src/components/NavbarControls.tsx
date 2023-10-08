@@ -8,6 +8,7 @@ const NavbarControls = () => {
 
   //check if in favorites page
   const inFavoritesPage = useMatch("/favorites");
+  const inDownloadFavoritesPage = useMatch("/download");
 
   const handleClearFavorites = () => {
     if (confirm("Are you sure you want to delete your favorites?")) {
@@ -34,10 +35,14 @@ const NavbarControls = () => {
         />
       </li>
       <li>
-        <FontAwesomeIcon
-          className="cursor-pointer rounded bg-[#4293a7] p-2 transition-all hover:scale-110 hover:bg-accent"
-          icon="download"
-        />
+        <Link to={inDownloadFavoritesPage ? "/" : "/download"}>
+          <FontAwesomeIcon
+            className={`cursor-pointer rounded ${
+              inDownloadFavoritesPage ? "bg-accent" : "bg-[#4293a7]"
+            } p-2 transition-all hover:scale-110 hover:bg-accent`}
+            icon="download"
+          />
+        </Link>
       </li>
     </ul>
   );
