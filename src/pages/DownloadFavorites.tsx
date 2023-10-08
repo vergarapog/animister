@@ -67,7 +67,7 @@ const DownloadFavorites = () => {
               </h1>
               <Link
                 to="/"
-                className="py-1 font-bold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-white"
+                className="p-1 font-bold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-white"
               >
                 Go back
               </Link>
