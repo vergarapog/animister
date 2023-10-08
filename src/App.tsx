@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
+import HowTo from "./pages/HowTo";
 import Favorites from "./pages/Favorites";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -50,7 +50,7 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/howto" element={<HowTo />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/download" element={<DownloadFavorites />} />
         <Route path="*" element={<div>404 Not Found</div>} />

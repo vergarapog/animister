@@ -63,11 +63,11 @@ const Sidebar = () => {
             </li>
             <li>
               <Link
-                to="/about"
+                to="/howto"
                 className="cursor-pointer rounded px-4 py-2  transition-all hover:line-through"
                 onClick={() => setIsSideBarOpen(false)}
               >
-                About
+                How To
               </Link>
             </li>
             <li>
