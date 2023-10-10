@@ -46,7 +46,7 @@ const Animation = ({
   return (
     <div
       key={itemId}
-      className={`relative mx-2 flex min-w-[90px] cursor-pointer select-none  items-center justify-center rounded-full px-1 py-1 text-center text-xs font-bold tracking-wide md:h-28 md:w-28  ${
+      className={`relative mx-2 flex min-w-[90px] cursor-pointer select-none  items-center justify-center rounded-full px-1 py-1 text-center text-xs font-bold tracking-wide transition-all duration-100 hover:bg-[#4293a7] md:h-28 md:w-28  ${
         selectedGroup.animationTitle === animationTitle
           ? "bg-accent"
           : "bg-primary"
