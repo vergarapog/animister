@@ -18,7 +18,7 @@ const HowTo = () => {
             </h1>
             <section className="space-y-20 md:space-y-16">
               <div className="flex items-center">
-                <h2 className="mr-5 text-6xl md:mr-11">1</h2>
+                <h2 className="mr-3 text-3xl md:mr-11 md:text-6xl">1</h2>
                 <div className="flex h-36 flex-col justify-between border-l-2 px-2 md:px-6">
                   <h3 className="text-xl font-bold uppercase md:text-2xl">
                     Play
@@ -32,7 +32,7 @@ const HowTo = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <h2 className="mr-2 text-6xl md:mr-8">2</h2>
+                <h2 className="mr-2 text-3xl md:mr-8 md:text-6xl">2</h2>
                 <div className="flex h-36 flex-col justify-between border-l-2 px-2 md:px-6">
                   <h3 className="text-xl font-bold uppercase md:text-2xl">
                     Like
@@ -48,7 +48,7 @@ const HowTo = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <h2 className="mr-2 text-6xl md:mr-8">3</h2>
+                <h2 className="mr-2 text-3xl md:mr-8 md:text-6xl">3</h2>
                 <div className="flex h-36 flex-col justify-between border-l-2 px-2 md:px-6">
                   <h3 className="text-xl font-bold uppercase md:text-2xl">
                     Copy Code
