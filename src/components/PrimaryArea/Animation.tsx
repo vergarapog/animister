@@ -46,7 +46,7 @@ const Animation = ({
   return (
     <div
       key={itemId}
-      className={`relative mx-2 flex min-w-[100px] cursor-pointer select-none items-center justify-center whitespace-nowrap rounded-full px-1 py-1 text-center text-xs font-bold tracking-wide transition-all duration-100 md:h-28  md:w-28 md:whitespace-normal  ${
+      className={`relative mx-2 flex min-w-[100px] cursor-pointer select-none flex-row-reverse items-center justify-center whitespace-nowrap rounded-full px-2 py-2 text-center text-xs font-bold tracking-wide transition-all duration-100 md:h-28 md:w-28 md:whitespace-normal  md:px-1 md:py-1  ${
         selectedGroup.animationTitle === animationTitle
           ? "bg-accent hover:bg-accent"
           : "bg-primary hover:bg-[#4293a7]"
@@ -54,9 +54,11 @@ const Animation = ({
       onClick={handleClick}
     >
       {selectedAnimationGroupObject && (
-        <div className={`absolute left-1/2 top-6 -translate-x-1/2`}>
+        <div
+          className={`ml-2 md:absolute md:left-1/2 md:top-6 md:ml-0 md:-translate-x-1/2`}
+        >
           {selectedAnimationGroupObject.variations.length}{" "}
-          <FontAwesomeIcon icon="heart" />
+          <FontAwesomeIcon icon="heart" className="" />
         </div>
       )}
       <div>

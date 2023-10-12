@@ -48,10 +48,13 @@ function App() {
 
   //Options menu will be closed on first render in mobile devices
   const { setIsOptionsOpen } = useGlobalContext();
-  const userAgent = window.navigator.userAgent;
-  if (/Mobi|Android/i.test(userAgent)) {
-    setIsOptionsOpen(false);
-  }
+
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent;
+    if (/Mobi|Android/i.test(userAgent)) {
+      setIsOptionsOpen(false);
+    }
+  }, []);
 
   return (
     <div className="relative h-screen w-full overflow-x-hidden font-montserrat text-textoffwhite">
