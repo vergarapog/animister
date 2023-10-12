@@ -24,6 +24,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Backdrop from "./components/Backdrop";
 import DownloadFavorites from "./pages/DownloadFavorites";
+import { useGlobalContext } from "./context";
 
 library.add(
   faBars,
@@ -44,6 +45,17 @@ function App() {
   useEffect(() => {
     dispatch(initializeAnimations());
   }, [dispatch]);
+
+  //Options menu will be closed on first render in mobile devices
+  const { setIsOptionsOpen } = useGlobalContext();
+
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent;
+    if (/Mobi|Android/i.test(userAgent)) {
+      setIsOptionsOpen(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="relative h-screen w-full overflow-x-hidden font-montserrat text-textoffwhite">

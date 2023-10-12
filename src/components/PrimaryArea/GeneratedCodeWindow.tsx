@@ -58,7 +58,7 @@ const GeneratedCodeWindow = () => {
       </div>
       <div className="space-y-8 p-10 pt-0">
         <div className="space-y-4">
-          <pre className="h-32  overflow-y-scroll bg-gray-100 p-5">
+          <pre className="h-32 overflow-y-scroll bg-gray-100 p-5 text-xs md:text-base">
             {classNameText}
           </pre>
           <button
@@ -71,7 +71,7 @@ const GeneratedCodeWindow = () => {
           </button>
         </div>
         <div className="space-y-4">
-          <pre className="h-64 overflow-y-scroll bg-gray-100 p-5">
+          <pre className="h-64 overflow-y-scroll bg-gray-100 p-5 text-xs md:text-base">
             {keyframes}
           </pre>
           <button

@@ -24,7 +24,7 @@ const Favorites = () => {
         ) : (
           <div className="flex h-64 items-center justify-center text-primarydark">
             <div className="space-y-7">
-              <div className="text-2xl">
+              <div className="text-center text-2xl">
                 This space is waiting for your favorites. Add some now!
               </div>
               <div className="text-center text-2xl transition-all">
