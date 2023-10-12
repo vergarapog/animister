@@ -54,6 +54,7 @@ function App() {
     if (/Mobi|Android/i.test(userAgent)) {
       setIsOptionsOpen(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
