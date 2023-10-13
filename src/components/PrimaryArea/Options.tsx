@@ -11,6 +11,7 @@ import {
 } from "../../reducers/optionsReducer";
 import { useGlobalContext } from "../../context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { nonDraggableTypes } from "../../constants";
 
 const Options = () => {
   const {
@@ -25,6 +26,9 @@ const Options = () => {
 
   const [isInfinite, setIsInfinite] = useState<boolean>(false);
 
+  const { isOptionsOpen, setIsOptionsOpen, setIsDraggable } =
+    useGlobalContext();
+
   useEffect(() => {
     if (isInfinite) {
       dispatch(setIterationCount("infinite"));
@@ -33,6 +37,12 @@ const Options = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInfinite]);
+
+  useEffect(() => {
+    if (nonDraggableTypes.includes(objectType)) {
+      setIsDraggable(false);
+    }
+  }, [objectType, setIsDraggable]);
 
   const dispatch = useAppDispatch();
 
@@ -86,8 +96,6 @@ const Options = () => {
     const newFillMode = event.target.value;
     dispatch(setFillMode(newFillMode));
   };
-
-  const { isOptionsOpen, setIsOptionsOpen } = useGlobalContext();
 
   return (
     <div

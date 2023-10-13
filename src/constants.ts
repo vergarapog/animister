@@ -8,3 +8,13 @@ export const animationCategories = [
 ];
 
 export const apiBaseUrl = "http://localhost:3001";
+
+export const nonDraggableTypes = [
+  "image",
+  "bg gradient horizontal",
+  "bg gradient vertical",
+  "bg gradient diagonal",
+  "bg flat color",
+  "bg image",
+  "cover image",
+];

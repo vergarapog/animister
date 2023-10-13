@@ -22,6 +22,8 @@ import GeneratedCodeWindow from "./GeneratedCodeWindow";
 import { setKeyframes } from "../../reducers/animatedObjectReducer";
 import { Link, useMatch } from "react-router-dom";
 
+import Draggable from "react-draggable";
+
 //need to enable any because react-horizontal-scrolling library doesnt have updated types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type scrollVisibilityApiType = any;
@@ -47,6 +49,7 @@ const PrimaryArea = () => {
     setSelectedVariation,
     animationItemsList,
     setAnimationItemsList,
+    isDraggable,
   } = useGlobalContext();
 
   //these two useCallback and useMemo functions are in charge when a user changes the category from the navbar
@@ -205,7 +208,15 @@ const PrimaryArea = () => {
       <section className={`relative h-[750px] overflow-hidden bg-[#dfdfdf]`}>
         <OptionsToggle />
         <Options />
-        <AnimatedObject />
+        {isDraggable ? (
+          <Draggable bounds="parent">
+            <div className="absolute left-1/2 top-1/3 translate-x-1/2 cursor-grab">
+              <AnimatedObject />
+            </div>
+          </Draggable>
+        ) : (
+          <AnimatedObject />
+        )}
         <AnimationControls />
         <GeneratedCodeWindow />
       </section>

@@ -47,7 +47,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3 h-32 w-32  bg-primary`}
+          className={`absolute left-1/2 top-1/3 h-32 w-32 bg-primary`}
         ></div>
       );
 
