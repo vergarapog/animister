@@ -21,6 +21,8 @@ import {
   faDownload,
   faGear,
   faEyeSlash,
+  faArrowsUpDownLeftRight,
+  faLock,
 } from "@fortawesome/free-solid-svg-icons";
 import Backdrop from "./components/Backdrop";
 import DownloadFavorites from "./pages/DownloadFavorites";
@@ -36,7 +38,9 @@ library.add(
   faTrash,
   faDownload,
   faGear,
-  faEyeSlash
+  faEyeSlash,
+  faArrowsUpDownLeftRight,
+  faLock
 );
 
 function App() {

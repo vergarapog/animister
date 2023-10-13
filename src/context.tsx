@@ -17,6 +17,8 @@ interface AppContextType {
   setIsSideBarOpen: React.Dispatch<React.SetStateAction<boolean>>;
   isOptionsOpen: boolean;
   setIsOptionsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isDraggable: boolean;
+  setIsDraggable: React.Dispatch<React.SetStateAction<boolean>>;
   isGeneratedCodeWindowOpen: boolean;
   setIsGeneratedCodeWindowOpen: React.Dispatch<React.SetStateAction<boolean>>;
   animationItemsList: AnimationGroup[];
@@ -36,6 +38,8 @@ const AppContext = createContext<AppContextType>({
   setIsSideBarOpen: () => {},
   isOptionsOpen: false,
   setIsOptionsOpen: () => {},
+  isDraggable: false,
+  setIsDraggable: () => {},
   isGeneratedCodeWindowOpen: false,
   setIsGeneratedCodeWindowOpen: () => {},
   animationItemsList: [],
@@ -56,6 +60,7 @@ const AppProvider = ({ children }: AppProviderProps) => {
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
   const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(true);
+  const [isDraggable, setIsDraggable] = useState<boolean>(false);
   const [isGeneratedCodeWindowOpen, setIsGeneratedCodeWindowOpen] =
     useState<boolean>(false);
   const [animationItemsList, setAnimationItemsList] = useState<
@@ -86,6 +91,8 @@ const AppProvider = ({ children }: AppProviderProps) => {
         setIsSideBarOpen,
         isOptionsOpen,
         setIsOptionsOpen,
+        isDraggable,
+        setIsDraggable,
         isGeneratedCodeWindowOpen,
         setIsGeneratedCodeWindowOpen,
         animationItemsList,
