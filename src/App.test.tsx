@@ -1,4 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import {
+  render,
+  screen,
+  waitForElementToBeRemoved,
+} from "@testing-library/react";
 import { describe, expect, it, beforeEach, vi } from "vitest";
 import React from "react";
 
@@ -23,7 +27,7 @@ const TestWrapper = ({ children }: { children: React.ReactNode }) => {
           </Provider>
         </AppProvider>
       </Router>
-    </React.StrictMode>q
+    </React.StrictMode>
   );
 };
 
@@ -58,5 +62,21 @@ describe("#App", () => {
       const basicString = await screen.findAllByText(categoryString);
       expect(basicString).toBeDefined();
     }
+  });
+
+  it("on first render, 'Scale-Up' group and its first variation 'scale-up-center' should be selected", async () => {
+    render(
+      <TestWrapper>
+        <App />
+      </TestWrapper>
+    );
+
+    const scaleUpGroupText = await screen.findAllByText("Scale-Up");
+    expect(scaleUpGroupText).toBeDefined();
+
+    const scaleUpGroupFirstVariationText = await screen.findAllByText(
+      "scale-up-center"
+    );
+    expect(scaleUpGroupFirstVariationText).toBeDefined();
   });
 });

@@ -67,7 +67,6 @@ const PrimaryArea = () => {
   }, [selectedCategory, getListByCategory]);
 
   //check if in favorites page, used to resuse this component to only display favorites when on favorites page, triggered by useEffect
-
   const inFavoritesPage = useMatch("/favorites");
 
   useEffect(() => {
@@ -96,7 +95,7 @@ const PrimaryArea = () => {
     } else {
       setAnimationItemsList([]);
     }
-    //disable warning so favorites variable dependency will not cause re-render when favoriting a variation
+    //disable warning because favorites should not be a dependency will, else will cause re-render when favoriting a variation
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     animationsByCategory,
@@ -128,6 +127,7 @@ const PrimaryArea = () => {
         }
       });
 
+  //Prevent body scroll when scolling horizontally on Animation Group Menu
   const { enableScroll, disableScroll } = usePreventBodyScroll();
 
   return (
