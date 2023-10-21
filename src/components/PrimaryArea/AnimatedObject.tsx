@@ -47,7 +47,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3 h-32 w-32 bg-primary`}
+          className={`absolute left-1/2 top-1/4 h-32 w-32 bg-primary`}
         ></div>
       );
 
@@ -56,7 +56,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3 h-32 w-32  bg-white`}
+          className={`absolute left-1/2 top-1/4 h-32 w-32  bg-white`}
         ></div>
       );
 
@@ -65,7 +65,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3 h-32 w-32  rounded-full bg-primary`}
+          className={`absolute left-1/2 top-1/4 h-32 w-32  rounded-full bg-primary`}
         ></div>
       );
 
@@ -74,7 +74,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3  border-8 border-white`}
+          className={`absolute left-1/2 top-1/4  border-8 border-white`}
         >
           <img src="https://picsum.photos/id/11/250/275" alt="mountain skies" />
         </div>
@@ -84,7 +84,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3 rounded-full bg-primary px-4 py-3 text-2xl`}
+          className={`absolute left-1/2 top-1/4 rounded-full bg-primary px-4 py-3 text-2xl`}
         >
           <button>CSS Animations</button>
         </div>
@@ -94,7 +94,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3 rounded-full text-4xl font-bold text-primary`}
+          className={`absolute left-1/2 top-1/4 rounded-full text-4xl font-bold text-primary`}
         >
           <button>CSS Animations</button>
         </div>
@@ -104,7 +104,7 @@ const AnimatedObject = () => {
         <div
           key={key}
           style={{ animation: animationCSS }}
-          className={`absolute left-1/2 top-1/3 text-9xl font-bold text-white`}
+          className={`absolute left-1/2 top-1/4 text-9xl font-bold text-white`}
         >
           <button>B</button>
         </div>
