@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 import { useEffect, useRef, useCallback, useMemo } from "react";
 
 import Animation from "./Animation";
@@ -275,7 +274,7 @@ const LoadingSkeletonsVariation = ({
   );
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any,
+//  @typescript-eslint/no-explicit-any,
 //need to ignore because react-horizontal-scrolling library doesnt have updated types
 function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
   const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;

@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 export const data = [
   {
     id: "0",

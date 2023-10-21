@@ -71,6 +71,7 @@ export interface Props {
         });
       }
      */
+  // eslint-disable-next-line @typescript-eslint/ban-types
   transitionBehavior?: string | Function;
   /**
      Callback that fire once on init

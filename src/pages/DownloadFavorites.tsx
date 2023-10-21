@@ -23,6 +23,7 @@ const DownloadFavorites = () => {
     );
 
     setDownloadList(allVariationsOfFavorites);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleDeleteFavorite = (variationTitle: string) => {
