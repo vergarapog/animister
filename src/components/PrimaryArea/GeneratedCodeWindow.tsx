@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useGlobalContext } from "../../context";
 import { useAppSelector } from "../../hooks";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const GeneratedCodeWindow = () => {
   const { className, keyframes } = useAppSelector(
@@ -14,11 +14,26 @@ const GeneratedCodeWindow = () => {
     setIsGeneratedCodeWindowOpen(false);
   };
 
-  const animationName = className.split(" ")[0];
-  const classNameText = `.${animationName} {
+  const [syntaxOption, setSyntaxOption] = useState<string>("css_syntax");
+
+  const handleSyntaxOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSyntaxOption(e.target.value);
+  };
+
+  const [classNameText, setClassNameText] = useState<string>("");
+
+  useEffect(() => {
+    if (syntaxOption === "css_syntax") {
+      const animationName = className.split(" ")[0];
+      setClassNameText(`.${animationName} {
     -webkit-animation: ${className}
     animation: ${className}
-  }`;
+  }`);
+    } else {
+      const tailwindText = className.split(" ").join("_");
+      setClassNameText(`animate-[${tailwindText}]`);
+    }
+  }, [syntaxOption, className]);
 
   const [isClassNameCopied, setIsClassNameCopied] = useState<boolean>(false);
   const [isKeyframesCopied, setIsKeyframesCopied] = useState<boolean>(false);
@@ -55,6 +70,36 @@ const GeneratedCodeWindow = () => {
             onClick={handleCloseGeneratedCodeWindow}
           />
         </button>
+      </div>
+      <div className="flex space-x-4 px-10 pb-5">
+        <div className="space-x-1">
+          <input
+            type="radio"
+            id="css_syntax"
+            name="syntaxOption"
+            value="css_syntax"
+            checked={syntaxOption === "css_syntax"}
+            className="cursor-pointer"
+            onChange={handleSyntaxOptionChange}
+          />
+          <label htmlFor="css_syntax" className="cursor-pointer">
+            CSS Syntax
+          </label>
+        </div>
+        <div className="space-x-1">
+          <input
+            type="radio"
+            id="tailwind_syntax"
+            name="syntaxOption"
+            value="tailwind_syntax"
+            checked={syntaxOption === "tailwind_syntax"}
+            className="cursor-pointer"
+            onChange={handleSyntaxOptionChange}
+          />
+          <label htmlFor="tailwind_syntax" className="cursor-pointer">
+            Tailwind Syntax
+          </label>
+        </div>
       </div>
       <div className="space-y-8 p-10 pt-0">
         <div className="space-y-4">
