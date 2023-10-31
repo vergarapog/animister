@@ -22,6 +22,7 @@ This project is a faithful clone of the Animista.net website. It demonstrates my
 
 - React JS
 - React Router
+- Redux
 - HTML
 - Tailwind CSS
 - TypeScript
