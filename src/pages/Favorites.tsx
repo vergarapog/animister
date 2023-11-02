@@ -3,6 +3,7 @@ import styles from "../style";
 import PrimaryArea from "../components/PrimaryArea";
 import { useAppSelector } from "../hooks";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Favorites = () => {
   const favorites = useAppSelector(
@@ -25,7 +26,8 @@ const Favorites = () => {
           <div className="flex h-64 items-center justify-center text-primarydark">
             <div className="space-y-7">
               <div className="text-center text-2xl">
-                This space is waiting for your favorites. Add some now!
+                This space is waiting for your favorites. Add some by clicking
+                the <FontAwesomeIcon icon="heart" /> icon :)
               </div>
               <div className="text-center text-2xl transition-all">
                 Back to{" "}
