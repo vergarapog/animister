@@ -101,7 +101,7 @@ const Options = () => {
     <div
       className={`absolute ${
         isOptionsOpen ? "left-4" : "-left-full"
-      } top-4 z-20 h-[450px] w-56 select-none bg-white text-primarydark shadow-xl transition-all`}
+      } top-4 z-20 h-[450px] w-56 select-none rounded-md bg-white text-primarydark shadow-xl transition-all`}
     >
       <section className="p-3">
         <div className="flex items-center justify-between ">
@@ -121,7 +121,7 @@ const Options = () => {
             <select
               name="objectType"
               id="objectType"
-              className="w-full bg-gray-200  px-1"
+              className="w-full rounded  bg-gray-200 px-2 py-1"
               value={objectType}
               onChange={handleObjectTypeChange}
             >
@@ -170,7 +170,7 @@ const Options = () => {
             <select
               name="timingFunction"
               id="timingFunction"
-              className="w-full bg-gray-200 px-1"
+              className="w-full bg-gray-200 px-2 py-1"
               value={timingFunction}
               onChange={handleTimingFunctionChange}
             >
@@ -230,7 +230,7 @@ const Options = () => {
           <select
             name="direction"
             id="direction"
-            className="w-full bg-gray-200 px-1"
+            className="w-full bg-gray-200 px-2 py-1"
             value={direction}
             onChange={handleDirectionChange}
           >
@@ -248,7 +248,7 @@ const Options = () => {
           <select
             name="fillMode"
             id="fillMode"
-            className="w-full bg-gray-200 px-1"
+            className="w-full bg-gray-200 px-2 py-1"
             value={fillMode}
             onChange={handleFillModeChange}
           >
