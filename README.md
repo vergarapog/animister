@@ -1,4 +1,4 @@
-# Animista Clone Website
+# Animister
 
 ![Project Image](https://raw.githubusercontent.com/vergarapog/animista-clone-ts/main/public/git-pic/animista-clone-sc.jpg)
 
