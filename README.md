@@ -2,7 +2,7 @@
 
 ![Project Image](https://raw.githubusercontent.com/vergarapog/animista-clone-ts/main/public/git-pic/animista-clone-sc.jpg)
 
-This project is a faithful clone of the Animista.net website. It demonstrates my web development and design skills by replicating Animista's user-friendly interface for generating CSS animations. The clone closely mimics the responsive design and animation features of the original website, focusing on the principles of UI/UX. I've even added  features like tailwind code generation support and the ability to drag the animated object for further experimentation.
+This project is a tailwind friendly clone of the Animista.net website. It demonstrates my web development and design skills by replicating Animista's user-friendly interface for generating CSS animations. The clone closely mimics the responsive design and animation features of the original website, focusing on the principles of UI/UX. I've even added  features like tailwind code generation support and the ability to drag the animated object for further experimentation.
 
 [Visit the live site here](https://animista-clone.vercel.app/)
 
