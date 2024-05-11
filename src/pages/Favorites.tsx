@@ -23,7 +23,7 @@ const Favorites = () => {
             <PrimaryArea />
           </div>
         ) : (
-          <div className="flex h-64 items-center justify-center text-primarydark">
+          <div className="flex h-64 items-center justify-center p-8 text-primarydark">
             <div className="space-y-7">
               <div className="text-center text-2xl">
                 This space is waiting for your favorites. Add some by clicking
