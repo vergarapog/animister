@@ -9,7 +9,7 @@ const Breadcrumbs = ({ routeName }: Props) => {
     <nav className="mt-4 w-full text-center text-primarydark ">
       <Link
         to="/"
-        className="rounded p-1 text-xl hover:bg-accent hover:text-white"
+        className="rounded p-1 text-xl transition-all hover:bg-accent hover:text-white"
       >
         Home
       </Link>{" "}

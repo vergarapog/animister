@@ -57,6 +57,7 @@ const DownloadFavorites = () => {
             <SimpleNavbar />
           </div>
         </div>
+        <Breadcrumbs routeName="Download" />
         <main className={`flex flex-grow justify-center text-primarydark`}>
           <section className={`w-full p-8 text-primarydark md:max-w-[850px]`}>
             <h1 className="my-4 text-4xl uppercase md:my-8 md:text-5xl">
@@ -68,7 +69,7 @@ const DownloadFavorites = () => {
               </h1>
               <Link
                 to="/"
-                className="p-1 font-bold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-white"
+                className="rounded-md p-1 font-bold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-white"
               >
                 Go back
               </Link>
@@ -165,12 +166,12 @@ const FavoriteBlock = ({
   handleDeleteFavorite,
 }: FavoriteBlockProps) => {
   return (
-    <button className="mr-3 mt-3 flex items-center bg-gray-200 px-2 pt-1 text-sm">
+    <button className="mr-3 mt-3 flex items-center rounded bg-gray-200 px-2 pt-1 text-sm">
       <p>{variationTitle}</p>
       <span className="ml-2">
         <FontAwesomeIcon
           icon="x"
-          className="p-1 text-sm hover:bg-accent hover:text-white"
+          className="rounded p-1 text-sm hover:bg-accent hover:text-white"
           onClick={() => handleDeleteFavorite(variationTitle)}
         />
       </span>
