@@ -76,7 +76,7 @@ const AnimatedObject = () => {
           style={{ animation: animationCSS }}
           className={`absolute left-1/2 top-1/4  border-8 border-white`}
         >
-          <img src="https://picsum.photos/id/11/250/275" alt="mountain skies" />
+          <img src="/images/option-image.jpg" alt="mountain skies" />
         </div>
       );
     case "button":
