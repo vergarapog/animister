@@ -153,7 +153,7 @@ const AnimatedObject = () => {
           className={`absolute left-[30%] top-1/4  border-8 border-white`}
         >
           <img
-            src="https://picsum.photos/id/10/600/400"
+            src="/images/option-bg-image.jpg"
             alt="mountain and pine trees"
           />
         </div>
@@ -167,8 +167,8 @@ const AnimatedObject = () => {
         >
           <img
             className="h-full w-full"
-            src="https://picsum.photos/id/10/1280/720"
-            alt="mountain and pine trees"
+            src="/images/option-cover-image.jpg"
+            alt="rows of mountains"
           />
         </div>
       );
