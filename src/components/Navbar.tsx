@@ -21,7 +21,7 @@ const Navbar = () => {
       >
         <div className={`flex items-center space-x-5`}>
           <div
-            className={`select-none rounded-full bg-white px-2 text-xl font-semibold text-black md:text-3xl `}
+            className={`btn nav-shine btn-primary btn-ghost btn-shine select-none rounded-full bg-white px-2 text-xl font-semibold text-black md:text-3xl`}
           >
             B
           </div>

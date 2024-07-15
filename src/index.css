@@ -25,6 +25,20 @@
   transition: 0.25s;
 }
 
+/* to shine Nav logo */
+.nav-shine {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* to shine mobile Nav logo */
+.nav-shine-mobile {
+  width: 60px;
+  height: 60px;
+  font-size: 1rem !important;
+}
+
 /* .btn Default Styles */
 .btn {
   --hue: 192;
