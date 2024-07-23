@@ -8,7 +8,7 @@ The clone closely mimics the responsive design and animation features of the ori
 
 I also added features like tailwind code generation support and the ability to drag the animated object for greater animation experimentation.
 
-[Visit the live site here](https://animista-clone.vercel.app/)
+[Visit the live site here](https://animister.vercel.app/)
 
 ## Features
 
