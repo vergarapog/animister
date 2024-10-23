@@ -41,7 +41,7 @@ const Navbar = () => {
                 } else {
                   return (
                     <li
-                      className={`cursor-pointer select-none p-1 underline-offset-4 transition-all hover:scale-110 `}
+                      className={`cursor-pointer select-none rounded p-1 underline-offset-4 transition-all hover:bg-accent`}
                       key={category.id}
                       onClick={() => handleClick(category.title)}
                     >
@@ -102,7 +102,7 @@ const Navbar = () => {
               } else {
                 return (
                   <li
-                    className={`cursor-pointer select-none p-1 underline-offset-4 transition-all hover:scale-110 `}
+                    className={`cursor-pointer select-none rounded p-1 underline-offset-4 transition-all hover:bg-accent `}
                     key={category.id}
                     onClick={() => handleClick(category.title)}
                   >

@@ -23,7 +23,7 @@ const Favorites = () => {
             <PrimaryArea />
           </div>
         ) : (
-          <div className="flex h-64 items-center justify-center text-primarydark">
+          <div className="flex h-64 items-center justify-center p-8 text-primarydark">
             <div className="space-y-7">
               <div className="text-center text-2xl">
                 This space is waiting for your favorites. Add some by clicking
@@ -32,7 +32,7 @@ const Favorites = () => {
               <div className="text-center text-2xl transition-all">
                 Back to{" "}
                 <Link to="/">
-                  <span className="rounded bg-primary p-1 text-white underline transition-all hover:bg-accent hover:px-3">
+                  <span className="rounded bg-primary p-1 text-white transition-all hover:bg-accent">
                     Home
                   </span>
                 </Link>

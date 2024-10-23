@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useAppDispatch } from "./hooks";
 import { initializeAnimations } from "./reducers/animationsReducer";
 import { Routes, Route } from "react-router-dom";
+import "./global.css";
 
 import Sidebar from "./components/Sidebar";
 
